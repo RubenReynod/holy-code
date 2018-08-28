@@ -1,47 +1,33 @@
 <template>
-	<div>
+	<div id="instalacion">
 		<div class="container">
-	    	<div class="row">
-	        	<div class="service">
-	        		<div class="col-md-6 col-md-offset-3">
-	            		<div class="text-center">
-	              			<h2>Instalacion</h2>
-	              			<p>Instalacion y configuracion para el proyecto Laravel-vue.<br></p>
-	            		</div>
-	            	<hr>
-	          		</div>
-	        	</div>
-	      	</div>
-	    </div>
-	    <div class="container">
-	    	<div class="row">
-	    		<div class="col-md-12">
-	    			<h2>Intoduccion</h2>
-	    			<p>La base Laravel – Vue utiliza las tecnologias estandar de que Laravel propone para el desarrollo en su framework, en este caso tiene como intencion que el programador use las tecnologias de Vue para el front-end haciendo uso de webpack con laravel-mix para la compilacion de archivos css, less,sass y js.</p>
-	    		</div>
-	    		<div class="col-md-12">
-	    			<h2>Documentacion basica</h2>
-	    			<p>Para poder empezar a programar en este proyecto para otros proyectos es necesario tener conocimientos basicos de Laravel y Vuejs.</p>
-	    			<p><a href="https://laravel.com/docs/5.5/" target="_blank">Documentacion de Laravel (oficial)</a></p>
-	    			<p><a href="https://docs.laraveles.com/docs/5.5/" target="_blank">Documentacion de Laravel al español</a></p>
-	    			<p><a href="https://es-vuejs.github.io/vuejs.org/v2/guide/" target="_blank">Documentacion de Vuejs (oficial)</a></p>
-	    			<p><a href="https://www.youtube.com/watch?v=KnmauNagGTo&list=PLhCiuvlix-rTK8DfSiSP1itl7vbjWp7_F" target="_blank">Usando Vuejs en Laravel (curso en youtube)</a></p>
-	    		</div>
-	    		<div class="col-md-12">
-	    			<h2>Requerimientos</h2>
-	    			<p>Para poder programar en este proyecto son necesarias las siguientes herramientas:</p>
-	    			<ul>
-	    				<li>Terminal UNIX: Cualquier distribucion Linux o MacOS las tienen. En el caso de windows es necesario descargar una Terminal como Cygwin.</li>
-	    				<li>Composer: Gestor de paquetes/librerias PHP.</li>
-	    				<li>NPM: Gestor de paquetes/librerias de JavaScript.</li>
-	    				<li>PHP 7.1 o superior: Necesario para utilizar Composer y Laravel</li>
-	    				<li>Git: Para control de versiones</li>
-	    			</ul>
-	    		</div>
-	    	</div>
-	    	<div class="row">
-	    		<div class="col-md-12">
-	    			<h2>Instalacion:</h2>
+			<h2 class="title text-center">Instalacion</h2>
+			<p class="text text-center">Instalacion y configuracion para el proyecto Laravel-vue.</p>
+			<div class="seccion">
+				<h2 class="subtitle">Intoduccion</h2>
+	    		<p>La base Laravel – Vue utiliza las tecnologias estandar de que Laravel propone para el desarrollo en su framework, en este caso tiene como intencion que el programador use las tecnologias de Vue para el front-end haciendo uso de webpack con laravel-mix para la compilacion de archivos css, less,sass y js.</p>
+			</div>
+			<div class="seccion">
+				<h2 class="subtitle">Documentacion basica</h2>
+	    		<p>Para poder empezar a programar en este proyecto para otros proyectos es necesario tener conocimientos basicos de Laravel y Vuejs.</p>
+	    		<p><a href="https://laravel.com/docs/5.5/" target="_blank">Documentacion de Laravel (oficial)</a></p>
+	    		<p><a href="https://docs.laraveles.com/docs/5.5/" target="_blank">Documentacion de Laravel al español</a></p>
+	    		<p><a href="https://es-vuejs.github.io/vuejs.org/v2/guide/" target="_blank">Documentacion de Vuejs (oficial)</a></p>
+	    		<p><a href="https://www.youtube.com/watch?v=KnmauNagGTo&list=PLhCiuvlix-rTK8DfSiSP1itl7vbjWp7_F" target="_blank">Usando Vuejs en Laravel (curso en youtube)</a></p>
+			</div>
+			<div class="seccion">
+				<h2 class="subtitle">Requerimientos</h2>
+	    		<p>Para poder programar en este proyecto son necesarias las siguientes herramientas:</p>
+	    		<ul>
+	    			<li>Terminal UNIX: Cualquier distribucion Linux o MacOS las tienen. En el caso de windows es necesario descargar una Terminal como Cygwin.</li>
+	    			<li>Composer: Gestor de paquetes/librerias PHP.</li>
+	    			<li>NPM: Gestor de paquetes/librerias de JavaScript.</li>
+	    			<li>PHP 7.1 o superior: Necesario para utilizar Composer y Laravel</li>
+	    			<li>Git: Para control de versiones</li>
+	    		</ul>
+			</div>
+			<div class="seccion">
+				<h2 class="subtitle">Instalacion:</h2>
 	    			<p>
 	    				1.- Clonar el repositorio:
 						<code>git clone https://bitbucket.org/csng18/base_laravel/</code>
@@ -78,9 +64,8 @@
 					<p>
 						9.- El sitio ya deberia de funcionar correctamente.
 					</p>
-	    		</div>
-	    	</div>
-	    </div>
+			</div>
+		</div>
 	</div>
 </template>
 <script type="text/javascript">

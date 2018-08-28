@@ -10,7 +10,10 @@ import es from 'vee-validate/dist/locale/es';
 import Datetime from 'vue-datetime';
 import vSelect from 'vue-select';
 import cart from './services/cart.js';
-import vueTopprogress from 'vue-top-progress'
+import vueTopprogress from 'vue-top-progress';
+import * as VueGoogleMaps from 'vue2-google-maps';
+import svgicon from "vue-svgicon";
+import svgs from "./svgs/index.js";
 
 //Funcion para añadirlas a Vue
 function fire(Vue){
@@ -23,6 +26,26 @@ function fire(Vue){
 
 	//Vue-select	
 	Vue.component('v-select', vSelect);
+
+    //Vue-svgicon
+     Vue.use(svgicon, {
+		  tagName: 'svgicon',
+			classPrefix: 'vue-svg'
+	});
+
+    //iconos svg
+    Vue.use(svgs);
+
+	//Google map
+	Vue.use(VueGoogleMaps, {
+		load: {
+			key: 'AIzaSyAtuB4iDyT81TK-Mg5DfvRhoKmkGORys_A'
+			//libraries: 'places', // This is required if you use the Autocomplete plugin
+					// OR: libraries: 'places,drawing'
+					// OR: libraries: 'places,drawing,visualization'
+					// (as you require)
+		}
+	});
 
 	//Loading bar
 	Vue.use(vueTopprogress);

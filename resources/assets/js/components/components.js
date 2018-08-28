@@ -5,11 +5,13 @@
  */
 
 const page="./page/";
+import slick from 'vue-slick';
 
 function plugin (Vue) {
 	//Componentes llamados
   	Vue.component('my-header', require(page+'shared/header.vue'));
 	Vue.component('my-footer', require(page+'shared/footer.vue'));
+	Vue.component('slick',slick);
 }
 
 // Install by default if using the script tag

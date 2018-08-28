@@ -1,29 +1,24 @@
 <template>
-	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse.collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <router-link to="/" class="navbar-brand" ><span>LaraVue</span></router-link>
-            </div>
-            <div class="navbar-collapse collapse">                          
-                <div class="menu">
-                    <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation"><router-link to="/">Inicio</router-link></li>
-                        <li role="presentation"><router-link to="/instalation">Instalacion</router-link></li>
-                        <li role="presentation"><router-link to="/backend">Backend</router-link></li>
-                        <li role="presentation"><router-link to="/frontend">Frontend</router-link></li>
-                        <li role="presentation"><router-link to="/tutorials">Tutoriales</router-link></li>                     
-                    </ul>
+    <header id="header">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-md-2 align-self-center logo">
+                    <router-link to="/" tag="img" src="public/images/logo.png"></router-link>
                 </div>
-            </div>          
+                <div class="col-md-6 offset-md-2 align-self-center menu">
+                    <nav class="navbar navbar-expand">
+                        <ul class="navbar-nav">
+                            <router-link class="nav-link" to="/" tag="li" v-bind:class="{ active : $router.path=='/' }">Inicio</router-link>
+                            <router-link class="nav-link" to="/instalation" tag="li">Instalacion</router-link>
+                            <router-link class="nav-link" to="/backend" tag="li">backend</router-link>
+                            <router-link class="nav-link" to="/frontend" tag="li">Frontend</router-link>
+                            <router-link class="nav-link gray" to="/tutorials" tag="li">Tutoriales</router-link>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
-    </nav>
+    </header>
 </template>
 
 <script type="text/javascript">

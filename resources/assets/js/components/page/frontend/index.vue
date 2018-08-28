@@ -17,11 +17,11 @@
 	    	<div class="row">
 	    		<div class="col-md-12">
 	    			<h3>Guia de inicio Frontend</h3>
-	    			<iframe src="docs/Frontend.pdf" width="100%" height="500px"></iframe>
+					<iframe src="docs/Frontend_admin.pdf" width="100%" height="500px"></iframe>
 	    		</div>
 	    		<div class="col-md-12">
 	    			<h3>Frontend en dashboard</h3>
-	    			<iframe src="docs/Frontend_admin.pdf" width="100%" height="500px"></iframe>
+	    			<iframe src="docs/Frontend.pdf" width="100%" height="500px"></iframe>
 	    		</div>
 	    	</div>
 	    </div>

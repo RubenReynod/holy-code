@@ -6,7 +6,7 @@
 @import "variables";
 
 // Bootstrap
-@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+@import "~bootstrap/scss/bootstrap.scss";
 
 // Alertify
 @import "~alertifyjs/build/css/alertify.min";
@@ -28,4 +28,8 @@
 }
 
 // MyStyle
-@import "./main.scss";
+@import "./toolbox.scss";
+@import "./global.scss";
+@import "./shared.scss";
+@import "./home.scss";
+@import "./instalacion.scss";

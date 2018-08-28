@@ -21,17 +21,17 @@ const MyRouter = new VueRouter({
 
 MyRouter.beforeEach((to, from, next) => {
 	window.scrollTo(0,0);
-	if(this.a.app.$refs.loadingBar){
-		this.a.app.$refs.loadingBar.start();
+	if(window.app.__vue__ && window.app.__vue__.$refs.loadingBar){
+		window.app.__vue__.$refs.loadingBar.start();
 	}
 	next();
 });
 
 MyRouter.afterEach((to, from) => {	
 
-	if(this.a.app.$refs.loadingBar){
+	if(window.app.__vue__ && window.app.__vue__.$refs.loadingBar){
 		setTimeout(()=>{
-			this.a.app.$refs.loadingBar.done();
+			window.app.__vue__.$refs.loadingBar.done();
 		},500);
 	}
 

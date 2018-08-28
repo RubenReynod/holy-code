@@ -1,77 +1,51 @@
 <template>
-	<div>
-    <div class="container">
-      <div class="row">
-        <div class="service">
-          <div class="col-md-6 col-md-offset-3">
-            <div class="text-center">
-              <h2>Inicio</h2>
-              <p>Proyecto Laravel-vue.<br>
-              </p>
-            </div>
-            <hr>
-          </div>
-        </div>
+  <div id="home">
+      <h2 class="title text-center">LaraVue</h2>
+      <div class="container text-center seccion">
+          <p>Este proyecto utiliza las tecnologias estandar de que Laravel propone para el desarrollo en su framework, en este caso tiene como intencion que el programador use las tecnologias de Vue para el front-end haciendo uso de webpack con laravel-mix para la compilacion de archivos css, less,sass y js.</p>
       </div>
-    </div>
-    
-    <div class="services">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="wow bounceIn" data-wow-offset="0" data-wow-delay="0.4s">
-              <h4>Instalacion</h4>         
-                <div class="icon">
-                  <i class="fas fa-archive fa-3x"></i>
-                </div>            
-              <p>Guia basica de instalacion.</p>
-              <div class="ficon">
-                <router-link to="/instalation" class="btn btn-default" role="button">Ver</router-link>
+      <!-- ======================= Documentacion ======================= -->
+      <div class="container seccion">
+          <div class="row">
+              <div class="col-md-3 col-sm-6 col-12">
+                  <router-link to="/instalation" tag="div" class="tarjeta">
+                      <h4 class="title">Instalación</h4>
+                      <div class="image">
+                          <i class="fas fa-archive fa-3x"></i>
+                      </div>
+                      <p class="descript">Guia basica de instalacion.</p>
+                  </router-link>
               </div>
-            </div>
-          </div>
-          
-          <div class="col-md-3">
-            <div class="wow bounceIn" data-wow-offset="0" data-wow-delay="1.0s">
-              <h4>Backend</h4>
-              <div class="icon">
-                <i class="fas fa-cogs fa-3x"></i>
+              <div class="col-md-3 col-sm-6 col-12">
+                  <router-link to="/backend" tag="div" class="tarjeta">
+                      <h4 class="title">Backend</h4>
+                      <div class="image">
+                          <i class="fas fa-cogs fa-3x"></i>
+                      </div>
+                      <p class="descript">Documentacion basica del backend</p>
+                  </router-link>
               </div>
-              <p>Documentacion basica del backend </p>
-              <div class="ficon">
-                <router-link to="/backend" class="btn btn-default" role="button">Ver</router-link>
+              <div class="col-md-3 col-sm-6 col-12">
+                  <router-link to="/frontend" tag="div" class="tarjeta">
+                      <h4 class="title">Frontend</h4>
+                      <div class="image">
+                          <i class="fas fa-desktop fa-3x"></i>
+                      </div>
+                      <p class="descript">Documentacion basica del frontend</p>
+                  </router-link>
               </div>
-            </div>
-          </div>
-          
-          <div class="col-md-3">
-            <div class="wow bounceIn" data-wow-offset="0" data-wow-delay="1.6s">
-              <h4>Frontend</h4>
-              <div class="icon">
-                <i class="fas fa-desktop fa-3x"></i>
+              <div class="col-md-3 col-sm-6 col-12">
+                  <router-link to="/tutorials" tag="div" class="tarjeta">
+                      <h4 class="title">Tutoriales</h4>
+                      <div class="image">
+                          <i class="far fa-clone fa-3x"></i>
+                      </div>
+                      <p class="descript">Tutoriales sobre componentes y plugins</p>
+                  </router-link>
               </div>
-              <p>Documentacion basica del frontend</p>
-              <div class="ficon">
-                <router-link to="/frontend" class="btn btn-default" role="button">Ver</router-link>
-              </div>
-            </div>          
-          </div>
-          
-          <div class="col-md-3">
-            <div class="wow bounceIn" data-wow-offset="0" data-wow-delay="2.2s">
-              <h4>Tutoriales</h4>
-              <div class="icon">
-                <i class="far fa-clone fa-3x"></i>
-              </div>
-              <p>Tutoriales sobre componentes y plugins</p>
-              <div class="ficon">
-                <router-link to="/tutorials" class="btn btn-default" role="button">Ver</router-link>
-              </div>
-            </div>          
-          </div>
-        </div>
-      </div>
-    </div>
+          </div>  
+      </div> 
+      <!-- ======================= Documentacion ======================= --> 
   </div>
 </template>
 
