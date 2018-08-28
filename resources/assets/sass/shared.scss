@@ -1,16 +1,14 @@
 /*================== HEADER ==================== */
 #header{
-	background: $color--background;
-	height: 80px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 50;
+	  height: 100px;
+		background: transparent;
+		@extend %text;
+		position: relative;
+		z-index: 10;
 	 .logo{
         img{
             max-height: 100%;
-            max-width: 100%;
+            max-width: 250px;
             cursor: pointer;
         }
     }
@@ -18,14 +16,15 @@
         nav{
             ul{
                 li{
-                    font-size: 1.2em;
+                    font-size: 1em;
                     padding-left: 0.8rem;
                     padding-right: 0.8rem;
-                    color: $color--text2;
+                    color: $color--text;
                     cursor: pointer;
+										letter-spacing: 2px;
+										font-weight: 400;
                     position: relative;
-                    font-weight: bold;
-                    &:after{
+                    /*&:after{
                         @extend %horizontal-align;
                         @include transition(400ms);
                         content: "";
@@ -39,7 +38,7 @@
                     }
                     &.router-link-exact-active:after{
                         width: 100%;
-                    }
+                    }*/
                 }
             }
         }
@@ -49,7 +48,7 @@
 /*================== FOOTER ==================== */
 #footer{
     height: 60px;
-    background: $color--background; 
+    background: $color--background;
     color: $color--text2;
     .logo{
         width: 100%;
@@ -73,6 +72,6 @@
                 }
             }
         }
-    } 
+    }
 }
 /*================== FOOTER ==================== */

@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);/*!
+@import url(https://fonts.googleapis.com/css?family=Muli:200,300,400,700,800,900);/*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
  * Copyright 2011-2018 Twitter, Inc.
@@ -9029,7 +9029,7 @@ a.text-dark:hover, a.text-dark:focus {
 /**
  * alertifyjs 1.11.0 http://alertifyjs.com
  * AlertifyJS is a javascript framework for developing pretty browser dialogs and notifications.
- * Copyright 2017 Mohammad Younes <Mohammad@alertifyjs.com> (http://alertifyjs.com) 
+ * Copyright 2017 Mohammad Younes <Mohammad@alertifyjs.com> (http://alertifyjs.com)
  * Licensed under GPL 3 <https://opensource.org/licenses/gpl-3.0>*/
 .alertify .ajs-dimmer {
   position: fixed;
@@ -10049,7 +10049,7 @@ a.text-dark:hover, a.text-dark:focus {
 /**
  * alertifyjs 1.11.0 http://alertifyjs.com
  * AlertifyJS is a javascript framework for developing pretty browser dialogs and notifications.
- * Copyright 2017 Mohammad Younes <Mohammad@alertifyjs.com> (http://alertifyjs.com) 
+ * Copyright 2017 Mohammad Younes <Mohammad@alertifyjs.com> (http://alertifyjs.com)
  * Licensed under GPL 3 <https://opensource.org/licenses/gpl-3.0>*/
 .alertify .ajs-dialog {
   background-color: #fff;
@@ -10462,27 +10462,27 @@ a.text-dark:hover, a.text-dark:focus {
 /* ================ Variables ================== */
 /* ================ Variables ================== */
 /* ================ Fuentes ================== */
+#header, #home {
+  font-family: 'Muli', sans-serif;
+  font-weight: 200;
+}
+
 /* ================ Fuentes ================== */
 /* ================ Mixins (include) ================== */
 /* ================ Mixins (include) ================== */
 /* ================ Herencias (extend) ================== */
-#header .menu nav ul li:after {
+#home .banner .title {
   position: absolute;
-  transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  -sm-transform: translateX(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  -sm-transform: translateX(-50%) translateY(-50%);
   left: 50%;
+  top: 50%;
 }
 
 /* ================ Herencias (extend) ================== */
-.title {
-  margin-bottom: 30px;
-  color: #109173;
-  font-weight: 600;
-}
-
 .seccion {
   padding-top: 25px;
   padding-bottom: 25px;
@@ -10517,52 +10517,47 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .tarjeta .descript {
-  color: #757575;
+  color: #777777;
 }
 
 /*================== HEADER ==================== */
 #header {
-  background: #109173;
-  height: 80px;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 50;
+  height: 100px;
+  background: transparent;
+  position: relative;
+  z-index: 10;
 }
 
 #header .logo img {
   max-height: 100%;
-  max-width: 100%;
+  max-width: 250px;
   cursor: pointer;
 }
 
 #header .menu nav ul li {
-  font-size: 1.2em;
+  font-size: 1em;
   padding-left: 0.8rem;
   padding-right: 0.8rem;
-  color: #fff;
+  color: #777777;
   cursor: pointer;
+  letter-spacing: 2px;
+  font-weight: 400;
   position: relative;
-  font-weight: bold;
-}
-
-#header .menu nav ul li:after {
-  -webkit-transition: 400ms;
-  transition: 400ms;
-  content: "";
-  bottom: 8px;
-  width: 0;
-  height: 2px;
-  background: #fff;
-}
-
-#header .menu nav ul li:hover:after {
-  width: 50%;
-}
-
-#header .menu nav ul li.router-link-exact-active:after {
-  width: 100%;
+  /*&:after{
+                        @extend %horizontal-align;
+                        @include transition(400ms);
+                        content: "";
+                        bottom: 8px;
+                        width: 0;
+                        height: 2px;
+                        background: $color--text2;
+                    }
+                    &:hover:after{
+                        width: 50%;
+                    }
+                    &.router-link-exact-active:after{
+                        width: 100%;
+                    }*/
 }
 
 /*================== HEADER ==================== */
@@ -10603,19 +10598,48 @@ a.text-dark:hover, a.text-dark:focus {
 
 /*================== FOOTER ==================== */
 #home {
-  margin-top: 80px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  min-height: calc(100vh - 140px);
-  min-height: -o-calc(100vh - 140px);
-  min-height: -sm-calc(100vh - 140px);
+  margin-top: -100px;
+}
+
+#home .banner {
+  height: 100vh;
+  min-height: 600px;
+  position: relative;
+}
+
+#home .banner .title {
+  color: #777777;
+  letter-spacing: 2px;
+}
+
+#home .banner .title h1 {
+  margin-bottom: 2.5rem;
+  font-weight: 300;
+}
+
+#home .banner .title h1:first-child {
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+#home .banner .title button {
+  background: -webkit-gradient(linear, left top, right top, from(#02A859), to(#B2D787));
+  background: linear-gradient(to right, #02A859, #B2D787);
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 200;
+  border: none;
+  padding: 7px 15px;
+  width: 200px;
+  cursor: pointer;
+  border-radius: 50px;
 }
 
 #instalacion {
   padding-top: 30px;
   padding-bottom: 30px;
   margin-top: 80px;
-  color: #757575;
+  color: #777777;
 }
 
 #instalacion .title {

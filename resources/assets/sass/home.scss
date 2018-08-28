@@ -1,6 +1,33 @@
 #home{
-	margin-top: 80px;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	@include cp-style(min-height,calc,unquote('(100vh - 140px)'));
+	  margin-top: -100px;
+		@extend %text;
+		.banner{
+			   height: 100vh;
+				 min-height: 600px;
+				 position: relative;
+				 .title{
+					   @extend %center-align;
+						 color: $color--text;
+						 letter-spacing: 2px;
+						 h1{
+							   margin-bottom: 2.5rem;
+								 font-weight: 300;
+								 &:first-child{
+									   font-weight: 500;
+										 margin-bottom: 1rem;
+								 }
+						 }
+						 button{
+							   background: linear-gradient(to right, $color--primary, $color--secundary);
+								 color: #fff;
+								 letter-spacing: 2px;
+								 font-weight: 200;
+								 border: none;
+								 padding: 7px 15px;
+								 width: 200px;
+								 cursor: pointer;
+								 border-radius: 50px;
+						 }
+				 }
+		}
 }

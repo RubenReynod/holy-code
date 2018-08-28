@@ -28910,7 +28910,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources\\assets\\js\\components\\admin\\home.vue"
+Component.options.__file = "resources/assets/js/components/admin/home.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -28919,9 +28919,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-23a875e3", Component.options)
+    hotAPI.createRecord("data-v-42b39576", Component.options)
   } else {
-    hotAPI.reload("data-v-23a875e3", Component.options)
+    hotAPI.reload("data-v-42b39576", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -29227,7 +29227,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-23a875e3", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-42b39576", module.exports)
   }
 }
 
@@ -29257,7 +29257,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources\\assets\\js\\components\\page\\home.vue"
+Component.options.__file = "resources/assets/js/components/page/home.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -29266,9 +29266,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-2b01eac5", Component.options)
+    hotAPI.createRecord("data-v-7caf2650", Component.options)
   } else {
-    hotAPI.reload("data-v-2b01eac5", Component.options)
+    hotAPI.reload("data-v-7caf2650", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -29286,7 +29286,7 @@ module.exports = Component.exports
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 //
 //
@@ -29302,49 +29302,8 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
-exports.default = {
-    mounted: function mounted() {
-        console.log('Home mounted.');
-    }
-};
+exports.default = {};
 
 /***/ }),
 /* 38 */
@@ -29354,128 +29313,36 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { attrs: { id: "home" } }, [
-    _c("h2", { staticClass: "title text-center" }, [_vm._v("LaraVue")]),
-    _vm._v(" "),
-    _vm._m(0),
-    _vm._v(" "),
-    _c("div", { staticClass: "container seccion" }, [
-      _c("div", { staticClass: "row" }, [
-        _c(
-          "div",
-          { staticClass: "col-md-3 col-sm-6 col-12" },
-          [
-            _c(
-              "router-link",
-              {
-                staticClass: "tarjeta",
-                attrs: { to: "/instalation", tag: "div" }
-              },
-              [
-                _c("h4", { staticClass: "title" }, [_vm._v("Instalación")]),
-                _vm._v(" "),
-                _c("div", { staticClass: "image" }, [
-                  _c("i", { staticClass: "fas fa-archive fa-3x" })
-                ]),
-                _vm._v(" "),
-                _c("p", { staticClass: "descript" }, [
-                  _vm._v("Guia basica de instalacion.")
-                ])
-              ]
-            )
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "col-md-3 col-sm-6 col-12" },
-          [
-            _c(
-              "router-link",
-              { staticClass: "tarjeta", attrs: { to: "/backend", tag: "div" } },
-              [
-                _c("h4", { staticClass: "title" }, [_vm._v("Backend")]),
-                _vm._v(" "),
-                _c("div", { staticClass: "image" }, [
-                  _c("i", { staticClass: "fas fa-cogs fa-3x" })
-                ]),
-                _vm._v(" "),
-                _c("p", { staticClass: "descript" }, [
-                  _vm._v("Documentacion basica del backend")
-                ])
-              ]
-            )
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "col-md-3 col-sm-6 col-12" },
-          [
-            _c(
-              "router-link",
-              {
-                staticClass: "tarjeta",
-                attrs: { to: "/frontend", tag: "div" }
-              },
-              [
-                _c("h4", { staticClass: "title" }, [_vm._v("Frontend")]),
-                _vm._v(" "),
-                _c("div", { staticClass: "image" }, [
-                  _c("i", { staticClass: "fas fa-desktop fa-3x" })
-                ]),
-                _vm._v(" "),
-                _c("p", { staticClass: "descript" }, [
-                  _vm._v("Documentacion basica del frontend")
-                ])
-              ]
-            )
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "col-md-3 col-sm-6 col-12" },
-          [
-            _c(
-              "router-link",
-              {
-                staticClass: "tarjeta",
-                attrs: { to: "/tutorials", tag: "div" }
-              },
-              [
-                _c("h4", { staticClass: "title" }, [_vm._v("Tutoriales")]),
-                _vm._v(" "),
-                _c("div", { staticClass: "image" }, [
-                  _c("i", { staticClass: "far fa-clone fa-3x" })
-                ]),
-                _vm._v(" "),
-                _c("p", { staticClass: "descript" }, [
-                  _vm._v("Tutoriales sobre componentes y plugins")
-                ])
-              ]
-            )
-          ],
-          1
-        )
-      ])
-    ])
-  ])
+  return _vm._m(0)
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container text-center seccion" }, [
-      _c("p", [
-        _vm._v(
-          "Este proyecto utiliza las tecnologias estandar de que Laravel propone para el desarrollo en su framework, en este caso tiene como intencion que el programador use las tecnologias de Vue para el front-end haciendo uso de webpack con laravel-mix para la compilacion de archivos css, less,sass y js."
-        )
-      ])
+    return _c("div", { attrs: { id: "home" } }, [
+      _c(
+        "div",
+        {
+          staticClass: "banner",
+          staticStyle: {
+            background:
+              "url('public/images/banner.jpg')no-repeat center center",
+            "background-size": "cover"
+          }
+        },
+        [
+          _c("div", { staticClass: "title container text-right" }, [
+            _c("h1", [_vm._v("DESARROLLAMOS IDEAS")]),
+            _vm._v(" "),
+            _c("h1", [_vm._v("¡PLATÍCANOS TU PROYECTO!")]),
+            _vm._v(" "),
+            _c("button", { attrs: { type: "button", name: "button" } }, [
+              _vm._v("CONTÁCTANOS")
+            ])
+          ])
+        ]
+      )
     ])
   }
 ]
@@ -29484,7 +29351,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-2b01eac5", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-7caf2650", module.exports)
   }
 }
 
@@ -29537,7 +29404,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources\\assets\\js\\components\\page\\instalation\\index.vue"
+Component.options.__file = "resources/assets/js/components/page/instalation/index.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -29546,9 +29413,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-895b9db8", Component.options)
+    hotAPI.createRecord("data-v-155c037e", Component.options)
   } else {
-    hotAPI.reload("data-v-895b9db8", Component.options)
+    hotAPI.reload("data-v-155c037e", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -29849,7 +29716,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-895b9db8", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-155c037e", module.exports)
   }
 }
 
@@ -29902,7 +29769,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources\\assets\\js\\components\\page\\backend\\index.vue"
+Component.options.__file = "resources/assets/js/components/page/backend/index.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -29911,9 +29778,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-ad53b7d8", Component.options)
+    hotAPI.createRecord("data-v-ad273624", Component.options)
   } else {
-    hotAPI.reload("data-v-ad53b7d8", Component.options)
+    hotAPI.reload("data-v-ad273624", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -30012,7 +29879,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-ad53b7d8", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-ad273624", module.exports)
   }
 }
 
@@ -30065,7 +29932,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources\\assets\\js\\components\\page\\frontend\\index.vue"
+Component.options.__file = "resources/assets/js/components/page/frontend/index.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -30074,9 +29941,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-658aeb24", Component.options)
+    hotAPI.createRecord("data-v-0b36ee4e", Component.options)
   } else {
-    hotAPI.reload("data-v-658aeb24", Component.options)
+    hotAPI.reload("data-v-0b36ee4e", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -30198,7 +30065,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-658aeb24", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-0b36ee4e", module.exports)
   }
 }
 
@@ -30255,7 +30122,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources\\assets\\js\\components\\page\\tutorials\\index.vue"
+Component.options.__file = "resources/assets/js/components/page/tutorials/index.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -30264,9 +30131,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-bce466d6", Component.options)
+    hotAPI.createRecord("data-v-5e686e2f", Component.options)
   } else {
-    hotAPI.reload("data-v-bce466d6", Component.options)
+    hotAPI.reload("data-v-5e686e2f", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -30287,13 +30154,13 @@ var content = __webpack_require__(54);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(9)("0caac507", content, false, {});
+var update = __webpack_require__(9)("a21efea4", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-bce466d6\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./index.vue", function() {
-     var newContent = require("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-bce466d6\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./index.vue");
+   module.hot.accept("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-5e686e2f\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./index.vue", function() {
+     var newContent = require("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-5e686e2f\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./index.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -30671,7 +30538,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-bce466d6", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-5e686e2f", module.exports)
   }
 }
 
@@ -30724,7 +30591,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources\\assets\\js\\components\\page\\checkout.vue"
+Component.options.__file = "resources/assets/js/components/page/checkout.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -30733,9 +30600,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-0ae4bea8", Component.options)
+    hotAPI.createRecord("data-v-11a23d82", Component.options)
   } else {
-    hotAPI.reload("data-v-0ae4bea8", Component.options)
+    hotAPI.reload("data-v-11a23d82", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -31260,7 +31127,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-0ae4bea8", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-11a23d82", module.exports)
   }
 }
 
@@ -31317,14 +31184,14 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 //Funcion para añadirlas a Vue
 function fire(Vue) {
-	//Vee-validate	
+	//Vee-validate
 	_veeValidate.Validator.localize('es', _es2.default);
 	Vue.use(_veeValidate2.default, { locale: "es" });
 
-	//vue-datetime	
+	//vue-datetime
 	Vue.use(_vueDatetime2.default);
 
-	//Vue-select	
+	//Vue-select
 	Vue.component('v-select', _vueSelect2.default);
 
 	//Vue-svgicon
@@ -31387,7 +31254,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   * (c) 2018 Abdelrahman Awad
   * @license MIT
   */
-// 
+//
 
 /**
  * Gets the data attribute. the name must be kebab-case.
@@ -31840,7 +31707,7 @@ var merge = function (target, source) {
   return target;
 };
 
-// 
+//
 
 var ErrorBag = function ErrorBag () {
   this.items = [];
@@ -32117,7 +31984,7 @@ ErrorBag.prototype._scope = function _scope (field) {
   return null;
 };
 
-// 
+//
 
 var LOCALE = 'en';
 
@@ -32248,7 +32115,7 @@ Dictionary.prototype.setAttribute = function setAttribute (locale, key, attribut
 
 Object.defineProperties( Dictionary.prototype, prototypeAccessors$2 );
 
-// 
+//
 
 var normalizeValue = function (value) {
   if (isObject(value)) {
@@ -32366,7 +32233,7 @@ I18nDictionary.prototype.setAttribute = function setAttribute (locale, key, valu
 
 Object.defineProperties( I18nDictionary.prototype, prototypeAccessors$3 );
 
-// 
+//
 
 var defaultConfig = {
   locale: 'en',
@@ -32696,7 +32563,7 @@ Generator.resolveGetter = function resolveGetter (el, vnode, model) {
   }
 };
 
-// 
+//
 
 var DEFAULT_OPTIONS = {
   targetOf: null,
@@ -33272,7 +33139,7 @@ Field.prototype.destroy = function destroy () {
 
 Object.defineProperties( Field.prototype, prototypeAccessors$1 );
 
-// 
+//
 
 var FieldBag = function FieldBag () {
   this.items = [];
@@ -33354,7 +33221,7 @@ FieldBag.prototype.push = function push (item) {
 
 Object.defineProperties( FieldBag.prototype, prototypeAccessors$4 );
 
-// 
+//
 
 var RULES = {};
 var STRICT_MODE = true;
@@ -34091,7 +33958,7 @@ Validator.prototype._validate = function _validate (field, value, silent) {
 Object.defineProperties( Validator.prototype, prototypeAccessors );
 Object.defineProperties( Validator, staticAccessors );
 
-// 
+//
 
 /**
  * Checks if a parent validator instance was requested.
@@ -34184,7 +34051,7 @@ var mixin = {
   }
 };
 
-// 
+//
 
 /**
  * Finds the requested field by id from the context object.
@@ -34418,7 +34285,7 @@ if (isDefinedGlobally()) {
   var obj;
 }
 
-// 
+//
 
 function use (plugin, options) {
   if ( options === void 0 ) options = {};
@@ -37047,7 +36914,7 @@ function cleanEscapedString$1 (input) {
 
 // This file is generated automatically by `scripts/build/indices.js`. Please, don't change it.
 
-// 
+//
 
 /**
  * Custom parse behavior on top of date-fns parse function.
@@ -38187,7 +38054,7 @@ var Rules = {
   url: url
 };
 
-// 
+//
 
 var normalize = function (fields) {
   if (Array.isArray(fields)) {
@@ -47136,7 +47003,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "node_modules\\vue2-google-maps\\dist\\components\\infoWindow.vue"
+Component.options.__file = "node_modules/vue2-google-maps/dist/components/infoWindow.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -47145,9 +47012,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-0c4b6f5c", Component.options)
+    hotAPI.createRecord("data-v-17fc7ddc", Component.options)
   } else {
-    hotAPI.reload("data-v-0c4b6f5c", Component.options)
+    hotAPI.reload("data-v-17fc7ddc", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -47300,7 +47167,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-0c4b6f5c", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-17fc7ddc", module.exports)
   }
 }
 
@@ -47334,7 +47201,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "node_modules\\vue2-google-maps\\dist\\components\\map.vue"
+Component.options.__file = "node_modules/vue2-google-maps/dist/components/map.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -47343,9 +47210,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-2b10bb2e", Component.options)
+    hotAPI.createRecord("data-v-85ca06a4", Component.options)
   } else {
-    hotAPI.reload("data-v-2b10bb2e", Component.options)
+    hotAPI.reload("data-v-85ca06a4", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -47366,13 +47233,13 @@ var content = __webpack_require__(86);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(9)("9895f004", content, false, {});
+var update = __webpack_require__(9)("78dc4eec", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../css-loader/index.js!../../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2b10bb2e\",\"scoped\":false,\"hasInlineConfig\":true}!../../../vue-loader/lib/selector.js?type=styles&index=0!./map.vue", function() {
-     var newContent = require("!!../../../css-loader/index.js!../../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2b10bb2e\",\"scoped\":false,\"hasInlineConfig\":true}!../../../vue-loader/lib/selector.js?type=styles&index=0!./map.vue");
+   module.hot.accept("!!../../../css-loader/index.js!../../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-85ca06a4\",\"scoped\":false,\"hasInlineConfig\":true}!../../../vue-loader/lib/selector.js?type=styles&index=0!./map.vue", function() {
+     var newContent = require("!!../../../css-loader/index.js!../../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-85ca06a4\",\"scoped\":false,\"hasInlineConfig\":true}!../../../vue-loader/lib/selector.js?type=styles&index=0!./map.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -47641,7 +47508,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-2b10bb2e", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-85ca06a4", module.exports)
   }
 }
 
@@ -47675,7 +47542,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "node_modules\\vue2-google-maps\\dist\\components\\streetViewPanorama.vue"
+Component.options.__file = "node_modules/vue2-google-maps/dist/components/streetViewPanorama.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -47684,9 +47551,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-432a910a", Component.options)
+    hotAPI.createRecord("data-v-ed35740a", Component.options)
   } else {
-    hotAPI.reload("data-v-432a910a", Component.options)
+    hotAPI.reload("data-v-ed35740a", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -47707,13 +47574,13 @@ var content = __webpack_require__(92);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(9)("29ce6eb1", content, false, {});
+var update = __webpack_require__(9)("9762adce", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../css-loader/index.js!../../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-432a910a\",\"scoped\":false,\"hasInlineConfig\":true}!../../../vue-loader/lib/selector.js?type=styles&index=0!./streetViewPanorama.vue", function() {
-     var newContent = require("!!../../../css-loader/index.js!../../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-432a910a\",\"scoped\":false,\"hasInlineConfig\":true}!../../../vue-loader/lib/selector.js?type=styles&index=0!./streetViewPanorama.vue");
+   module.hot.accept("!!../../../css-loader/index.js!../../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ed35740a\",\"scoped\":false,\"hasInlineConfig\":true}!../../../vue-loader/lib/selector.js?type=styles&index=0!./streetViewPanorama.vue", function() {
+     var newContent = require("!!../../../css-loader/index.js!../../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ed35740a\",\"scoped\":false,\"hasInlineConfig\":true}!../../../vue-loader/lib/selector.js?type=styles&index=0!./streetViewPanorama.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -47956,7 +47823,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-432a910a", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-ed35740a", module.exports)
   }
 }
 
@@ -47986,7 +47853,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "node_modules\\vue2-google-maps\\dist\\components\\placeInput.vue"
+Component.options.__file = "node_modules/vue2-google-maps/dist/components/placeInput.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -47995,9 +47862,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-d90da4be", Component.options)
+    hotAPI.createRecord("data-v-c1ab87be", Component.options)
   } else {
-    hotAPI.reload("data-v-d90da4be", Component.options)
+    hotAPI.reload("data-v-c1ab87be", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -48145,7 +48012,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-d90da4be", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-c1ab87be", module.exports)
   }
 }
 
@@ -48175,7 +48042,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "node_modules\\vue2-google-maps\\dist\\components\\autocomplete.vue"
+Component.options.__file = "node_modules/vue2-google-maps/dist/components/autocomplete.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -48184,9 +48051,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-48eabe86", Component.options)
+    hotAPI.createRecord("data-v-2c922d06", Component.options)
   } else {
-    hotAPI.reload("data-v-48eabe86", Component.options)
+    hotAPI.reload("data-v-2c922d06", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -48335,7 +48202,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-48eabe86", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-2c922d06", module.exports)
   }
 }
 
@@ -48433,7 +48300,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "node_modules\\vue-slick\\slickCarousel.vue"
+Component.options.__file = "node_modules/vue-slick/slickCarousel.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -48442,9 +48309,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-11ae86ee", Component.options)
+    hotAPI.createRecord("data-v-14c5b163", Component.options)
   } else {
-    hotAPI.reload("data-v-11ae86ee", Component.options)
+    hotAPI.reload("data-v-14c5b163", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -51658,7 +51525,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-11ae86ee", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-14c5b163", module.exports)
   }
 }
 
@@ -51712,7 +51579,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources\\assets\\js\\components\\admin\\shared\\header.vue"
+Component.options.__file = "resources/assets/js/components/admin/shared/header.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -51721,9 +51588,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-739b6a10", Component.options)
+    hotAPI.createRecord("data-v-0f9bb3f0", Component.options)
   } else {
-    hotAPI.reload("data-v-739b6a10", Component.options)
+    hotAPI.reload("data-v-0f9bb3f0", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -52095,7 +51962,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-739b6a10", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-0f9bb3f0", module.exports)
   }
 }
 
@@ -52125,7 +51992,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources\\assets\\js\\components\\page\\shared\\header.vue"
+Component.options.__file = "resources/assets/js/components/page/shared/header.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -52134,9 +52001,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-df0b5924", Component.options)
+    hotAPI.createRecord("data-v-55460ace", Component.options)
   } else {
-    hotAPI.reload("data-v-df0b5924", Component.options)
+    hotAPI.reload("data-v-55460ace", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -52154,7 +52021,7 @@ module.exports = Component.exports
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 //
 //
@@ -52178,13 +52045,8 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
-//
 
-exports.default = {
-    mounted: function mounted() {
-        console.log('Header mounted.');
-    }
-};
+exports.default = {};
 
 /***/ }),
 /* 116 */
@@ -52199,7 +52061,7 @@ var render = function() {
       _c("div", { staticClass: "row h-100" }, [
         _c(
           "div",
-          { staticClass: "col-md-2 align-self-center logo" },
+          { staticClass: "col-md-3 align-self-center logo" },
           [
             _c("router-link", {
               attrs: { to: "/", tag: "img", src: "public/images/logo.png" }
@@ -52208,66 +52070,44 @@ var render = function() {
           1
         ),
         _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "col-md-6 offset-md-2 align-self-center menu" },
-          [
-            _c("nav", { staticClass: "navbar navbar-expand" }, [
+        _c("div", { staticClass: "col-md-9 menu" }, [
+          _c(
+            "nav",
+            { staticClass: "navbar justify-content-end navbar-expand h-100" },
+            [
               _c(
                 "ul",
                 { staticClass: "navbar-nav" },
                 [
                   _c(
                     "router-link",
-                    {
-                      staticClass: "nav-link",
-                      class: { active: _vm.$router.path == "/" },
-                      attrs: { to: "/", tag: "li" }
-                    },
-                    [_vm._v("Inicio")]
+                    { staticClass: "nav-link", attrs: { to: "/", tag: "li" } },
+                    [_vm._v("SERVICIOS")]
                   ),
                   _vm._v(" "),
                   _c(
                     "router-link",
-                    {
-                      staticClass: "nav-link",
-                      attrs: { to: "/instalation", tag: "li" }
-                    },
-                    [_vm._v("Instalacion")]
+                    { staticClass: "nav-link", attrs: { to: "/", tag: "li" } },
+                    [_vm._v("NOSOTROS")]
                   ),
                   _vm._v(" "),
                   _c(
                     "router-link",
-                    {
-                      staticClass: "nav-link",
-                      attrs: { to: "/backend", tag: "li" }
-                    },
-                    [_vm._v("backend")]
+                    { staticClass: "nav-link", attrs: { to: "/", tag: "li" } },
+                    [_vm._v("PORTAFOLIO")]
                   ),
                   _vm._v(" "),
                   _c(
                     "router-link",
-                    {
-                      staticClass: "nav-link",
-                      attrs: { to: "/frontend", tag: "li" }
-                    },
-                    [_vm._v("Frontend")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "router-link",
-                    {
-                      staticClass: "nav-link gray",
-                      attrs: { to: "/tutorials", tag: "li" }
-                    },
-                    [_vm._v("Tutoriales")]
+                    { staticClass: "nav-link", attrs: { to: "/", tag: "li" } },
+                    [_vm._v("CONTACTO")]
                   )
                 ],
                 1
               )
-            ])
-          ]
-        )
+            ]
+          )
+        ])
       ])
     ])
   ])
@@ -52278,7 +52118,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-df0b5924", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-55460ace", module.exports)
   }
 }
 
@@ -52332,7 +52172,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources\\assets\\js\\components\\admin\\shared\\footer.vue"
+Component.options.__file = "resources/assets/js/components/admin/shared/footer.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -52341,9 +52181,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-5269061e", Component.options)
+    hotAPI.createRecord("data-v-232d6004", Component.options)
   } else {
-    hotAPI.reload("data-v-5269061e", Component.options)
+    hotAPI.reload("data-v-232d6004", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -52410,7 +52250,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-5269061e", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-232d6004", module.exports)
   }
 }
 
@@ -52440,7 +52280,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources\\assets\\js\\components\\page\\shared\\footer.vue"
+Component.options.__file = "resources/assets/js/components/page/shared/footer.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -52449,9 +52289,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-6f47ef7c", Component.options)
+    hotAPI.createRecord("data-v-3413a6dc", Component.options)
   } else {
-    hotAPI.reload("data-v-6f47ef7c", Component.options)
+    hotAPI.reload("data-v-3413a6dc", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -52565,7 +52405,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-6f47ef7c", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-3413a6dc", module.exports)
   }
 }
 
@@ -73803,11 +73643,11 @@ Object.defineProperty(exports, '__esModule', { value: true });
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
  * alertifyjs 1.11.0 http://alertifyjs.com
  * AlertifyJS is a javascript framework for developing pretty browser dialogs and notifications.
- * Copyright 2017 Mohammad Younes <Mohammad@alertifyjs.com> (http://alertifyjs.com) 
+ * Copyright 2017 Mohammad Younes <Mohammad@alertifyjs.com> (http://alertifyjs.com)
  * Licensed under GPL 3 <https://opensource.org/licenses/gpl-3.0>*/
 ( function ( window ) {
     'use strict';
-    
+
     /**
      * Keys enum
      * @type {Object}
@@ -73821,7 +73661,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
         RIGHT: 39
     };
     /**
-     * Default options 
+     * Default options
      * @type {Object}
      */
     var defaults = {
@@ -73866,7 +73706,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
             cancel:'ajs-cancel',
         }
     };
-    
+
     //holds open dialogs instances
     var openDialogs = [];
 
@@ -73875,19 +73715,19 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
      *
      * @element {node}      The element
      * @className {string}  One or more space-separated classes to be added to the class attribute of the element.
-     * 
+     *
      * @return {undefined}
      */
     function addClass(element,classNames){
         element.className += ' ' + classNames;
     }
-    
+
     /**
      * [Helper]  Removes the specified class(es) from the element.
      *
      * @element {node}      The element
      * @className {string}  One or more space-separated classes to be removed from the class attribute of the element.
-     * 
+     *
      * @return {undefined}
      */
     function removeClass(element, classNames) {
@@ -73957,11 +73797,11 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
             }
             return cpy;
         }
-      
+
         if(src instanceof Date){
             return new Date(src.getTime());
         }
-      
+
         if(src instanceof RegExp){
             cpy = new RegExp(src.source);
             cpy.global = src.global;
@@ -73970,7 +73810,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
             cpy.lastIndex = src.lastIndex;
             return cpy;
         }
-        
+
         if(typeof src === 'object'){
             cpy = {};
             // copy dialog pototype over definition.
@@ -74089,7 +73929,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
 
     /**
     * Creates event handler delegate that sends the instance as last argument.
-    * 
+    *
     * @return {Function}    a function wrapper which sends the instance as last argument.
     */
     function delegate(context, method) {
@@ -74107,7 +73947,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
     }
     /**
     * Helper for creating a dialog close event.
-    * 
+    *
     * @return {object}
     */
     function createCloseEvent(index, button) {
@@ -74190,16 +74030,16 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
 
         /**
          * Helper: initializes the dialog instance
-         * 
+         *
          * @return	{Number}	The total count of currently open modals.
          */
         function initialize(instance){
-            
+
             if(!instance.__internal){
 
                 //no need to expose init after this.
                 delete instance.__init;
-              
+
                 //keep a copy of initial dialog settings
                 if(!instance.__settings){
                     instance.__settings = copy(instance.settings);
@@ -74229,7 +74069,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                         }
                     };
                 }
-                
+
                 //initialize hooks object.
                 if(typeof instance.hooks !== 'object'){
                     instance.hooks = {};
@@ -74253,7 +74093,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 var internal = instance.__internal = {
                     /**
                      * Flag holding the open state of the dialog
-                     * 
+                     *
                      * @type {Boolean}
                      */
                     isOpen:false,
@@ -74315,11 +74155,11 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 var elements = {};
                 //root node
                 elements.root = document.createElement('div');
-                
+
                 elements.root.className = classes.base + ' ' + classes.hidden + ' ';
 
                 elements.root.innerHTML = templates.dimmer + templates.modal;
-                
+
                 //dimmer
                 elements.dimmer = elements.root.firstChild;
 
@@ -74333,14 +74173,14 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 elements.reset = [];
                 elements.reset.push(elements.dialog.firstChild);
                 elements.reset.push(elements.dialog.lastChild);
-                
+
                 //commands
                 elements.commands = {};
                 elements.commands.container = elements.reset[0].nextSibling;
                 elements.commands.pin = elements.commands.container.firstChild;
                 elements.commands.maximize = elements.commands.pin.nextSibling;
                 elements.commands.close = elements.commands.maximize.nextSibling;
-                
+
                 //header
                 elements.header = elements.commands.container.nextSibling;
 
@@ -74352,7 +74192,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 //footer
                 elements.footer = elements.body.nextSibling;
                 elements.footer.innerHTML = templates.buttons.auxiliary + templates.buttons.primary;
-                
+
                 //resize handle
                 elements.resizeHandle = elements.footer.nextSibling;
 
@@ -74364,10 +74204,10 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 elements.buttonTemplate = elements.buttons.primary.firstChild;
                 //remove button template
                 elements.buttons.primary.removeChild(elements.buttonTemplate);
-                               
+
                 for(var x=0; x < instance.__internal.buttons.length; x+=1) {
                     var button = instance.__internal.buttons[x];
-                    
+
                     // add to the list of used keys.
                     if(usedKeys.indexOf(button.key) < 0){
                         usedKeys.push(button.key);
@@ -74391,7 +74231,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 }
                 //make elements pubic
                 instance.elements = elements;
-                
+
                 //save event handlers delegates
                 internal.resetHandler = delegate(instance, onReset);
                 internal.beginMoveHandler = delegate(instance, beginMove);
@@ -74422,7 +74262,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                     instance.build();
                 }
             }
-            
+
             //add to the end of the DOM tree.
             document.body.appendChild(instance.elements.root);
         }
@@ -74482,10 +74322,10 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 }
             }
         }
-		
+
         /**
          * Sets the name of the transition used to show/hide the dialog
-         * 
+         *
          * @param {Object} instance The dilog instance.
          *
          */
@@ -74496,7 +74336,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
             addClass(instance.elements.root, classes.prefix + value);
             reflow = instance.elements.root.offsetWidth;
         }
-		
+
         /**
          * Toggles the dialog display mode
          *
@@ -74536,7 +74376,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
         }
 
         /**
-         * Toggles the dialog basic view mode 
+         * Toggles the dialog basic view mode
          *
          * @param {Object} instance The dilog instance.
          *
@@ -74553,7 +74393,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
         }
 
         /**
-         * Toggles the dialog frameless view mode 
+         * Toggles the dialog frameless view mode
          *
          * @param {Object} instance The dilog instance.
          *
@@ -74568,7 +74408,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 removeClass(instance.elements.root, classes.frameless);
             }
         }
-		
+
         /**
          * Helper: Brings the modeless dialog to front, attached to modeless dialogs.
          *
@@ -74578,7 +74418,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          * @return {undefined}
          */
         function bringToFront(event, instance){
-            
+
             // Do not bring to front if preceeded by an open modal
             var index = openDialogs.indexOf(instance);
             for(var x=index+1;x<openDialogs.length;x+=1){
@@ -74586,7 +74426,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                     return;
                 }
             }
-			
+
             // Bring to front by making it the last child.
             if(document.body.lastChild !== instance.elements.root){
                 document.body.appendChild(instance.elements.root);
@@ -74595,17 +74435,17 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 openDialogs.push(instance);
                 setFocus(instance);
             }
-			
+
             return false;
         }
-		
+
         /**
          * Helper: reflects dialogs options updates
          *
          * @param {Object} instance The dilog instance.
          * @param {String} option The updated option name.
          *
-         * @return	{undefined}	
+         * @return	{undefined}
          */
         function optionUpdated(instance, option, oldValue, newValue){
             switch(option){
@@ -74666,7 +74506,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 instance.hooks.onupdate.call(instance, option, oldValue, newValue);
             }
         }
-		
+
         /**
          * Helper: reflects dialogs options updates
          *
@@ -74677,9 +74517,9 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          * @param {Object} value Optional, the value associated with the key (in case it was a string).
          * @param {String} option The updated option name.
          *
-         * @return	{Object} result object 
+         * @return	{Object} result object
          *	The result objects has an 'op' property, indicating of this is a SET or GET operation.
-         *		GET: 
+         *		GET:
          *		- found: a flag indicating if the key was found or not.
          *		- value: the property value.
          *		SET:
@@ -74748,7 +74588,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          * Triggers a close event.
          *
          * @param {Object} instance	The dilog instance.
-         * 
+         *
          * @return {undefined}
          */
         function triggerClose(instance) {
@@ -74768,7 +74608,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          *
          * @param {Event} event	DOM event object.
          * @param {Object} instance	The dilog instance.
-         * 
+         *
          * @return {undefined}
          */
         function commandsClickHandler(event, instance) {
@@ -74799,7 +74639,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          * Helper: pins the modeless dialog.
          *
          * @param {Object} instance	The dialog instance.
-         * 
+         *
          * @return {undefined}
          */
         function pin(instance) {
@@ -74811,11 +74651,11 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          * Helper: unpins the modeless dialog.
          *
          * @param {Object} instance	The dilog instance.
-         * 
+         *
          * @return {undefined}
          */
         function unpin(instance) {
-            //unpin the dialog 
+            //unpin the dialog
             instance.set('pinned', false);
         }
 
@@ -74824,13 +74664,13 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          * Helper: enlarges the dialog to fill the entire screen.
          *
          * @param {Object} instance	The dilog instance.
-         * 
+         *
          * @return {undefined}
          */
         function maximize(instance) {
             // allow custom `onmaximize` method
             dispatchEvent('onmaximize', instance);
-            //maximize the dialog 
+            //maximize the dialog
             addClass(instance.elements.root, classes.maximized);
             if (instance.isOpen()) {
                 ensureNoOverflow();
@@ -74843,13 +74683,13 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          * Helper: returns the dialog to its former size.
          *
          * @param {Object} instance	The dilog instance.
-         * 
+         *
          * @return {undefined}
          */
         function restore(instance) {
             // allow custom `onrestore` method
             dispatchEvent('onrestore', instance);
-            //maximize the dialog 
+            //maximize the dialog
             removeClass(instance.elements.root, classes.maximized);
             if (instance.isOpen()) {
                 ensureNoOverflow();
@@ -75016,7 +74856,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
 
         // flag to cancel keyup event if already handled by click event (pressing Enter on a focusted button).
         var cancelKeyup = false;
-        /** 
+        /**
          * Helper: triggers a button callback
          *
          * @param {Object}		The dilog instance.
@@ -75046,7 +74886,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          *
          * @param {Event}		DOM event object.
          * @param {Object}		The dilog instance.
-         * 
+         *
          * @return {undefined}
          */
         function buttonsClickHandler(event, instance) {
@@ -75062,7 +74902,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          *
          * @param {Event}		DOM event object.
          * @param {Object}		The dilog instance.
-         * 
+         *
          * @return {undefined}
          */
         function keyupHandler(event) {
@@ -75089,7 +74929,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
         *
         * @param {Event}		DOM event object.
         * @param {Object}		The dilog instance.
-        * 
+        *
         * @return {undefined}
         */
         function keydownHandler(event) {
@@ -75159,7 +74999,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                     element = focus.element.call(instance);
                     break;
                 }
-                
+
                 // if no focus element, default to first reset element.
                 if ((typeof element === 'undefined' || element === null) && instance.__internal.buttons.length === 0) {
                     element = instance.elements.reset[0];
@@ -75186,7 +75026,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          */
         function onReset(event, instance) {
 
-            // should work on last modal if triggered from document.body 
+            // should work on last modal if triggered from document.body
             if (!instance) {
                 for (var x = openDialogs.length - 1; x > -1; x -= 1) {
                     if (openDialogs[x].isModal()) {
@@ -75232,7 +75072,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
             }
         }
         /**
-         * Transition in transitionend event handler. 
+         * Transition in transitionend event handler.
          *
          * @param {Event}		TransitionEnd event object.
          * @param {Object}		The dilog instance.
@@ -75262,7 +75102,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
         }
 
         /**
-         * Transition out transitionend event handler. 
+         * Transition out transitionend event handler.
          *
          * @param {Event}		TransitionEnd event object.
          * @param {Object}		The dilog instance.
@@ -75290,7 +75130,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 instance.__internal.activeElement.focus();
                 instance.__internal.activeElement = null;
             }
-            
+
             //destory the instance
             if (typeof instance.__internal.destroy === 'function') {
                 instance.__internal.destroy.apply(instance);
@@ -75315,7 +75155,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          *
          * @param {Event} event	DOM event object.
          * @param {Node} element The element being moved.
-         * 
+         *
          * @return {undefined}
          */
         function moveElement(event, element) {
@@ -75325,17 +75165,17 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
             if(refreshTop){
                 top -= document.body.scrollTop;
             }
-           
+
             element.style.left = left + 'px';
             element.style.top = top + 'px';
-           
+
         }
         /**
          * Helper: sets the element top/left coordinates within screen bounds
          *
          * @param {Event} event	DOM event object.
          * @param {Node} element The element being moved.
-         * 
+         *
          * @return {undefined}
          */
         function moveElementBounded(event, element) {
@@ -75345,7 +75185,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
             if(refreshTop){
                 top -= document.body.scrollTop;
             }
-            
+
             element.style.left = Math.min(bounds.maxLeft, Math.max(bounds.minLeft, left)) + 'px';
             if(refreshTop){
                 element.style.top = Math.min(bounds.maxTop, Math.max(bounds.minTop, top)) + 'px';
@@ -75353,7 +75193,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 element.style.top = Math.max(bounds.minTop, top) + 'px';
             }
         }
-            
+
 
         /**
          * Triggers the start of a move event, attached to the header element mouse down event.
@@ -75361,7 +75201,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          *
          * @param {Event} event	DOM event object.
          * @param {Object} instance The dilog instance.
-         * 
+         *
          * @return {Boolean} false
          */
         function beginMove(event, instance) {
@@ -75388,7 +75228,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                     if (element.style.top) {
                         top = parseInt(element.style.top, 10);
                     }
-                    
+
                     offsetX = eventSrc[xProp] - left;
                     offsetY = eventSrc[yProp] - top;
 
@@ -75397,18 +75237,18 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                     }else if(instance.isPinned()){
                         offsetY -= document.body.scrollTop;
                     }
-                    
+
                     if(instance.get('moveBounded')){
                         var current = element,
                             offsetLeft = -left,
                             offsetTop = -top;
-                        
+
                         //calc offset
                         do {
                             offsetLeft += current.offsetLeft;
                             offsetTop += current.offsetTop;
                         } while (current = current.offsetParent);
-                        
+
                         bounds = {
                             maxLeft : offsetLeft,
                             minLeft : -offsetLeft,
@@ -75420,7 +75260,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                         bounds = null;
                         moveDelegate = moveElement;
                     }
-                    
+
                     // allow custom `onmove` method
                     dispatchEvent('onmove', instance);
 
@@ -75437,7 +75277,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          * The actual move handler,  attached to document.body mousemove event.
          *
          * @param {Event} event	DOM event object.
-         * 
+         *
          * @return {undefined}
          */
         function move(event) {
@@ -75513,7 +75353,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
         }
 
         /* Controls moving a dialog around */
-        //holde the current instance being resized		
+        //holde the current instance being resized
         var resizable = null,
             //holds the staring left offset when resize starts.
             startingLeft = Number.Nan,
@@ -75531,7 +75371,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          * @param {Event} event	DOM mousemove event object.
          * @param {Node} element The element being moved.
          * @param {Boolean} pinned A flag indicating if the element being resized is pinned to the screen.
-         * 
+         *
          * @return {undefined}
          */
         function resizeElement(event, element, pageRelative) {
@@ -75557,7 +75397,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
             // rtl handling
             var isRTL = isRightToLeft();
             if (isRTL) {
-                // reverse X 
+                // reverse X
                 X = document.body.offsetWidth - X;
                 // if has a starting left, calculate offsetRight
                 if (!isNaN(startingLeft)) {
@@ -75595,7 +75435,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          *
          * @param {Event} event	DOM event object.
          * @param {Object} instance The dilog instance.
-         * 
+         *
          * @return {Boolean} false
          */
         function beginResize(event, instance) {
@@ -75610,7 +75450,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 if (eventSrc) {
                     // allow custom `onresize` method
                     dispatchEvent('onresize', instance);
-                    
+
                     resizable = instance;
                     handleOffset = instance.elements.resizeHandle.offsetHeight / 2;
                     var element = instance.elements.dialog;
@@ -75634,7 +75474,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          * The actual resize handler,  attached to document.body mousemove event.
          *
          * @param {Event} event	DOM event object.
-         * 
+         *
          * @return {undefined}
          */
         function resize(event) {
@@ -75991,12 +75831,12 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 if(!isNaN(x) && !isNaN(y)){
                     // allow custom `onmove` method
                     dispatchEvent('onmove', this);
-                    
+
                     var element = this.elements.dialog,
                         current = element,
                         offsetLeft = 0,
                         offsetTop = 0;
-                    
+
                     //subtract existing left,top
                     if (element.style.left) {
                         offsetLeft -= parseInt(element.style.left, 10);
@@ -76021,7 +75861,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
 
                     element.style.left = left + 'px';
                     element.style.top = top + 'px';
-                    
+
                     // allow custom `onmoved` method
                     dispatchEvent('onmoved', this);
                 }
@@ -76046,10 +75886,10 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 ;
 
                 if(!isNaN(w) && !isNaN(h) && this.get('resizable') === true){
-                    
+
                     // allow custom `onresize` method
                     dispatchEvent('onresize', this);
-                    
+
                     if(('' + width).match(regex)){
                         w = w / 100 * document.documentElement.clientWidth ;
                     }
@@ -76066,14 +75906,14 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                     element.style.minHeight = this.elements.header.offsetHeight + this.elements.footer.offsetHeight + 'px';
                     element.style.width = w + 'px';
                     element.style.height = h + 'px';
-                    
+
                     // allow custom `onresized` method
                     dispatchEvent('onresized', this);
                 }
                 return this;
             },
             /**
-             * Gets or Sets dialog settings/options 
+             * Gets or Sets dialog settings/options
              *
              * @param {String|Object} key A string specifying a propery name or a collection of key/value pairs.
              * @param {Object} value Optional, the value associated with the key (in case it was a string).
@@ -76105,14 +75945,14 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 }
             },
             /**
-             * [Alias] Sets dialog settings/options 
+             * [Alias] Sets dialog settings/options
              */
             set:function(key, value){
                 this.setting(key,value);
                 return this;
             },
             /**
-             * [Alias] Gets dialog settings/options 
+             * [Alias] Gets dialog settings/options
              */
             get:function(key){
                 return this.setting(key);
@@ -76163,7 +76003,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
              * @return {Object} the dialog instance.
              */
             show: function (modal, className) {
-                
+
                 // ensure initialization
                 initialize(this);
 
@@ -76225,7 +76065,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
 
                     //reflow
                     reflow = this.elements.root.offsetWidth;
-                  
+
                     // show dialog
                     removeClass(this.elements.root, classes.hidden);
 
@@ -76741,12 +76581,12 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
         return {
             /**
              * Alertify defaults
-             * 
+             *
              * @type {Object}
              */
             defaults: defaults,
             /**
-             * Dialogs factory 
+             * Dialogs factory
              *
              * @param {string}      Dialog name.
              * @param {Function}    A Dialog factory function.
@@ -76839,13 +76679,13 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 }
             },
             /**
-             * [Alias] Sets dialog settings/options 
+             * [Alias] Sets dialog settings/options
              */
             set: function(name,key,value){
                 return this.setting(name, key,value);
             },
             /**
-             * [Alias] Gets dialog settings/options 
+             * [Alias] Gets dialog settings/options
              */
             get: function(name, key){
                 return this.setting(name, key);

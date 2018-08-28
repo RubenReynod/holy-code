@@ -1,12 +1,18 @@
 /* ================ Variables ================== */
+$color--primary: #02A859;
+$color--secundary: #B2D787;
 $color--background: #109173;
-$color--text: #757575;
+$color--text: #777777;
 $color--text2: #fff;
 $color--facebook: #3b5998;
 $color--youtube: #c4302b;
 $color--twitter: #00aced;
 /* ================ Variables ================== */
 /* ================ Fuentes ================== */
+%text{
+    font-family: 'Muli', sans-serif;
+    font-weight: 200;
+}
 /* ================ Fuentes ================== */
 /* ================ Mixins (include) ================== */
 @mixin cp-property($property,$style){
