@@ -10482,12 +10482,17 @@ a.text-dark:hover, a.text-dark:focus {
   top: 50%;
 }
 
-/* ================ Herencias (extend) ================== */
-.seccion {
-  padding-top: 25px;
-  padding-bottom: 25px;
+#home .seccion .key, #home .seccion .title, #home .creat .content .branding li::before {
+  position: absolute;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -sm-transform: translateY(-50%);
+  top: 50%;
 }
 
+/* ================ Herencias (extend) ================== */
 .tarjeta {
   text-align: center;
   padding-top: 20px;
@@ -10601,10 +10606,25 @@ a.text-dark:hover, a.text-dark:focus {
   margin-top: -100px;
 }
 
-#home .banner {
+#home .seccion {
   height: 100vh;
   min-height: 600px;
   position: relative;
+}
+
+#home .seccion .key {
+  left: 0;
+  width: 300px;
+}
+
+#home .seccion .title {
+  left: 310px;
+  color: #777777;
+  letter-spacing: 2px;
+}
+
+#home .seccion .title h1:first-child {
+  margin-bottom: 1rem;
 }
 
 #home .banner .title {
@@ -10633,6 +10653,30 @@ a.text-dark:hover, a.text-dark:focus {
   width: 200px;
   cursor: pointer;
   border-radius: 50px;
+}
+
+#home .creat .content {
+  position: absolute;
+  left: 60px;
+  bottom: 35px;
+  color: #fff;
+}
+
+#home .creat .content .branding {
+  list-style: none;
+}
+
+#home .creat .content .branding li {
+  position: relative;
+}
+
+#home .creat .content .branding li::before {
+  content: '';
+  width: 18px;
+  height: 7px;
+  left: -25px;
+  border-radius: 8px;
+  background: #fff;
 }
 
 #instalacion {

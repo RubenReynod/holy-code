@@ -29302,6 +29302,36 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 exports.default = {};
 
@@ -29324,7 +29354,7 @@ var staticRenderFns = [
       _c(
         "div",
         {
-          staticClass: "banner",
+          staticClass: "banner seccion",
           staticStyle: {
             background:
               "url('public/images/banner.jpg')no-repeat center center",
@@ -29342,7 +29372,65 @@ var staticRenderFns = [
             ])
           ])
         ]
-      )
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "seccion creat container-fluid" }, [
+        _c("div", { staticClass: "row h-100" }, [
+          _c(
+            "div",
+            { staticClass: "col-md-6 pr-0 pl-0 h-100 position-relative" },
+            [
+              _c("img", {
+                staticClass: "key",
+                attrs: { src: "public/images/key.png" }
+              }),
+              _vm._v(" "),
+              _c("div", { staticClass: "title" }, [
+                _c("h1", [_vm._v("NOS ENCANTA")]),
+                _vm._v(" "),
+                _c("h1", [_vm._v("CREAR")])
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "col-md-6 pr-0 pl-0 h-100",
+              staticStyle: {
+                background:
+                  "linear-gradient(45deg,rgba(2,168,89,1) 10%,rgba(2,168,89,0.8) 30%, rgba(255,255,255,0.5)),url('public/images/creat.jpg')no-repeat center center",
+                "background-size": "cover"
+              }
+            },
+            [
+              _c("div", { staticClass: "content" }, [
+                _c("h3", [_vm._v("BRANDING")]),
+                _vm._v(" "),
+                _c("ul", { staticClass: "branding" }, [
+                  _c("li", [_vm._v("Papelería Institucional")]),
+                  _vm._v(" "),
+                  _c("li", [_vm._v("Imagen Corporativa")]),
+                  _vm._v(" "),
+                  _c("li", [_vm._v("Manual de Identidad")]),
+                  _vm._v(" "),
+                  _c("li", [_vm._v("Logotípos y Slogan")])
+                ]),
+                _vm._v(" "),
+                _c("p", [_vm._v("Basicamente le damos vida a tu marca.")]),
+                _vm._v(" "),
+                _c("ul", [
+                  _c("li", [_vm._v("WEB")]),
+                  _vm._v(" "),
+                  _c("li", [_vm._v("REDES")]),
+                  _vm._v(" "),
+                  _c("li", [_vm._v("APPS")])
+                ])
+              ])
+            ]
+          )
+        ])
+      ])
     ])
   }
 ]

@@ -1,10 +1,26 @@
 #home{
 	  margin-top: -100px;
 		@extend %text;
+		.seccion{
+			  height: 100vh;
+			  min-height: 600px;
+			  position: relative;
+				.key{
+					  @extend %vertical-align;
+						left: 0;
+						width: 300px;
+				}
+				.title{
+					  @extend %vertical-align;
+						left: 310px;
+						color: $color--text;
+						letter-spacing: 2px;
+						h1:first-child{
+								margin-bottom: 1rem;
+						}
+				}
+		}
 		.banner{
-			   height: 100vh;
-				 min-height: 600px;
-				 position: relative;
 				 .title{
 					   @extend %center-align;
 						 color: $color--text;
@@ -29,5 +45,28 @@
 								 border-radius: 50px;
 						 }
 				 }
+		}
+		.creat{
+			  .content{
+					  position: absolute;
+						left: 60px;
+						bottom: 35px;
+						color: #fff;
+						.branding{
+							  list-style: none;
+								li{
+									  position: relative;
+										&::before{
+											  content: '';
+												@extend %vertical-align;
+												width: 18px;
+												height: 7px;
+												left: -25px;
+												border-radius: 8px;
+												background: #fff;
+										}
+								}
+						}
+				}
 		}
 }
