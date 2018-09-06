@@ -48,15 +48,15 @@
                        <h1>CONÓCENOS</h1>
                    </div>
                </div>
-           
+
                <div class="col-md-6 pr-0 pl-0 h-100">
                    <div class="row h-100 align-items-center">
                        <div class="col-12">
                            <div class="row">
-                               <div class="col image">
-                                   <img src="public/images/us.png">
+                               <div class="col-md image">
+                                   <img class="w-100" src="public/images/us/us.jpg">
                                </div>
-                               <div class="col text">
+                               <div class="col-md align-self-center text-center text">
                                    <p> <b>SOMOS HOLY-CODE</b> </p>
                                    <p>Somos gamers, amantes de la tecnología y de la música, entusiastas de Netflix, fotografos empedernidos, padres orgullosos.</p>
                                    <p>Somos individuos pero, más que nada, somos un equipo. ¡Tu equipo!</p>
@@ -65,7 +65,7 @@
                        </div>
                        <div class="col-12">
                            <div class="row">
-                         
+
                            </div>
                        </div>
                    </div>
