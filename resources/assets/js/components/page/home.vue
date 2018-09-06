@@ -29,7 +29,7 @@
                           <li>Logotípos y Slogan</li>
                       </ul>
                       <p>Basicamente le damos vida a tu marca.</p>
-                      <ul>
+                      <ul class="services">
                           <li>WEB</li>
                           <li>REDES</li>
                           <li>APPS</li>
@@ -39,6 +39,40 @@
           </div>
       </div>
       <!-- ================ Nos encanta crear ================ -->
+      <!-- ================ Conocenos ================ -->
+      <div class="seccion us container-fluid">
+           <div class="row h-100">
+               <div class="col-md-6 pr-0 pl-0 h-100 position-relative">
+                   <img src="public/images/key.png" class="key">
+                   <div class="title">
+                       <h1>CONÓCENOS</h1>
+                   </div>
+               </div>
+           
+               <div class="col-md-6 pr-0 pl-0 h-100">
+                   <div class="row h-100 align-items-center">
+                       <div class="col-12">
+                           <div class="row">
+                               <div class="col image">
+                                   <img src="public/images/us.png">
+                               </div>
+                               <div class="col text">
+                                   <p> <b>SOMOS HOLY-CODE</b> </p>
+                                   <p>Somos gamers, amantes de la tecnología y de la música, entusiastas de Netflix, fotografos empedernidos, padres orgullosos.</p>
+                                   <p>Somos individuos pero, más que nada, somos un equipo. ¡Tu equipo!</p>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="col-12">
+                           <div class="row">
+                         
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+      </div>
+      <!-- ================ Conocenos ================ -->
   </div>
 </template>
 

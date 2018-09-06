@@ -9029,7 +9029,7 @@ a.text-dark:hover, a.text-dark:focus {
 /**
  * alertifyjs 1.11.0 http://alertifyjs.com
  * AlertifyJS is a javascript framework for developing pretty browser dialogs and notifications.
- * Copyright 2017 Mohammad Younes <Mohammad@alertifyjs.com> (http://alertifyjs.com)
+ * Copyright 2017 Mohammad Younes <Mohammad@alertifyjs.com> (http://alertifyjs.com) 
  * Licensed under GPL 3 <https://opensource.org/licenses/gpl-3.0>*/
 .alertify .ajs-dimmer {
   position: fixed;
@@ -10049,7 +10049,7 @@ a.text-dark:hover, a.text-dark:focus {
 /**
  * alertifyjs 1.11.0 http://alertifyjs.com
  * AlertifyJS is a javascript framework for developing pretty browser dialogs and notifications.
- * Copyright 2017 Mohammad Younes <Mohammad@alertifyjs.com> (http://alertifyjs.com)
+ * Copyright 2017 Mohammad Younes <Mohammad@alertifyjs.com> (http://alertifyjs.com) 
  * Licensed under GPL 3 <https://opensource.org/licenses/gpl-3.0>*/
 .alertify .ajs-dialog {
   background-color: #fff;
@@ -10482,7 +10482,7 @@ a.text-dark:hover, a.text-dark:focus {
   top: 50%;
 }
 
-#home .seccion .key, #home .seccion .title, #home .creat .content .branding li::before {
+#home .seccion .key, #home .creat .content .branding li::before, #home .creat .title, #home .us .title {
   position: absolute;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
@@ -10617,16 +10617,6 @@ a.text-dark:hover, a.text-dark:focus {
   width: 300px;
 }
 
-#home .seccion .title {
-  left: 310px;
-  color: #777777;
-  letter-spacing: 2px;
-}
-
-#home .seccion .title h1:first-child {
-  margin-bottom: 1rem;
-}
-
 #home .banner .title {
   color: #777777;
   letter-spacing: 2px;
@@ -10660,6 +10650,15 @@ a.text-dark:hover, a.text-dark:focus {
   left: 60px;
   bottom: 35px;
   color: #fff;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+#home .creat .content h3 {
+  font-weight: 900;
+  font-size: 1.3em;
+  margin-bottom: 1rem;
+  padding-left: 35px;
 }
 
 #home .creat .content .branding {
@@ -10672,11 +10671,70 @@ a.text-dark:hover, a.text-dark:focus {
 
 #home .creat .content .branding li::before {
   content: '';
-  width: 18px;
-  height: 7px;
+  width: 16px;
+  height: 6px;
   left: -25px;
   border-radius: 8px;
   background: #fff;
+}
+
+#home .creat .content .services {
+  list-style: none;
+  font-weight: 900;
+  font-size: 1.3em;
+}
+
+#home .creat .content .services li {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  position: relative;
+}
+
+#home .creat .content .services li::before {
+  position: absolute;
+  content: '';
+  transform: translateY(-50%) rotate(-2deg);
+  -webkit-transform: translateY(-50%) rotate(-2deg);
+  -moz-transform: translateY(-50%) rotate(-2deg);
+  -o-transform: translateY(-50%) rotate(-2deg);
+  -sm-transform: translateY(-50%) rotate(-2deg);
+  top: 50%;
+  background: #fff;
+  height: 6px;
+  width: 25px;
+  left: -35px;
+  border-radius: 10px;
+}
+
+#home .creat .content .services li::after {
+  position: absolute;
+  content: '';
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -sm-transform: translateY(-50%);
+  top: 50%;
+  background: #fff;
+  height: 26px;
+  width: 6px;
+  left: -24px;
+  border-radius: 10px;
+}
+
+#home .creat .title {
+  left: 310px;
+  color: #777777;
+  letter-spacing: 2px;
+}
+
+#home .creat .title h1:first-child {
+  margin-bottom: 1rem;
+}
+
+#home .us .title {
+  left: 310px;
+  color: #777777;
 }
 
 #instalacion {
