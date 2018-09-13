@@ -10466,14 +10466,15 @@ a.text-dark:hover, a.text-dark:focus {
 /* ================ Mixins (include) ================== */
 /* ================ Mixins (include) ================== */
 /* ================ Herencias (extend) ================== */
-#header .menu nav ul li:after {
+#header .bars {
   position: absolute;
-  transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  -sm-transform: translateX(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  -sm-transform: translateX(-50%) translateY(-50%);
   left: 50%;
+  top: 50%;
 }
 
 /* ================ Herencias (extend) ================== */
@@ -10522,47 +10523,55 @@ a.text-dark:hover, a.text-dark:focus {
 
 /*================== HEADER ==================== */
 #header {
-  background: #109173;
-  height: 80px;
-  position: fixed;
+  padding-top: 1.5rem;
+}
+
+#header .logo {
+  max-width: 200px;
+}
+
+#header .logo svg {
   width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 50;
 }
 
-#header .logo img {
-  max-height: 100%;
-  max-width: 100%;
+#header .logo svg .cls-1 {
+  fill: #40b979;
+  font-size: 25px;
+  font-family: Arial-BoldMT, Arial;
+  font-weight: 700;
+}
+
+#header .logo svg .cls-2 {
+  fill: #2ecc71;
+}
+
+#header .logo svg .cls-3 {
+  fill: #c4c4c4;
+}
+
+#header .bars {
+  width: 25px;
+  height: 3px;
+  background: #C4C4C4;
   cursor: pointer;
 }
 
-#header .menu nav ul li {
-  font-size: 1.2em;
-  padding-left: 0.8rem;
-  padding-right: 0.8rem;
-  color: #fff;
-  cursor: pointer;
-  position: relative;
-  font-weight: bold;
+#header .bars::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #C4C4C4;
+  top: 8px;
 }
 
-#header .menu nav ul li:after {
-  -webkit-transition: 400ms;
-  transition: 400ms;
-  content: "";
+#header .bars::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #C4C4C4;
   bottom: 8px;
-  width: 0;
-  height: 2px;
-  background: #fff;
-}
-
-#header .menu nav ul li:hover:after {
-  width: 50%;
-}
-
-#header .menu nav ul li.router-link-exact-active:after {
-  width: 100%;
 }
 
 /*================== HEADER ==================== */

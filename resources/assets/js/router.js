@@ -11,11 +11,6 @@ const page="./components/page/";
 const MyRouter = new VueRouter({
   	routes:[
 	    { path: '/', component: require(page+'home.vue'), meta:{title:"Home"}},
-	    { path: '/instalation', component: require(page+'instalation/index.vue'), meta:{title:"Instalacion"}},
-	    { path: '/backend', component: require(page+'backend/index.vue'), meta:{title:"Backend"}},
-	    { path: '/frontend', component: require(page+'frontend/index.vue'), meta:{title:"Frontend"}},
-	    { path: '/tutorials', component: require(page+'tutorials/index.vue'), meta:{title:"Tutoriales"}},
-	    { path: '/checkout', component: require(page+'checkout.vue'), meta:{title:"Checkout"}},
 	  ]
 });
 
