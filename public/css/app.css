@@ -10466,7 +10466,7 @@ a.text-dark:hover, a.text-dark:focus {
 /* ================ Mixins (include) ================== */
 /* ================ Mixins (include) ================== */
 /* ================ Herencias (extend) ================== */
-#header .bars {
+.title_, #header .bars {
   position: absolute;
   transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
@@ -10478,47 +10478,21 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 /* ================ Herencias (extend) ================== */
-.title {
-  margin-bottom: 30px;
-  color: #109173;
-  font-weight: 600;
+.title_ {
+  width: 90%;
+  visibility: hidden;
 }
 
-.seccion {
-  padding-top: 25px;
-  padding-bottom: 25px;
+.title_ h2 {
+  font-weight: bold;
 }
 
-.tarjeta {
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  -webkit-box-shadow: 3px 3px 10px darkgrey;
-          box-shadow: 3px 3px 10px darkgrey;
-  cursor: pointer;
-  height: 100%;
-  width: 100%;
-  -webkit-transition: 400ms;
-  transition: 400ms;
+.title_ h2[color="green"] {
+  color: #40B979;
 }
 
-.tarjeta .image {
-  margin-bottom: 3em;
-  font-size: 1.2em;
-  color: aqua;
-}
-
-.tarjeta:hover {
-  transform: scale(1.05);
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -o-transform: scale(1.05);
-  -sm-transform: scale(1.05);
-  opacity: 0.7;
-}
-
-.tarjeta .descript {
-  color: #757575;
+.title_ h2[color="gray"] {
+  color: #C4C4C4;
 }
 
 /*================== HEADER ==================== */
@@ -10611,13 +10585,9 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 /*================== FOOTER ==================== */
-#home {
-  margin-top: 80px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  min-height: calc(100vh - 140px);
-  min-height: -o-calc(100vh - 140px);
-  min-height: -sm-calc(100vh - 140px);
+#home .us {
+  position: relative;
+  height: 300px;
 }
 
 #instalacion {
