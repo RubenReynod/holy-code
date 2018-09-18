@@ -29300,6 +29300,60 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 exports.default = {
 	methods: {
@@ -29346,6 +29400,154 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("h2", { attrs: { color: "gray" } }, [
             _vm._v("Marcas, e-commerce y productos digitales")
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("figure", { staticClass: "us_desc" }, [
+        _c("div", { staticClass: "text" }, [
+          _c("p", [
+            _vm._v("Bienvenido a HOLY-CODE "),
+            _c("br"),
+            _vm._v(
+              "Holy-Code es una agencia digital interactiva con sede en Guadalajara, Jalisco.México. Nuestra ambición es seguir mejorando el panorama digital y hacer que la web sea un lugar mejor con un diseño hermoso. Esa es nuestra misión."
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", {
+          staticClass: "foto",
+          staticStyle: {
+            background:
+              "url('public/images/us/agency.jpg')no-repeat center center",
+            "background-size": "cover"
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "works" }, [
+        _c("div", { staticClass: "title_" }, [
+          _c("h2", { attrs: { color: "green" } }, [
+            _vm._v("Trabajos recientes")
+          ]),
+          _vm._v(" "),
+          _c("h2", { attrs: { color: "gray" } }, [
+            _vm._v("Nuestros últimos y mejores proyectos.")
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-6 work" }, [
+            _c("figure", [
+              _c("img", {
+                staticClass: "w-100",
+                attrs: { src: "public/images/branding.jpg" }
+              }),
+              _vm._v(" "),
+              _c("h4", [
+                _c("span", { attrs: { color: "green" } }, [
+                  _vm._v("Petroleos Inversor")
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "line" }),
+                _vm._v(" "),
+                _c("span", { attrs: { color: "gray" } }, [_vm._v("Branding")])
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-6 work" }, [
+            _c("figure", [
+              _c("img", {
+                staticClass: "w-100",
+                attrs: { src: "public/images/website.jpg" }
+              }),
+              _vm._v(" "),
+              _c("h4", [
+                _c("span", { attrs: { color: "green" } }, [
+                  _vm._v("Petroleos Inversor")
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "line" }),
+                _vm._v(" "),
+                _c("span", { attrs: { color: "gray" } }, [_vm._v("WebSite")])
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-6 work" }, [
+            _c("figure", [
+              _c("img", {
+                staticClass: "w-100",
+                attrs: { src: "public/images/website.jpg" }
+              }),
+              _vm._v(" "),
+              _c("h4", [
+                _c("span", { attrs: { color: "green" } }, [
+                  _vm._v("Petroleos Inversor")
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "line" }),
+                _vm._v(" "),
+                _c("span", { attrs: { color: "gray" } }, [_vm._v("WebSite")])
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-6 work" }, [
+            _c("figure", [
+              _c("img", {
+                staticClass: "w-100",
+                attrs: { src: "public/images/branding.jpg" }
+              }),
+              _vm._v(" "),
+              _c("h4", [
+                _c("span", { attrs: { color: "green" } }, [
+                  _vm._v("Petroleos Inversor")
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "line" }),
+                _vm._v(" "),
+                _c("span", { attrs: { color: "gray" } }, [_vm._v("Branding")])
+              ])
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "contact" }, [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-md-6 offset-md-3 text-center" }, [
+              _c("h6", [_vm._v("Abrimos Fronteras")]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "Somos versátiles y trabajamos duro para lograr los objetivos. Nos tomamos el tiempo para cumplir objetivos, siempre entregando productos de calidad y funcionales."
+                )
+              ])
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", {
+        staticClass: "back",
+        staticStyle: {
+          background:
+            "url('public/images/background.jpg')no-repeat center center",
+          "background-size": "cover"
+        }
+      }),
+      _vm._v(" "),
+      _c("div", { staticClass: "quotation" }, [
+        _c("div", { staticClass: "title_" }, [
+          _c("h2", { attrs: { color: "green" } }, [
+            _vm._v("Hagamos algo increíble.")
+          ]),
+          _vm._v(" "),
+          _c("h2", { attrs: { color: "gray" } }, [
+            _vm._v("Comenzar un proyecto")
           ])
         ])
       ])
@@ -50322,10 +50524,34 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 exports.default = {
-    mounted: function mounted() {
-        console.log('Header mounted.');
+    data: function data() {
+        return {
+            statusMenu: false
+        };
     }
 };
 
@@ -50349,8 +50575,47 @@ var render = function() {
           )
         ]),
         _vm._v(" "),
-        _vm._m(0)
+        _c("div", { staticClass: "col-2" }, [
+          _c(
+            "div",
+            {
+              staticClass: "bars",
+              on: {
+                click: function($event) {
+                  _vm.statusMenu = true
+                }
+              }
+            },
+            [_c("div", { staticClass: "bar" })]
+          )
+        ])
       ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "menu", class: { active: _vm.statusMenu } }, [
+      _c("div", { staticClass: "top" }, [
+        _c(
+          "div",
+          { staticClass: "logo" },
+          [_c("svgicon", { attrs: { name: "logo" } })],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "btn_close",
+            on: {
+              click: function($event) {
+                _vm.statusMenu = false
+              }
+            }
+          },
+          [_vm._m(0)]
+        )
+      ]),
+      _vm._v(" "),
+      _vm._m(1)
     ])
   ])
 }
@@ -50359,8 +50624,24 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-2" }, [
-      _c("div", { staticClass: "bars" })
+    return _c("p", [_vm._v("Cerrar"), _c("i", { staticClass: "fas fa-times" })])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "center" }, [
+      _c("nav", [
+        _c("ul", [
+          _c("li", [_vm._v("Portafolio")]),
+          _vm._v(" "),
+          _c("li", [_vm._v("Nuestros Servicos")]),
+          _vm._v(" "),
+          _c("li", [_vm._v("Estudio")]),
+          _vm._v(" "),
+          _c("li", [_vm._v("Contacto")])
+        ])
+      ])
     ])
   }
 ]
@@ -50590,6 +50871,8 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
 
 exports.default = {
     mounted: function mounted() {
@@ -50605,47 +50888,62 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("footer", { attrs: { id: "footer" } }, [
-    _c("div", { staticClass: "container h-100" }, [
-      _c("div", { staticClass: "row h-100 align-items-center text-center" }, [
-        _c(
-          "div",
-          { staticClass: "col-md-3" },
-          [
-            _c("router-link", {
-              staticClass: "logo",
-              attrs: { to: "/", tag: "img", src: "public/images/logo.png" }
-            })
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-6" }, [
-          _vm._v("\n\t\t\t\t© 2018 Sustam\n\t\t\t")
-        ]),
-        _vm._v(" "),
-        _vm._m(0)
-      ])
-    ])
-  ])
+  return _vm._m(0)
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-md-3" }, [
-      _c("div", { staticClass: "row redes" }, [
-        _c("div", { staticClass: "col-md-4" }, [
-          _c("i", { staticClass: "fab fa-facebook-f red facebook" })
+    return _c("footer", { attrs: { id: "footer" } }, [
+      _c("div", { staticClass: "row contact" }, [
+        _c("div", { staticClass: "col-lg-2" }, [
+          _c("p", { attrs: { color: "gray" } }, [
+            _vm._v("info@holy-code.com "),
+            _c("br"),
+            _vm._v(" 02381 780 164 "),
+            _c("br"),
+            _vm._v(" Privada 345. Providencia.")
+          ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "col-md-4" }, [
-          _c("i", { staticClass: "fab fa-twitter red twitter" })
+        _c("div", { staticClass: "col-lg-2" }, [
+          _c("p", { attrs: { color: "green" } }, [
+            _vm._v("Siguenos:  \n\t\t\t\t"),
+            _c("span", { staticClass: "network" }, [
+              _c("i", { staticClass: "fab fa-twitter" })
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "network" }, [
+              _c("i", { staticClass: "fab fa-facebook-f" })
+            ])
+          ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "col-md-4" }, [
-          _c("i", { staticClass: "fab fa-youtube red youtube" })
+        _c("div", { staticClass: "col-lg-2 offset-lg-6" }, [
+          _c("p", { staticClass: "btn_return", attrs: { color: "green" } }, [
+            _vm._v("Regresar")
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "legal row" }, [
+        _c("div", { staticClass: "col-lg-4" }, [
+          _c("p", { attrs: { color: "gray" } }, [
+            _vm._v("© holy-Code. 2018 / Todos los derechos reservados")
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-lg-3" }, [
+          _c("p", { attrs: { color: "gray" } }, [
+            _vm._v("Terminos & Condiciones")
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-lg-3" }, [
+          _c("p", { attrs: { color: "gray" } }, [
+            _vm._v("Politicas de Privacidad")
+          ])
         ])
       ])
     ])

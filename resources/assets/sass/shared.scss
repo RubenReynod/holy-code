@@ -24,10 +24,15 @@
     .bars{
         @extend %center-align;
         width: 25px;
-        height: 3px;
-        background: #C4C4C4;
+        height: 24px;
         cursor: pointer;
-        &::before{
+        .bar{
+            @extend %vertical-align;
+            width: 100%;
+            height: 3px;
+            background: #C4C4C4;
+        }
+        .bar::before{
             content: '';
             position: absolute;
             width: 100%;
@@ -35,7 +40,7 @@
             background: #C4C4C4;
             top: 8px;
         }
-        &::after{
+        .bar::after{
             content: '';
             position: absolute;
             width: 100%;
@@ -44,35 +49,166 @@
             bottom: 8px;
         }
     }
+    .menu{
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        z-index: 50;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        &::after{
+            content: '';
+            background: $color--primary;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            @include cp-property(transform, translateX(120%));
+            @include transition(600ms);
+            opacity: 0.7;
+        }
+        &::before{
+            content: '';
+            background: $color--primary;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            @include cp-property(transform, translateX(120%));
+            @include transition(800ms);
+            @include cp-property(transition-delay, 300ms);
+            opacity: 1;
+        }
+        .top{
+            @extend %horizontal-align;
+            top: 2rem;
+            width: 90%;
+            z-index: 5;
+            opacity: 0;
+            @include transition(600ms);
+            .logo{
+                svg{
+                    .cls-1 {
+                        fill: #fff;
+                    }
+
+                    .cls-2 {
+                        fill: #fff;
+                    }
+
+                    .cls-3 {
+                        fill: #fff;
+                    }
+                }
+            }
+            .btn_close{
+                position: absolute;
+                color: #fff;
+                top: 0;
+                right: 0;
+                cursor: pointer;
+                font-size: 1.3em;
+                i{
+                    margin-left: 1rem;
+                }
+            }
+        }
+        .center{
+            @extend %vertical-align;
+            left: 5%;
+            color: #fff;
+            z-index: 5;
+            ul{
+                list-style: none;
+                padding-left: 0;
+                font-size: 3rem;
+                li{
+                    @include transition(600ms);
+                    @include cp-property(transform, translateY(-100%));
+                    opacity: 0;
+                }
+            }
+        }
+        &.active{
+            pointer-events: all;
+            &::after{
+                @include cp-property(transform, translateX(0%));
+            }
+            &::before{
+                @include cp-property(transform, translateX(0%));
+            }
+            .top{
+                @include cp-property(transition-delay, 600ms);
+                opacity: 1;
+            }
+            .center{
+                ul{
+                    li{
+                        $plus : 600;
+                        @for $i from 1 to 5{
+                            &:nth-child(#{$i}){
+                                opacity: 1;
+                                @include cp-property(transform, translateY(0%));
+                                @include cp-property(transition-delay, unquote($plus+'ms'));
+                            }
+                            $plus : $plus + 300;
+                        }   
+                    }
+                }
+                
+            }
+        }
+    }
 }
 /*================== HEADER ==================== */
 /*================== FOOTER ==================== */
 #footer{
-    height: 60px;
-    background: $color--background; 
-    color: $color--text2;
-    .logo{
-        width: 100%;
-        max-width: 120px;
-        cursor: pointer;
-    }
-    .redes{
-        font-size: 1.4em;
-        .red{
-            @include transition(400ms);
+    background: #fff;
+    padding-top: 2rem;
+    p{
+        margin-bottom: 0;
+        &[color="gray"]{
+            color: $color--secundary;
+        }
+        &[color="green"]{
+            color: $color--primary;
+        }
+         &.btn_return{
+            font-size: 1.5em;
             cursor: pointer;
-            &:hover{
-                &.facebook{
-                    color: $color--facebook;
-                }
-                &.twitter{
-                    color: $color--twitter;
-                }
-                &.youtube{
-                    color: $color--youtube;
-                }
+        }
+    }
+    .contact{
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        width: 90%;
+        margin-left: 5%;
+        .network{
+            position: relative;
+            color: #fff;
+            margin-left: 2px;
+            margin-right: 2px;
+            padding-left: 10px;
+            padding-right: 10px;
+            &::before{
+                content: '';
+                @extend %center-align;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background: $color--primary;
+            }
+            i{
+                z-index: 10;
             }
         }
-    } 
+    }
+    .legal{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-top: 1px solid $color--secundary;
+        text-align: center;
+        width: 90%;
+        margin-left: 5%;
+    }
 }
 /*================== FOOTER ==================== */

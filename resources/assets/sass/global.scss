@@ -1,9 +1,7 @@
 .title_{
-    @extend %center-align;
-    width: 90%;
-    visibility: hidden;
     h2{
         font-weight: bold;
+        margin-bottom: 0;
         &[color="green"]{
             color: $color--primary;
         }

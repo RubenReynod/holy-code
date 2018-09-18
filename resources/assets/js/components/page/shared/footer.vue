@@ -1,28 +1,30 @@
 <template>
 	<footer id="footer">
-		<div class="container h-100">
-			<div class="row h-100 align-items-center text-center">
-				<div class="col-md-3">
-					<router-link class="logo" to="/" tag="img" src="public/images/logo.png"></router-link>
-				</div>
-				<div class="col-md-6">
-					© 2018 Sustam
-				</div>
-				<div class="col-md-3">
-					<div class="row redes">
-						<div class="col-md-4">
-							<i class="fab fa-facebook-f red facebook"></i>
-						</div>
-						<div class="col-md-4">
-							<i class="fab fa-twitter red twitter"></i>
-						</div>
-						<div class="col-md-4">
-							<i class="fab fa-youtube red youtube"></i>
-						</div>
-					</div>
-				</div>
+		<div class="row contact">
+			<div class="col-lg-2">
+				<p color="gray">info@holy-code.com <br> 02381 780 164 <br> Privada 345. Providencia.</p>
 			</div>
-		</div>	
+			<div class="col-lg-2">
+				<p color="green">Siguenos:  
+					<span class="network"><i class="fab fa-twitter"></i></span> 
+					<span class="network"><i class="fab fa-facebook-f"></i></span>
+				</p>
+			</div>
+			<div class="col-lg-2 offset-lg-6">
+				<p class="btn_return" color="green">Regresar</p>
+			</div>
+		</div>
+		<div class="legal row">
+			<div class="col-lg-4">
+				<p color="gray">© holy-Code. 2018 / Todos los derechos reservados</p>
+			</div>
+			<div class="col-lg-3">
+				<p color="gray">Terminos & Condiciones</p>
+			</div>
+			<div class="col-lg-3">
+				<p color="gray">Politicas de Privacidad</p>
+			</div>
+		</div>
 	</footer>
 </template>
 

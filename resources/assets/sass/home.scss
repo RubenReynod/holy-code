@@ -1,6 +1,96 @@
 #home{
+	background: #fff;
 	.us{
         position: relative;
         height: 300px;
+        .title_{
+        	@extend %center-align;
+        	width: 90%;
+        }
+	}
+	.us_desc{
+		position: relative;
+		height: 500px;
+		.foto{
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 55%;
+			height: 85%;
+			z-index: 5;
+		}
+		.text{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 55%;
+            height: 70%;
+            background:  $color--primary;
+            color: #fff;
+            z-index: 10;
+            p{
+            	@extend %center-align;
+            	min-width: 80%;
+            	max-width: 550px;
+            	line-height: 220%;
+            }
+		}
+	}
+	.works{
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+		margin-left: 5%;
+	    width: 90%;
+		.title_{
+			margin-bottom: 4rem;
+		}
+		.work{
+			margin-top: 1rem;
+			margin-bottom: 1rem;
+			img{
+				margin-bottom: 1rem;
+			}
+			h4{
+				font-weight: bold;
+				span{
+					&[color="green"]{
+						color: $color--primary;
+					}
+					&[color="gray"]{
+						color: $color--secundary;
+					}
+					&.line{
+						padding-left: 25px;
+						padding-right: 25px;
+						position: relative;
+						&::after{
+							content: '';
+							@extend %center-align;
+							width: 70%;
+							height: 3px;
+							background: $color--secundary;
+						}
+					}
+				}
+			}
+		}
+	}
+	.contact{
+		background: $color--primary;
+		color: #fff;
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+		h6{
+			margin-bottom: 2rem;
+			font-weight: bold;
+		}
+	}
+	.back{
+		height: 500px;
+	}
+	.quotation{
+		margin-left: 5%;
+	    width: 90%;
+	    padding-top: 6rem;
 	}
 }
