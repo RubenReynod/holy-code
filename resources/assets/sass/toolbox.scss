@@ -9,6 +9,11 @@ $color--youtube: #c4302b;
 $color--twitter: #00aced;
 /* ================ Variables ================== */
 /* ================ Fuentes ================== */
+%text{
+    font-family: 'Helvetica Neue';
+    font-weight: 100;
+    font-style: normal;
+}
 /* ================ Fuentes ================== */
 /* ================ Mixins (include) ================== */
 @mixin cp-property($property,$style){

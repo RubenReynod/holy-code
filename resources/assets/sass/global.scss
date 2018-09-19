@@ -1,6 +1,8 @@
+
 .title_{
-    h2{
-        font-weight: bold;
+    @extend %text;
+    h1,h2{
+        font-weight: 500;
         margin-bottom: 0;
         &[color="green"]{
             color: $color--primary;

@@ -12,6 +12,7 @@ function plugin (Vue) {
   	Vue.component('my-header', require(page+'shared/header.vue'));
 	Vue.component('my-footer', require(page+'shared/footer.vue'));
 	Vue.component('slick',slick);
+  Vue.component('contact', require(page+'shared/contact.vue'));
 }
 
 // Install by default if using the script tag

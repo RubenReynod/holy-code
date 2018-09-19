@@ -9029,7 +9029,7 @@ a.text-dark:hover, a.text-dark:focus {
 /**
  * alertifyjs 1.11.0 http://alertifyjs.com
  * AlertifyJS is a javascript framework for developing pretty browser dialogs and notifications.
- * Copyright 2017 Mohammad Younes <Mohammad@alertifyjs.com> (http://alertifyjs.com) 
+ * Copyright 2017 Mohammad Younes <Mohammad@alertifyjs.com> (http://alertifyjs.com)
  * Licensed under GPL 3 <https://opensource.org/licenses/gpl-3.0>*/
 .alertify .ajs-dimmer {
   position: fixed;
@@ -10049,7 +10049,7 @@ a.text-dark:hover, a.text-dark:focus {
 /**
  * alertifyjs 1.11.0 http://alertifyjs.com
  * AlertifyJS is a javascript framework for developing pretty browser dialogs and notifications.
- * Copyright 2017 Mohammad Younes <Mohammad@alertifyjs.com> (http://alertifyjs.com) 
+ * Copyright 2017 Mohammad Younes <Mohammad@alertifyjs.com> (http://alertifyjs.com)
  * Licensed under GPL 3 <https://opensource.org/licenses/gpl-3.0>*/
 .alertify .ajs-dialog {
   background-color: #fff;
@@ -10459,14 +10459,97 @@ a.text-dark:hover, a.text-dark:focus {
   color: #ff9800;
 }
 
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url("../fonts/HelveticaNeue-Italic.woff2") format("woff2"), url("../fonts/HelveticaNeue-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url("../fonts/HelveticaNeue-LightItalic.woff2") format("woff2"), url("../fonts/HelveticaNeue-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url("../fonts/HelveticaNeue-BoldItalic.woff2") format("woff2"), url("../fonts/HelveticaNeue-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url("../fonts/HelveticaNeue-Bold.woff2") format("woff2"), url("../fonts/HelveticaNeue-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url("../fonts/HelveticaNeue-CondensedBlack.woff2") format("woff2"), url("../fonts/HelveticaNeue-CondensedBlack.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url("../fonts/HelveticaNeue-Medium.woff2") format("woff2"), url("../fonts/HelveticaNeue-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url("../fonts/HelveticaNeue-Light.woff2") format("woff2"), url("../fonts/HelveticaNeue-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url("../fonts/HelveticaNeue-CondensedBold.woff2") format("woff2"), url("../fonts/HelveticaNeue-CondensedBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url("../fonts/HelveticaNeue-UltraLight.woff2") format("woff2"), url("../fonts/HelveticaNeue-UltraLight.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url("../fonts/HelveticaNeue-UltraLightItalic.woff2") format("woff2"), url("../fonts/HelveticaNeue-UltraLightItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url("../fonts/HelveticaNeue.woff2") format("woff2"), url("../fonts/HelveticaNeue.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* ================ Variables ================== */
 /* ================ Variables ================== */
 /* ================ Fuentes ================== */
+.title_, #header .menu, #footer, #contact .top .btn_close, #contact .center {
+  font-family: 'Helvetica Neue';
+  font-weight: 100;
+  font-style: normal;
+}
+
 /* ================ Fuentes ================== */
 /* ================ Mixins (include) ================== */
 /* ================ Mixins (include) ================== */
 /* ================ Herencias (extend) ================== */
-#header .bars, #footer .contact .network::before, #home .us .title_, #home .us_desc .text p, #home .works .work h4 span.line::after {
+#header .bars, #footer .contact .network::before, #home .us .title_, #home .us_desc .text .content, #home .works .work h3 span.line::after {
   position: absolute;
   transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
@@ -10477,7 +10560,7 @@ a.text-dark:hover, a.text-dark:focus {
   top: 50%;
 }
 
-#header .bars .bar, #header .menu .center {
+#header .bars .bar, #header .menu .center, #contact .center, #home .contact button i {
   position: absolute;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
@@ -10487,7 +10570,7 @@ a.text-dark:hover, a.text-dark:focus {
   top: 50%;
 }
 
-#header .menu .top {
+#header .menu .top, #contact .top {
   position: absolute;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
@@ -10498,22 +10581,23 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 /* ================ Herencias (extend) ================== */
-.title_ h2 {
-  font-weight: bold;
+.title_ h1, .title_ h2 {
+  font-weight: 500;
   margin-bottom: 0;
 }
 
-.title_ h2[color="green"] {
+.title_ h1[color="green"], .title_ h2[color="green"] {
   color: #40B979;
 }
 
-.title_ h2[color="gray"] {
+.title_ h1[color="gray"], .title_ h2[color="gray"] {
   color: #C4C4C4;
 }
 
 /*================== HEADER ==================== */
 #header {
   padding-top: 1.5rem;
+  background: #fff;
 }
 
 #header .logo {
@@ -10621,8 +10705,16 @@ a.text-dark:hover, a.text-dark:focus {
   width: 90%;
   z-index: 5;
   opacity: 0;
-  -webkit-transition: 600ms;
-  transition: 600ms;
+  -webkit-transition: 600ms ease;
+  transition: 600ms ease;
+}
+
+#header .menu .top .logo {
+  max-width: 200px;
+}
+
+#header .menu .top .logo svg {
+  width: 100%;
 }
 
 #header .menu .top .logo svg .cls-1 {
@@ -10644,6 +10736,7 @@ a.text-dark:hover, a.text-dark:focus {
   right: 0;
   cursor: pointer;
   font-size: 1.3em;
+  font-weight: 300;
 }
 
 #header .menu .top .btn_close i {
@@ -10660,6 +10753,7 @@ a.text-dark:hover, a.text-dark:focus {
   list-style: none;
   padding-left: 0;
   font-size: 3rem;
+  font-weight: 500;
 }
 
 #header .menu .center ul li {
@@ -10767,6 +10861,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 #footer p {
   margin-bottom: 0;
+  font-weight: 400;
+  font-size: 1.2em;
 }
 
 #footer p[color="gray"] {
@@ -10807,6 +10903,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 #footer .contact .network i {
+  position: relative;
   z-index: 10;
 }
 
@@ -10820,13 +10917,200 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 /*================== FOOTER ==================== */
+/*================== CONTACTO ==================== */
+#contact {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+#contact::after {
+  content: '';
+  background: #40B979;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: translateX(120%);
+  -webkit-transform: translateX(120%);
+  -moz-transform: translateX(120%);
+  -o-transform: translateX(120%);
+  -sm-transform: translateX(120%);
+  -webkit-transition: 600ms;
+  transition: 600ms;
+  opacity: 0.7;
+}
+
+#contact::before {
+  content: '';
+  background: #40B979;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: translateX(120%);
+  -webkit-transform: translateX(120%);
+  -moz-transform: translateX(120%);
+  -o-transform: translateX(120%);
+  -sm-transform: translateX(120%);
+  -webkit-transition: 800ms;
+  transition: 800ms;
+  transition-delay: 300ms;
+  -webkit-transition-delay: 300ms;
+  -moz-transition-delay: 300ms;
+  -o-transition-delay: 300ms;
+  -sm-transition-delay: 300ms;
+  opacity: 1;
+}
+
+#contact .top {
+  top: 2rem;
+  width: 90%;
+  z-index: 5;
+  opacity: 0;
+  -webkit-transition: 600ms ease;
+  transition: 600ms ease;
+}
+
+#contact .top .logo {
+  max-width: 200px;
+}
+
+#contact .top .logo svg {
+  width: 100%;
+}
+
+#contact .top .logo svg .cls-1 {
+  fill: #fff;
+}
+
+#contact .top .logo svg .cls-2 {
+  fill: #fff;
+}
+
+#contact .top .logo svg .cls-3 {
+  fill: #fff;
+}
+
+#contact .top .btn_close {
+  position: absolute;
+  color: #fff;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  font-size: 1.3em;
+  font-weight: 300;
+}
+
+#contact .top .btn_close i {
+  margin-left: 1rem;
+}
+
+#contact .center {
+  left: 5%;
+  color: #fff;
+  z-index: 5;
+  opacity: 0;
+  width: 90%;
+  -webkit-transition: 600ms;
+  transition: 600ms;
+}
+
+#contact .center nav ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#contact .center nav ul li {
+  color: #38A365;
+  font-weight: 500;
+  font-size: 1.3em;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+#contact .center .question p {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+#contact .center .question input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  font-size: 3rem;
+  color: #38A365;
+}
+
+#contact .center .question input::-webkit-input-placeholder {
+  color: #38A365;
+}
+
+#contact .center .question input::-moz-placeholder {
+  color: #38A365;
+}
+
+#contact .center .question input:-sm-input-placeholder {
+  color: #38A365;
+}
+
+#contact .center .question input:-moz-placeholder {
+  color: #38A365;
+}
+
+#contact.active {
+  pointer-events: all;
+}
+
+#contact.active::after {
+  transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -o-transform: translateX(0%);
+  -sm-transform: translateX(0%);
+}
+
+#contact.active::before {
+  transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -o-transform: translateX(0%);
+  -sm-transform: translateX(0%);
+}
+
+#contact.active .top {
+  transition-delay: 600ms;
+  -webkit-transition-delay: 600ms;
+  -moz-transition-delay: 600ms;
+  -o-transition-delay: 600ms;
+  -sm-transition-delay: 600ms;
+  opacity: 1;
+}
+
+#contact.active .center {
+  opacity: 1;
+  transition-delay: 600ms;
+  -webkit-transition-delay: 600ms;
+  -moz-transition-delay: 600ms;
+  -o-transition-delay: 600ms;
+  -sm-transition-delay: 600ms;
+}
+
+/*================== CONTACTO ==================== */
 #home {
   background: #fff;
 }
 
 #home .us {
   position: relative;
-  height: 300px;
+  height: calc(50vh - 68px);
+  height: -o-calc(50vh - 68px);
+  height: -sm-calc(50vh - 68px);
+  min-height: 300px;
 }
 
 #home .us .title_ {
@@ -10835,7 +11119,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 #home .us_desc {
   position: relative;
-  height: 500px;
+  height: 80vh;
+  min-height: 500px;
 }
 
 #home .us_desc .foto {
@@ -10855,13 +11140,22 @@ a.text-dark:hover, a.text-dark:focus {
   height: 70%;
   background: #40B979;
   color: #fff;
+  font-size: 1.3em;
+  font-weight: 100;
   z-index: 10;
 }
 
-#home .us_desc .text p {
+#home .us_desc .text .content {
   min-width: 80%;
   max-width: 550px;
+}
+
+#home .us_desc .text .content p {
   line-height: 220%;
+}
+
+#home .us_desc .text .content p b {
+  font-weight: bold;
 }
 
 #home .works {
@@ -10884,25 +11178,25 @@ a.text-dark:hover, a.text-dark:focus {
   margin-bottom: 1rem;
 }
 
-#home .works .work h4 {
+#home .works .work h3 {
   font-weight: bold;
 }
 
-#home .works .work h4 span[color="green"] {
+#home .works .work h3 span[color="green"] {
   color: #40B979;
 }
 
-#home .works .work h4 span[color="gray"] {
+#home .works .work h3 span[color="gray"] {
   color: #C4C4C4;
 }
 
-#home .works .work h4 span.line {
+#home .works .work h3 span.line {
   padding-left: 25px;
   padding-right: 25px;
   position: relative;
 }
 
-#home .works .work h4 span.line::after {
+#home .works .work h3 span.line::after {
   content: '';
   width: 70%;
   height: 3px;
@@ -10912,17 +11206,42 @@ a.text-dark:hover, a.text-dark:focus {
 #home .contact {
   background: #40B979;
   color: #fff;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  font-size: 1.3em;
+  font-weight: 100;
 }
 
-#home .contact h6 {
-  margin-bottom: 2rem;
+#home .contact h5 {
+  margin-bottom: 3rem;
   font-weight: bold;
 }
 
+#home .contact p {
+  margin-bottom: 2rem;
+}
+
+#home .contact button {
+  border: 2px solid #fff;
+  color: #fff;
+  background: transparent;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: left;
+  height: 45px;
+  width: 200px;
+  position: relative;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+#home .contact button i {
+  right: 15px;
+}
+
 #home .back {
-  height: 500px;
+  height: 80vh;
+  min-height: 500px;
 }
 
 #home .quotation {

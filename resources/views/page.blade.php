@@ -15,9 +15,10 @@
 	<div id="app">
 		<vue-topprogress ref="loadingBar" color="yellow" :height="4"></vue-topprogress>
 		<my-header></my-header>
-		<router-view></router-view>	
+		<router-view></router-view>
+		<contact ref="contact"></contact>
 		<my-footer></my-footer>
-	</div>	
+	</div>
 	<script type="text/javascript" src="public/js/app.js"></script>
 </body>
 </html>

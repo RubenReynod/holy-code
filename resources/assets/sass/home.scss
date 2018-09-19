@@ -2,15 +2,17 @@
 	background: #fff;
 	.us{
         position: relative;
-        height: 300px;
+				@include cp-style(height,calc,unquote('(50vh - 68px)'));
+				min-height: 300px;
         .title_{
-        	@extend %center-align;
-        	width: 90%;
+        	  @extend %center-align;
+        	  width: 90%;
         }
 	}
 	.us_desc{
 		position: relative;
-		height: 500px;
+		height: 80vh;
+		min-height: 500px;
 		.foto{
 			position: absolute;
 			right: 0;
@@ -27,13 +29,21 @@
             height: 70%;
             background:  $color--primary;
             color: #fff;
+						font-size: 1.3em;
+						font-weight: 100;
             z-index: 10;
-            p{
-            	@extend %center-align;
-            	min-width: 80%;
-            	max-width: 550px;
-            	line-height: 220%;
-            }
+						.content{
+							  @extend %center-align;
+								min-width: 80%;
+								max-width: 550px;
+							  p{
+								    line-height: 220%;
+										b{
+											  font-weight: bold;
+										}
+							  }
+						}
+
 		}
 	}
 	.works{
@@ -50,7 +60,7 @@
 			img{
 				margin-bottom: 1rem;
 			}
-			h4{
+			h3{
 				font-weight: bold;
 				span{
 					&[color="green"]{
@@ -78,15 +88,38 @@
 	.contact{
 		background: $color--primary;
 		color: #fff;
-		padding-top: 5rem;
-		padding-bottom: 5rem;
-		h6{
-			margin-bottom: 2rem;
+		padding-top: 6rem;
+		padding-bottom: 6rem;
+		font-size: 1.3em;
+		font-weight: 100;
+		h5{
+			margin-bottom: 3rem;
 			font-weight: bold;
+		}
+		p{
+			 margin-bottom: 2rem;
+		}
+		button{
+				border: 2px solid #fff;
+				color: #fff;
+				background: transparent;
+				padding-left: 15px;
+				padding-right: 15px;
+				text-align: left;
+				height: 45px;
+				width: 200px;
+				position: relative;
+				font-size: 0.8em;
+				cursor: pointer;
+				i{
+						@extend %vertical-align;
+						right: 15px;
+				}
 		}
 	}
 	.back{
-		height: 500px;
+		  height: 80vh;
+		  min-height: 500px;
 	}
 	.quotation{
 		margin-left: 5%;
