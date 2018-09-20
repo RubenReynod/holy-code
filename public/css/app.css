@@ -9029,7 +9029,7 @@ a.text-dark:hover, a.text-dark:focus {
 /**
  * alertifyjs 1.11.0 http://alertifyjs.com
  * AlertifyJS is a javascript framework for developing pretty browser dialogs and notifications.
- * Copyright 2017 Mohammad Younes <Mohammad@alertifyjs.com> (http://alertifyjs.com)
+ * Copyright 2017 Mohammad Younes <Mohammad@alertifyjs.com> (http://alertifyjs.com) 
  * Licensed under GPL 3 <https://opensource.org/licenses/gpl-3.0>*/
 .alertify .ajs-dimmer {
   position: fixed;
@@ -10049,7 +10049,7 @@ a.text-dark:hover, a.text-dark:focus {
 /**
  * alertifyjs 1.11.0 http://alertifyjs.com
  * AlertifyJS is a javascript framework for developing pretty browser dialogs and notifications.
- * Copyright 2017 Mohammad Younes <Mohammad@alertifyjs.com> (http://alertifyjs.com)
+ * Copyright 2017 Mohammad Younes <Mohammad@alertifyjs.com> (http://alertifyjs.com) 
  * Licensed under GPL 3 <https://opensource.org/licenses/gpl-3.0>*/
 .alertify .ajs-dialog {
   background-color: #fff;
@@ -10560,7 +10560,7 @@ a.text-dark:hover, a.text-dark:focus {
   top: 50%;
 }
 
-#header .bars .bar, #header .menu .center, #contact .center, #home .contact button i {
+.btn_ i, #header .bars .bar, #header .menu .center, #contact .center {
   position: absolute;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
@@ -10594,33 +10594,55 @@ a.text-dark:hover, a.text-dark:focus {
   color: #C4C4C4;
 }
 
-/*================== HEADER ==================== */
-#header {
-  padding-top: 1.5rem;
-  background: #fff;
-}
-
-#header .logo {
+.logo {
   max-width: 200px;
 }
 
-#header .logo svg {
+.logo svg {
   width: 100%;
 }
 
-#header .logo svg .cls-1 {
+.logo svg .cls-1 {
   fill: #40b979;
   font-size: 25px;
   font-family: Arial-BoldMT, Arial;
   font-weight: 700;
 }
 
-#header .logo svg .cls-2 {
+.logo svg .cls-2 {
   fill: #2ecc71;
 }
 
-#header .logo svg .cls-3 {
+.logo svg .cls-3 {
   fill: #c4c4c4;
+}
+
+.logo[color="white"] .cls-1, .logo[color="white"] .cls-2, .logo[color="white"] .cls-3 {
+  fill: #fff;
+}
+
+.btn_ {
+  border: 2px solid #fff;
+  color: #fff;
+  background: transparent;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: left;
+  height: 45px;
+  width: 200px;
+  position: relative;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+.btn_ i {
+  right: 15px;
+}
+
+/*================== HEADER ==================== */
+#header {
+  padding-top: 1.5rem;
+  background: #fff;
 }
 
 #header .bars {
@@ -10707,26 +10729,6 @@ a.text-dark:hover, a.text-dark:focus {
   opacity: 0;
   -webkit-transition: 600ms ease;
   transition: 600ms ease;
-}
-
-#header .menu .top .logo {
-  max-width: 200px;
-}
-
-#header .menu .top .logo svg {
-  width: 100%;
-}
-
-#header .menu .top .logo svg .cls-1 {
-  fill: #fff;
-}
-
-#header .menu .top .logo svg .cls-2 {
-  fill: #fff;
-}
-
-#header .menu .top .logo svg .cls-3 {
-  fill: #fff;
 }
 
 #header .menu .top .btn_close {
@@ -10974,26 +10976,6 @@ a.text-dark:hover, a.text-dark:focus {
   transition: 600ms ease;
 }
 
-#contact .top .logo {
-  max-width: 200px;
-}
-
-#contact .top .logo svg {
-  width: 100%;
-}
-
-#contact .top .logo svg .cls-1 {
-  fill: #fff;
-}
-
-#contact .top .logo svg .cls-2 {
-  fill: #fff;
-}
-
-#contact .top .logo svg .cls-3 {
-  fill: #fff;
-}
-
 #contact .top .btn_close {
   position: absolute;
   color: #fff;
@@ -11029,6 +11011,13 @@ a.text-dark:hover, a.text-dark:focus {
   font-size: 1.3em;
   margin-top: 3px;
   margin-bottom: 3px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  cursor: pointer;
+}
+
+#contact .center nav ul li.active {
+  color: #fff;
 }
 
 #contact .center .question p {
@@ -11037,7 +11026,7 @@ a.text-dark:hover, a.text-dark:focus {
   margin-bottom: 0;
 }
 
-#contact .center .question input {
+#contact .center .question input:not([type="radio"]) {
   width: 100%;
   height: 50px;
   background: transparent;
@@ -11046,20 +11035,57 @@ a.text-dark:hover, a.text-dark:focus {
   color: #38A365;
 }
 
-#contact .center .question input::-webkit-input-placeholder {
+#contact .center .question input:not([type="radio"])::-webkit-input-placeholder {
   color: #38A365;
 }
 
-#contact .center .question input::-moz-placeholder {
+#contact .center .question input:not([type="radio"])::-moz-placeholder {
   color: #38A365;
 }
 
-#contact .center .question input:-sm-input-placeholder {
+#contact .center .question input:not([type="radio"]):-sm-input-placeholder {
   color: #38A365;
 }
 
-#contact .center .question input:-moz-placeholder {
+#contact .center .question input:not([type="radio"]):-moz-placeholder {
   color: #38A365;
+}
+
+#contact .center .question input:not([type="radio"]):focus {
+  outline: none;
+}
+
+#contact .center .question .btn_radio {
+  position: relative;
+  display: inline-block;
+  padding: .5rem 1rem;
+  border: 2px solid #38A365;
+  border-radius: 20px;
+  margin: .5rem;
+  color: #38A365;
+  font-weight: 400;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  cursor: pointer;
+}
+
+#contact .center .question .btn_radio label {
+  margin-bottom: 0;
+  pointer-events: none;
+}
+
+#contact .center .question .btn_radio input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+#contact .center .question .btn_radio.active, #contact .center .question .btn_radio:hover {
+  border-color: #fff;
+  color: #fff;
 }
 
 #contact.active {
@@ -11219,24 +11245,6 @@ a.text-dark:hover, a.text-dark:focus {
 
 #home .contact p {
   margin-bottom: 2rem;
-}
-
-#home .contact button {
-  border: 2px solid #fff;
-  color: #fff;
-  background: transparent;
-  padding-left: 15px;
-  padding-right: 15px;
-  text-align: left;
-  height: 45px;
-  width: 200px;
-  position: relative;
-  font-size: 0.8em;
-  cursor: pointer;
-}
-
-#home .contact button i {
-  right: 15px;
 }
 
 #home .back {

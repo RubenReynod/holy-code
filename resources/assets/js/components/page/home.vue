@@ -53,7 +53,7 @@
         		    <div class="col-md-6 offset-md-3 text-center">
         			    <h5>Abrimos Fronteras</h5>
         	            <p>Somos versátiles y trabajamos duro para lograr los objetivos. Nos tomamos el tiempo para cumplir objetivos, siempre entregando productos de calidad y funcionales.</p>
-                      <button type="button" v-on:click="$root.$refs.contact.statusContact = true">CONTACTO<i class="fas fa-arrow-right"></i></button>
+                      <button type="button" v-on:click="$root.$refs.contact.statusContact = true" class="btn_">CONTACTO<i class="fas fa-arrow-right"></i></button>
         		    </div>
         	    </div>
             </div>

@@ -180,7 +180,7 @@ module.exports = function normalizeComponent (
 
 
 var bind = __webpack_require__(20);
-var isBuffer = __webpack_require__(110);
+var isBuffer = __webpack_require__(114);
 
 /*global toString:true*/
 
@@ -22264,7 +22264,7 @@ exports.default = {
 /* WEBPACK VAR INJECTION */(function(process) {
 
 var utils = __webpack_require__(1);
-var normalizeHeaderName = __webpack_require__(112);
+var normalizeHeaderName = __webpack_require__(116);
 
 var DEFAULT_CONTENT_TYPE = {
   'Content-Type': 'application/x-www-form-urlencoded'
@@ -25548,12 +25548,12 @@ module.exports = function bind(fn, thisArg) {
 
 
 var utils = __webpack_require__(1);
-var settle = __webpack_require__(113);
-var buildURL = __webpack_require__(115);
-var parseHeaders = __webpack_require__(116);
-var isURLSameOrigin = __webpack_require__(117);
+var settle = __webpack_require__(117);
+var buildURL = __webpack_require__(119);
+var parseHeaders = __webpack_require__(120);
+var isURLSameOrigin = __webpack_require__(121);
 var createError = __webpack_require__(22);
-var btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window)) || __webpack_require__(118);
+var btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window)) || __webpack_require__(122);
 
 module.exports = function xhrAdapter(config) {
   return new Promise(function dispatchXhrRequest(resolve, reject) {
@@ -25650,7 +25650,7 @@ module.exports = function xhrAdapter(config) {
     // This is only done if running in a standard browser environment.
     // Specifically not if we're in a web worker, or react-native.
     if (utils.isStandardBrowserEnv()) {
-      var cookies = __webpack_require__(119);
+      var cookies = __webpack_require__(123);
 
       // Add xsrf header
       var xsrfValue = (config.withCredentials || isURLSameOrigin(config.url)) && config.xsrfCookieName ?
@@ -25734,7 +25734,7 @@ module.exports = function xhrAdapter(config) {
 "use strict";
 
 
-var enhanceError = __webpack_require__(114);
+var enhanceError = __webpack_require__(118);
 
 /**
  * Create an Error with the specified message, config, error code, request and response.
@@ -25795,7 +25795,7 @@ module.exports = Cancel;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(26);
-module.exports = __webpack_require__(130);
+module.exports = __webpack_require__(134);
 
 
 /***/ }),
@@ -25829,7 +25829,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-__webpack_require__(103);
+__webpack_require__(107);
 //Rutas del website
 
 
@@ -29403,6 +29403,7 @@ var render = function() {
             _c(
               "button",
               {
+                staticClass: "btn_",
                 attrs: { type: "button" },
                 on: {
                   click: function($event) {
@@ -29652,14 +29653,14 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 //Funcion para añadirlas a Vue
 function fire(Vue) {
-	//Vee-validate
+	//Vee-validate	
 	_veeValidate.Validator.localize('es', _es2.default);
 	Vue.use(_veeValidate2.default, { locale: "es" });
 
-	//vue-datetime
+	//vue-datetime	
 	Vue.use(_vueDatetime2.default);
 
-	//Vue-select
+	//Vue-select	
 	Vue.component('v-select', _vueSelect2.default);
 
 	//Vue-svgicon
@@ -29722,7 +29723,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   * (c) 2018 Abdelrahman Awad
   * @license MIT
   */
-//
+// 
 
 /**
  * Gets the data attribute. the name must be kebab-case.
@@ -30175,7 +30176,7 @@ var merge = function (target, source) {
   return target;
 };
 
-//
+// 
 
 var ErrorBag = function ErrorBag () {
   this.items = [];
@@ -30452,7 +30453,7 @@ ErrorBag.prototype._scope = function _scope (field) {
   return null;
 };
 
-//
+// 
 
 var LOCALE = 'en';
 
@@ -30583,7 +30584,7 @@ Dictionary.prototype.setAttribute = function setAttribute (locale, key, attribut
 
 Object.defineProperties( Dictionary.prototype, prototypeAccessors$2 );
 
-//
+// 
 
 var normalizeValue = function (value) {
   if (isObject(value)) {
@@ -30701,7 +30702,7 @@ I18nDictionary.prototype.setAttribute = function setAttribute (locale, key, valu
 
 Object.defineProperties( I18nDictionary.prototype, prototypeAccessors$3 );
 
-//
+// 
 
 var defaultConfig = {
   locale: 'en',
@@ -31031,7 +31032,7 @@ Generator.resolveGetter = function resolveGetter (el, vnode, model) {
   }
 };
 
-//
+// 
 
 var DEFAULT_OPTIONS = {
   targetOf: null,
@@ -31607,7 +31608,7 @@ Field.prototype.destroy = function destroy () {
 
 Object.defineProperties( Field.prototype, prototypeAccessors$1 );
 
-//
+// 
 
 var FieldBag = function FieldBag () {
   this.items = [];
@@ -31689,7 +31690,7 @@ FieldBag.prototype.push = function push (item) {
 
 Object.defineProperties( FieldBag.prototype, prototypeAccessors$4 );
 
-//
+// 
 
 var RULES = {};
 var STRICT_MODE = true;
@@ -32426,7 +32427,7 @@ Validator.prototype._validate = function _validate (field, value, silent) {
 Object.defineProperties( Validator.prototype, prototypeAccessors );
 Object.defineProperties( Validator, staticAccessors );
 
-//
+// 
 
 /**
  * Checks if a parent validator instance was requested.
@@ -32519,7 +32520,7 @@ var mixin = {
   }
 };
 
-//
+// 
 
 /**
  * Finds the requested field by id from the context object.
@@ -32753,7 +32754,7 @@ if (isDefinedGlobally()) {
   var obj;
 }
 
-//
+// 
 
 function use (plugin, options) {
   if ( options === void 0 ) options = {};
@@ -35382,7 +35383,7 @@ function cleanEscapedString$1 (input) {
 
 // This file is generated automatically by `scripts/build/indices.js`. Please, don't change it.
 
-//
+// 
 
 /**
  * Custom parse behavior on top of date-fns parse function.
@@ -36522,7 +36523,7 @@ var Rules = {
   url: url
 };
 
-//
+// 
 
 var normalize = function (fields) {
   if (Array.isArray(fields)) {
@@ -46785,7 +46786,7 @@ function plugin(Vue) {
   Vue.component('my-header', __webpack_require__(89)(page + 'shared/header.vue'));
   Vue.component('my-footer', __webpack_require__(96)(page + 'shared/footer.vue'));
   Vue.component('slick', _vueSlick2.default);
-  Vue.component('contact', __webpack_require__(134)(page + 'shared/contact.vue'));
+  Vue.component('contact', __webpack_require__(103)(page + 'shared/contact.vue'));
 }
 
 // Install by default if using the script tag
@@ -50633,7 +50634,7 @@ var render = function() {
       _c("div", { staticClass: "top" }, [
         _c(
           "div",
-          { staticClass: "logo" },
+          { staticClass: "logo", attrs: { color: "white" } },
           [_c("svgicon", { attrs: { name: "logo" } })],
           1
         ),
@@ -50999,12 +51000,860 @@ if (false) {
 /* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
+var map = {
+	"./page/shared/contact.vue": 104
+};
+function webpackContext(req) {
+	return __webpack_require__(webpackContextResolve(req));
+};
+function webpackContextResolve(req) {
+	var id = map[req];
+	if(!(id + 1)) // check for number or string
+		throw new Error("Cannot find module '" + req + "'.");
+	return id;
+};
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 103;
+
+/***/ }),
+/* 104 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = __webpack_require__(105)
+/* template */
+var __vue_template__ = __webpack_require__(106)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/page/shared/contact.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-11f6c7af", Component.options)
+  } else {
+    hotAPI.reload("data-v-11f6c7af", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 105 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+exports.default = {
+    data: function data() {
+        return {
+            statusContact: false,
+            btnForm: 'name',
+            mail: {
+                name: '',
+                factory: '',
+                budget: '',
+                phone: '',
+                email: '',
+                service: '',
+                contact: ''
+            }
+        };
+    },
+
+    methods: {
+        sendMail: function sendMail(form) {
+            var params = tools.params(form, this.mail);
+            var config = { header: { 'Content-Type': 'multipart/form-data' } };
+            axios.post(tools.url('/api/contact'), params, config).then(function (resp) {
+                console.log('se envio');
+            }).catch(function (error) {
+                console.log('Error');
+            });
+        }
+    }
+};
+
+/***/ }),
+/* 106 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { class: { active: _vm.statusContact }, attrs: { id: "contact" } },
+    [
+      _c("div", { staticClass: "top" }, [
+        _c(
+          "div",
+          { staticClass: "logo", attrs: { color: "white" } },
+          [_c("svgicon", { attrs: { name: "logo" } })],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "btn_close",
+            on: {
+              click: function($event) {
+                _vm.statusContact = false
+              }
+            }
+          },
+          [_vm._m(0)]
+        )
+      ]),
+      _vm._v(" "),
+      _c(
+        "form",
+        {
+          staticClass: "row align-items-center center",
+          on: {
+            submit: function($event) {
+              $event.preventDefault()
+              _vm.sendMail($event.target)
+            }
+          }
+        },
+        [
+          _c("nav", { staticClass: "col-md-3" }, [
+            _c("ul", [
+              _c(
+                "li",
+                {
+                  class: { active: _vm.mail.name != "" },
+                  on: {
+                    click: function($event) {
+                      _vm.btnForm = "name"
+                    }
+                  }
+                },
+                [_vm._v("Nombre")]
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                {
+                  class: { active: _vm.mail.factory != "" },
+                  on: {
+                    click: function($event) {
+                      _vm.btnForm = "factory"
+                    }
+                  }
+                },
+                [_vm._v("Empresa")]
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                {
+                  class: { active: _vm.mail.budget != "" },
+                  on: {
+                    click: function($event) {
+                      _vm.btnForm = "budget"
+                    }
+                  }
+                },
+                [_vm._v("Presupuesto")]
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                {
+                  class: { active: _vm.mail.phone != "" },
+                  on: {
+                    click: function($event) {
+                      _vm.btnForm = "phone"
+                    }
+                  }
+                },
+                [_vm._v("Teléfono")]
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                {
+                  class: { active: _vm.mail.email != "" },
+                  on: {
+                    click: function($event) {
+                      _vm.btnForm = "email"
+                    }
+                  }
+                },
+                [_vm._v("Correo Electrónico")]
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                {
+                  class: { active: _vm.mail.service != "" },
+                  on: {
+                    click: function($event) {
+                      _vm.btnForm = "service"
+                    }
+                  }
+                },
+                [_vm._v("Servicio")]
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                {
+                  class: { active: _vm.mail.contact != "" },
+                  on: {
+                    click: function($event) {
+                      _vm.btnForm = "contact"
+                    }
+                  }
+                },
+                [_vm._v("Contacto")]
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-9" }, [
+            _c(
+              "div",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value: _vm.btnForm == "name",
+                    expression: "  btnForm == 'name' "
+                  }
+                ],
+                staticClass: "question"
+              },
+              [
+                _c("p", [_vm._v("Hola :) Cual es tu Nombre")]),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.mail.name,
+                      expression: "mail.name"
+                    }
+                  ],
+                  attrs: { type: "text", placeholder: "Nombre,Apellidos" },
+                  domProps: { value: _vm.mail.name },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.mail, "name", $event.target.value)
+                    }
+                  }
+                })
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value: _vm.btnForm == "factory",
+                    expression: " btnForm == 'factory' "
+                  }
+                ],
+                staticClass: "question"
+              },
+              [
+                _c("p", [_vm._v("Cual es el nombre de tu empresa?")]),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.mail.factory,
+                      expression: "mail.factory"
+                    }
+                  ],
+                  attrs: { type: "text", placeholder: "Nombre de la empresa" },
+                  domProps: { value: _vm.mail.factory },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.mail, "factory", $event.target.value)
+                    }
+                  }
+                })
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value: _vm.btnForm == "budget",
+                    expression: " btnForm == 'budget' "
+                  }
+                ],
+                staticClass: "question"
+              },
+              [
+                _c("p", [_vm._v("Cual es tu presupuesto?")]),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "btn_radio",
+                    class: { active: _vm.mail.budget == "5,000" }
+                  },
+                  [
+                    _c("label", [_vm._v("5,000")]),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.mail.budget,
+                          expression: "mail.budget"
+                        }
+                      ],
+                      attrs: { type: "radio", value: "5,000" },
+                      domProps: { checked: _vm._q(_vm.mail.budget, "5,000") },
+                      on: {
+                        change: function($event) {
+                          _vm.$set(_vm.mail, "budget", "5,000")
+                        }
+                      }
+                    })
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "btn_radio",
+                    class: { active: _vm.mail.budget == "5,000 - 10,000" }
+                  },
+                  [
+                    _c("label", [_vm._v("5,000 - 10,000")]),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.mail.budget,
+                          expression: "mail.budget"
+                        }
+                      ],
+                      attrs: { type: "radio", value: "5,000 - 10,000" },
+                      domProps: {
+                        checked: _vm._q(_vm.mail.budget, "5,000 - 10,000")
+                      },
+                      on: {
+                        change: function($event) {
+                          _vm.$set(_vm.mail, "budget", "5,000 - 10,000")
+                        }
+                      }
+                    })
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "btn_radio",
+                    class: { active: _vm.mail.budget == "10,000 - 25,000" }
+                  },
+                  [
+                    _c("label", [_vm._v("10,000 - 25,000")]),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.mail.budget,
+                          expression: "mail.budget"
+                        }
+                      ],
+                      attrs: { type: "radio", value: "10,000 - 25,000" },
+                      domProps: {
+                        checked: _vm._q(_vm.mail.budget, "10,000 - 25,000")
+                      },
+                      on: {
+                        change: function($event) {
+                          _vm.$set(_vm.mail, "budget", "10,000 - 25,000")
+                        }
+                      }
+                    })
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "btn_radio",
+                    class: { active: _vm.mail.budget == "25,000 - 50,000" }
+                  },
+                  [
+                    _c("label", [_vm._v("25,000 - 50,000")]),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.mail.budget,
+                          expression: "mail.budget"
+                        }
+                      ],
+                      attrs: { type: "radio", value: "25,000 - 50,000" },
+                      domProps: {
+                        checked: _vm._q(_vm.mail.budget, "25,000 - 50,000")
+                      },
+                      on: {
+                        change: function($event) {
+                          _vm.$set(_vm.mail, "budget", "25,000 - 50,000")
+                        }
+                      }
+                    })
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "btn_radio",
+                    class: { active: _vm.mail.budget == "50,000 +" }
+                  },
+                  [
+                    _c("label", [_vm._v("50,000 +")]),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.mail.budget,
+                          expression: "mail.budget"
+                        }
+                      ],
+                      attrs: { type: "radio", value: "50,000 +" },
+                      domProps: {
+                        checked: _vm._q(_vm.mail.budget, "50,000 +")
+                      },
+                      on: {
+                        change: function($event) {
+                          _vm.$set(_vm.mail, "budget", "50,000 +")
+                        }
+                      }
+                    })
+                  ]
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value: _vm.btnForm == "phone",
+                    expression: " btnForm == 'phone' "
+                  }
+                ],
+                staticClass: "question"
+              },
+              [
+                _c("p", [_vm._v("Cual es tu teléfono?")]),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.mail.phone,
+                      expression: "mail.phone"
+                    }
+                  ],
+                  attrs: { type: "number", placeholder: "Número de telefóno" },
+                  domProps: { value: _vm.mail.phone },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.mail, "phone", $event.target.value)
+                    }
+                  }
+                })
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value: _vm.btnForm == "email",
+                    expression: " btnForm == 'email' "
+                  }
+                ],
+                staticClass: "question"
+              },
+              [
+                _c("p", [_vm._v("Cual es tu correo electrónico?")]),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.mail.email,
+                      expression: "mail.email"
+                    }
+                  ],
+                  attrs: {
+                    type: "email",
+                    placeholder: "tucorreo@holy-code.com"
+                  },
+                  domProps: { value: _vm.mail.email },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.mail, "email", $event.target.value)
+                    }
+                  }
+                })
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value: _vm.btnForm == "service",
+                    expression: " btnForm == 'service' "
+                  }
+                ],
+                staticClass: "question"
+              },
+              [
+                _c("p", [_vm._v("Estas interesado en ?")]),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "btn_radio",
+                    class: { active: _vm.mail.service == "Web Sites" }
+                  },
+                  [
+                    _c("label", [_vm._v("WEBSITES")]),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.mail.service,
+                          expression: "mail.service"
+                        }
+                      ],
+                      attrs: { type: "radio", value: "Web Sites" },
+                      domProps: {
+                        checked: _vm._q(_vm.mail.service, "Web Sites")
+                      },
+                      on: {
+                        change: function($event) {
+                          _vm.$set(_vm.mail, "service", "Web Sites")
+                        }
+                      }
+                    })
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "btn_radio",
+                    class: { active: _vm.mail.service == "Branding" }
+                  },
+                  [
+                    _c("label", [_vm._v("BRANDING")]),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.mail.service,
+                          expression: "mail.service"
+                        }
+                      ],
+                      attrs: { type: "radio", value: "Branding" },
+                      domProps: {
+                        checked: _vm._q(_vm.mail.service, "Branding")
+                      },
+                      on: {
+                        change: function($event) {
+                          _vm.$set(_vm.mail, "service", "Branding")
+                        }
+                      }
+                    })
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "btn_radio",
+                    class: { active: _vm.mail.service == "Redes Sociales" }
+                  },
+                  [
+                    _c("label", [_vm._v("REDES SOCIALES")]),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.mail.service,
+                          expression: "mail.service"
+                        }
+                      ],
+                      attrs: { type: "radio", value: "Redes Sociales" },
+                      domProps: {
+                        checked: _vm._q(_vm.mail.service, "Redes Sociales")
+                      },
+                      on: {
+                        change: function($event) {
+                          _vm.$set(_vm.mail, "service", "Redes Sociales")
+                        }
+                      }
+                    })
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "btn_radio",
+                    class: { active: _vm.mail.service == "Aplicación" }
+                  },
+                  [
+                    _c("label", [_vm._v("APLICACIÓN")]),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.mail.service,
+                          expression: "mail.service"
+                        }
+                      ],
+                      attrs: { type: "radio", value: "Aplicación" },
+                      domProps: {
+                        checked: _vm._q(_vm.mail.service, "Aplicación")
+                      },
+                      on: {
+                        change: function($event) {
+                          _vm.$set(_vm.mail, "service", "Aplicación")
+                        }
+                      }
+                    })
+                  ]
+                )
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _vm._m(1)
+        ]
+      )
+    ]
+  )
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", [_vm._v("Cerrar"), _c("i", { staticClass: "fas fa-times" })])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-md-9 offset-md-3" }, [
+      _c("button", { staticClass: "btn_", attrs: { type: "submit" } }, [
+        _vm._v("ENVIAR"),
+        _c("i", { staticClass: "fas fa-arrow-right" })
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-11f6c7af", module.exports)
+  }
+}
+
+/***/ }),
+/* 107 */
+/***/ (function(module, exports, __webpack_require__) {
+
 "use strict";
 
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-window._ = __webpack_require__(104);
+window._ = __webpack_require__(108);
 
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support
@@ -51016,11 +51865,11 @@ try {
     window.$ = window.jQuery = __webpack_require__(6);
     window.Popper = __webpack_require__(19).default;
 
-    __webpack_require__(106);
+    __webpack_require__(110);
 } catch (e) {}
 
 //Alertify
-window.alertify = __webpack_require__(107);
+window.alertify = __webpack_require__(111);
 window.alertify.defaults.transition = "flipx";
 window.alertify.defaults.glossary.title = "<i class='fab fa-laravel'></i> Base Laravel";
 
@@ -51030,19 +51879,19 @@ window.alertify.defaults.glossary.title = "<i class='fab fa-laravel'></i> Base L
  * CSRF token as a header based on the value of the "XSRF" token cookie.
  */
 
-window.axios = __webpack_require__(108);
+window.axios = __webpack_require__(112);
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 window.axios.defaults.headers.common['Content-Type'] = 'multipart/form-data';
 
-window.SyncPromise = __webpack_require__(127);
+window.SyncPromise = __webpack_require__(131);
 
 /*
  *
  *Configuracion de pushjs
  *
  */
-window.Push = __webpack_require__(128);
+window.Push = __webpack_require__(132);
 window.Push.config({
     timeout: 4000,
     icon: '/favicon.ico'
@@ -51054,7 +51903,7 @@ window.Push.config({
  *
  */
 
-__webpack_require__(129);
+__webpack_require__(133);
 
 //Idioma
 jQuery.fn.bootstrapTable.locales['es-MX'] = {
@@ -51190,7 +52039,7 @@ window.tools = {
 };
 
 /***/ }),
-/* 104 */
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, module) {var __WEBPACK_AMD_DEFINE_RESULT__;/**
@@ -68292,10 +69141,10 @@ window.tools = {
   }
 }.call(this));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3), __webpack_require__(105)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3), __webpack_require__(109)(module)))
 
 /***/ }),
-/* 105 */
+/* 109 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -68323,7 +69172,7 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 106 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*!
@@ -72223,17 +73072,17 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 
 /***/ }),
-/* 107 */
+/* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
  * alertifyjs 1.11.0 http://alertifyjs.com
  * AlertifyJS is a javascript framework for developing pretty browser dialogs and notifications.
- * Copyright 2017 Mohammad Younes <Mohammad@alertifyjs.com> (http://alertifyjs.com)
+ * Copyright 2017 Mohammad Younes <Mohammad@alertifyjs.com> (http://alertifyjs.com) 
  * Licensed under GPL 3 <https://opensource.org/licenses/gpl-3.0>*/
 ( function ( window ) {
     'use strict';
-
+    
     /**
      * Keys enum
      * @type {Object}
@@ -72247,7 +73096,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
         RIGHT: 39
     };
     /**
-     * Default options
+     * Default options 
      * @type {Object}
      */
     var defaults = {
@@ -72292,7 +73141,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
             cancel:'ajs-cancel',
         }
     };
-
+    
     //holds open dialogs instances
     var openDialogs = [];
 
@@ -72301,19 +73150,19 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
      *
      * @element {node}      The element
      * @className {string}  One or more space-separated classes to be added to the class attribute of the element.
-     *
+     * 
      * @return {undefined}
      */
     function addClass(element,classNames){
         element.className += ' ' + classNames;
     }
-
+    
     /**
      * [Helper]  Removes the specified class(es) from the element.
      *
      * @element {node}      The element
      * @className {string}  One or more space-separated classes to be removed from the class attribute of the element.
-     *
+     * 
      * @return {undefined}
      */
     function removeClass(element, classNames) {
@@ -72383,11 +73232,11 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
             }
             return cpy;
         }
-
+      
         if(src instanceof Date){
             return new Date(src.getTime());
         }
-
+      
         if(src instanceof RegExp){
             cpy = new RegExp(src.source);
             cpy.global = src.global;
@@ -72396,7 +73245,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
             cpy.lastIndex = src.lastIndex;
             return cpy;
         }
-
+        
         if(typeof src === 'object'){
             cpy = {};
             // copy dialog pototype over definition.
@@ -72515,7 +73364,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
 
     /**
     * Creates event handler delegate that sends the instance as last argument.
-    *
+    * 
     * @return {Function}    a function wrapper which sends the instance as last argument.
     */
     function delegate(context, method) {
@@ -72533,7 +73382,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
     }
     /**
     * Helper for creating a dialog close event.
-    *
+    * 
     * @return {object}
     */
     function createCloseEvent(index, button) {
@@ -72616,16 +73465,16 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
 
         /**
          * Helper: initializes the dialog instance
-         *
+         * 
          * @return	{Number}	The total count of currently open modals.
          */
         function initialize(instance){
-
+            
             if(!instance.__internal){
 
                 //no need to expose init after this.
                 delete instance.__init;
-
+              
                 //keep a copy of initial dialog settings
                 if(!instance.__settings){
                     instance.__settings = copy(instance.settings);
@@ -72655,7 +73504,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                         }
                     };
                 }
-
+                
                 //initialize hooks object.
                 if(typeof instance.hooks !== 'object'){
                     instance.hooks = {};
@@ -72679,7 +73528,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 var internal = instance.__internal = {
                     /**
                      * Flag holding the open state of the dialog
-                     *
+                     * 
                      * @type {Boolean}
                      */
                     isOpen:false,
@@ -72741,11 +73590,11 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 var elements = {};
                 //root node
                 elements.root = document.createElement('div');
-
+                
                 elements.root.className = classes.base + ' ' + classes.hidden + ' ';
 
                 elements.root.innerHTML = templates.dimmer + templates.modal;
-
+                
                 //dimmer
                 elements.dimmer = elements.root.firstChild;
 
@@ -72759,14 +73608,14 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 elements.reset = [];
                 elements.reset.push(elements.dialog.firstChild);
                 elements.reset.push(elements.dialog.lastChild);
-
+                
                 //commands
                 elements.commands = {};
                 elements.commands.container = elements.reset[0].nextSibling;
                 elements.commands.pin = elements.commands.container.firstChild;
                 elements.commands.maximize = elements.commands.pin.nextSibling;
                 elements.commands.close = elements.commands.maximize.nextSibling;
-
+                
                 //header
                 elements.header = elements.commands.container.nextSibling;
 
@@ -72778,7 +73627,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 //footer
                 elements.footer = elements.body.nextSibling;
                 elements.footer.innerHTML = templates.buttons.auxiliary + templates.buttons.primary;
-
+                
                 //resize handle
                 elements.resizeHandle = elements.footer.nextSibling;
 
@@ -72790,10 +73639,10 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 elements.buttonTemplate = elements.buttons.primary.firstChild;
                 //remove button template
                 elements.buttons.primary.removeChild(elements.buttonTemplate);
-
+                               
                 for(var x=0; x < instance.__internal.buttons.length; x+=1) {
                     var button = instance.__internal.buttons[x];
-
+                    
                     // add to the list of used keys.
                     if(usedKeys.indexOf(button.key) < 0){
                         usedKeys.push(button.key);
@@ -72817,7 +73666,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 }
                 //make elements pubic
                 instance.elements = elements;
-
+                
                 //save event handlers delegates
                 internal.resetHandler = delegate(instance, onReset);
                 internal.beginMoveHandler = delegate(instance, beginMove);
@@ -72848,7 +73697,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                     instance.build();
                 }
             }
-
+            
             //add to the end of the DOM tree.
             document.body.appendChild(instance.elements.root);
         }
@@ -72908,10 +73757,10 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 }
             }
         }
-
+		
         /**
          * Sets the name of the transition used to show/hide the dialog
-         *
+         * 
          * @param {Object} instance The dilog instance.
          *
          */
@@ -72922,7 +73771,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
             addClass(instance.elements.root, classes.prefix + value);
             reflow = instance.elements.root.offsetWidth;
         }
-
+		
         /**
          * Toggles the dialog display mode
          *
@@ -72962,7 +73811,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
         }
 
         /**
-         * Toggles the dialog basic view mode
+         * Toggles the dialog basic view mode 
          *
          * @param {Object} instance The dilog instance.
          *
@@ -72979,7 +73828,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
         }
 
         /**
-         * Toggles the dialog frameless view mode
+         * Toggles the dialog frameless view mode 
          *
          * @param {Object} instance The dilog instance.
          *
@@ -72994,7 +73843,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 removeClass(instance.elements.root, classes.frameless);
             }
         }
-
+		
         /**
          * Helper: Brings the modeless dialog to front, attached to modeless dialogs.
          *
@@ -73004,7 +73853,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          * @return {undefined}
          */
         function bringToFront(event, instance){
-
+            
             // Do not bring to front if preceeded by an open modal
             var index = openDialogs.indexOf(instance);
             for(var x=index+1;x<openDialogs.length;x+=1){
@@ -73012,7 +73861,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                     return;
                 }
             }
-
+			
             // Bring to front by making it the last child.
             if(document.body.lastChild !== instance.elements.root){
                 document.body.appendChild(instance.elements.root);
@@ -73021,17 +73870,17 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 openDialogs.push(instance);
                 setFocus(instance);
             }
-
+			
             return false;
         }
-
+		
         /**
          * Helper: reflects dialogs options updates
          *
          * @param {Object} instance The dilog instance.
          * @param {String} option The updated option name.
          *
-         * @return	{undefined}
+         * @return	{undefined}	
          */
         function optionUpdated(instance, option, oldValue, newValue){
             switch(option){
@@ -73092,7 +73941,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 instance.hooks.onupdate.call(instance, option, oldValue, newValue);
             }
         }
-
+		
         /**
          * Helper: reflects dialogs options updates
          *
@@ -73103,9 +73952,9 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          * @param {Object} value Optional, the value associated with the key (in case it was a string).
          * @param {String} option The updated option name.
          *
-         * @return	{Object} result object
+         * @return	{Object} result object 
          *	The result objects has an 'op' property, indicating of this is a SET or GET operation.
-         *		GET:
+         *		GET: 
          *		- found: a flag indicating if the key was found or not.
          *		- value: the property value.
          *		SET:
@@ -73174,7 +74023,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          * Triggers a close event.
          *
          * @param {Object} instance	The dilog instance.
-         *
+         * 
          * @return {undefined}
          */
         function triggerClose(instance) {
@@ -73194,7 +74043,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          *
          * @param {Event} event	DOM event object.
          * @param {Object} instance	The dilog instance.
-         *
+         * 
          * @return {undefined}
          */
         function commandsClickHandler(event, instance) {
@@ -73225,7 +74074,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          * Helper: pins the modeless dialog.
          *
          * @param {Object} instance	The dialog instance.
-         *
+         * 
          * @return {undefined}
          */
         function pin(instance) {
@@ -73237,11 +74086,11 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          * Helper: unpins the modeless dialog.
          *
          * @param {Object} instance	The dilog instance.
-         *
+         * 
          * @return {undefined}
          */
         function unpin(instance) {
-            //unpin the dialog
+            //unpin the dialog 
             instance.set('pinned', false);
         }
 
@@ -73250,13 +74099,13 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          * Helper: enlarges the dialog to fill the entire screen.
          *
          * @param {Object} instance	The dilog instance.
-         *
+         * 
          * @return {undefined}
          */
         function maximize(instance) {
             // allow custom `onmaximize` method
             dispatchEvent('onmaximize', instance);
-            //maximize the dialog
+            //maximize the dialog 
             addClass(instance.elements.root, classes.maximized);
             if (instance.isOpen()) {
                 ensureNoOverflow();
@@ -73269,13 +74118,13 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          * Helper: returns the dialog to its former size.
          *
          * @param {Object} instance	The dilog instance.
-         *
+         * 
          * @return {undefined}
          */
         function restore(instance) {
             // allow custom `onrestore` method
             dispatchEvent('onrestore', instance);
-            //maximize the dialog
+            //maximize the dialog 
             removeClass(instance.elements.root, classes.maximized);
             if (instance.isOpen()) {
                 ensureNoOverflow();
@@ -73442,7 +74291,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
 
         // flag to cancel keyup event if already handled by click event (pressing Enter on a focusted button).
         var cancelKeyup = false;
-        /**
+        /** 
          * Helper: triggers a button callback
          *
          * @param {Object}		The dilog instance.
@@ -73472,7 +74321,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          *
          * @param {Event}		DOM event object.
          * @param {Object}		The dilog instance.
-         *
+         * 
          * @return {undefined}
          */
         function buttonsClickHandler(event, instance) {
@@ -73488,7 +74337,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          *
          * @param {Event}		DOM event object.
          * @param {Object}		The dilog instance.
-         *
+         * 
          * @return {undefined}
          */
         function keyupHandler(event) {
@@ -73515,7 +74364,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
         *
         * @param {Event}		DOM event object.
         * @param {Object}		The dilog instance.
-        *
+        * 
         * @return {undefined}
         */
         function keydownHandler(event) {
@@ -73585,7 +74434,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                     element = focus.element.call(instance);
                     break;
                 }
-
+                
                 // if no focus element, default to first reset element.
                 if ((typeof element === 'undefined' || element === null) && instance.__internal.buttons.length === 0) {
                     element = instance.elements.reset[0];
@@ -73612,7 +74461,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          */
         function onReset(event, instance) {
 
-            // should work on last modal if triggered from document.body
+            // should work on last modal if triggered from document.body 
             if (!instance) {
                 for (var x = openDialogs.length - 1; x > -1; x -= 1) {
                     if (openDialogs[x].isModal()) {
@@ -73658,7 +74507,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
             }
         }
         /**
-         * Transition in transitionend event handler.
+         * Transition in transitionend event handler. 
          *
          * @param {Event}		TransitionEnd event object.
          * @param {Object}		The dilog instance.
@@ -73688,7 +74537,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
         }
 
         /**
-         * Transition out transitionend event handler.
+         * Transition out transitionend event handler. 
          *
          * @param {Event}		TransitionEnd event object.
          * @param {Object}		The dilog instance.
@@ -73716,7 +74565,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 instance.__internal.activeElement.focus();
                 instance.__internal.activeElement = null;
             }
-
+            
             //destory the instance
             if (typeof instance.__internal.destroy === 'function') {
                 instance.__internal.destroy.apply(instance);
@@ -73741,7 +74590,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          *
          * @param {Event} event	DOM event object.
          * @param {Node} element The element being moved.
-         *
+         * 
          * @return {undefined}
          */
         function moveElement(event, element) {
@@ -73751,17 +74600,17 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
             if(refreshTop){
                 top -= document.body.scrollTop;
             }
-
+           
             element.style.left = left + 'px';
             element.style.top = top + 'px';
-
+           
         }
         /**
          * Helper: sets the element top/left coordinates within screen bounds
          *
          * @param {Event} event	DOM event object.
          * @param {Node} element The element being moved.
-         *
+         * 
          * @return {undefined}
          */
         function moveElementBounded(event, element) {
@@ -73771,7 +74620,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
             if(refreshTop){
                 top -= document.body.scrollTop;
             }
-
+            
             element.style.left = Math.min(bounds.maxLeft, Math.max(bounds.minLeft, left)) + 'px';
             if(refreshTop){
                 element.style.top = Math.min(bounds.maxTop, Math.max(bounds.minTop, top)) + 'px';
@@ -73779,7 +74628,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 element.style.top = Math.max(bounds.minTop, top) + 'px';
             }
         }
-
+            
 
         /**
          * Triggers the start of a move event, attached to the header element mouse down event.
@@ -73787,7 +74636,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          *
          * @param {Event} event	DOM event object.
          * @param {Object} instance The dilog instance.
-         *
+         * 
          * @return {Boolean} false
          */
         function beginMove(event, instance) {
@@ -73814,7 +74663,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                     if (element.style.top) {
                         top = parseInt(element.style.top, 10);
                     }
-
+                    
                     offsetX = eventSrc[xProp] - left;
                     offsetY = eventSrc[yProp] - top;
 
@@ -73823,18 +74672,18 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                     }else if(instance.isPinned()){
                         offsetY -= document.body.scrollTop;
                     }
-
+                    
                     if(instance.get('moveBounded')){
                         var current = element,
                             offsetLeft = -left,
                             offsetTop = -top;
-
+                        
                         //calc offset
                         do {
                             offsetLeft += current.offsetLeft;
                             offsetTop += current.offsetTop;
                         } while (current = current.offsetParent);
-
+                        
                         bounds = {
                             maxLeft : offsetLeft,
                             minLeft : -offsetLeft,
@@ -73846,7 +74695,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                         bounds = null;
                         moveDelegate = moveElement;
                     }
-
+                    
                     // allow custom `onmove` method
                     dispatchEvent('onmove', instance);
 
@@ -73863,7 +74712,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          * The actual move handler,  attached to document.body mousemove event.
          *
          * @param {Event} event	DOM event object.
-         *
+         * 
          * @return {undefined}
          */
         function move(event) {
@@ -73939,7 +74788,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
         }
 
         /* Controls moving a dialog around */
-        //holde the current instance being resized
+        //holde the current instance being resized		
         var resizable = null,
             //holds the staring left offset when resize starts.
             startingLeft = Number.Nan,
@@ -73957,7 +74806,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          * @param {Event} event	DOM mousemove event object.
          * @param {Node} element The element being moved.
          * @param {Boolean} pinned A flag indicating if the element being resized is pinned to the screen.
-         *
+         * 
          * @return {undefined}
          */
         function resizeElement(event, element, pageRelative) {
@@ -73983,7 +74832,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
             // rtl handling
             var isRTL = isRightToLeft();
             if (isRTL) {
-                // reverse X
+                // reverse X 
                 X = document.body.offsetWidth - X;
                 // if has a starting left, calculate offsetRight
                 if (!isNaN(startingLeft)) {
@@ -74021,7 +74870,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          *
          * @param {Event} event	DOM event object.
          * @param {Object} instance The dilog instance.
-         *
+         * 
          * @return {Boolean} false
          */
         function beginResize(event, instance) {
@@ -74036,7 +74885,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 if (eventSrc) {
                     // allow custom `onresize` method
                     dispatchEvent('onresize', instance);
-
+                    
                     resizable = instance;
                     handleOffset = instance.elements.resizeHandle.offsetHeight / 2;
                     var element = instance.elements.dialog;
@@ -74060,7 +74909,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          * The actual resize handler,  attached to document.body mousemove event.
          *
          * @param {Event} event	DOM event object.
-         *
+         * 
          * @return {undefined}
          */
         function resize(event) {
@@ -74417,12 +75266,12 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 if(!isNaN(x) && !isNaN(y)){
                     // allow custom `onmove` method
                     dispatchEvent('onmove', this);
-
+                    
                     var element = this.elements.dialog,
                         current = element,
                         offsetLeft = 0,
                         offsetTop = 0;
-
+                    
                     //subtract existing left,top
                     if (element.style.left) {
                         offsetLeft -= parseInt(element.style.left, 10);
@@ -74447,7 +75296,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
 
                     element.style.left = left + 'px';
                     element.style.top = top + 'px';
-
+                    
                     // allow custom `onmoved` method
                     dispatchEvent('onmoved', this);
                 }
@@ -74472,10 +75321,10 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 ;
 
                 if(!isNaN(w) && !isNaN(h) && this.get('resizable') === true){
-
+                    
                     // allow custom `onresize` method
                     dispatchEvent('onresize', this);
-
+                    
                     if(('' + width).match(regex)){
                         w = w / 100 * document.documentElement.clientWidth ;
                     }
@@ -74492,14 +75341,14 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                     element.style.minHeight = this.elements.header.offsetHeight + this.elements.footer.offsetHeight + 'px';
                     element.style.width = w + 'px';
                     element.style.height = h + 'px';
-
+                    
                     // allow custom `onresized` method
                     dispatchEvent('onresized', this);
                 }
                 return this;
             },
             /**
-             * Gets or Sets dialog settings/options
+             * Gets or Sets dialog settings/options 
              *
              * @param {String|Object} key A string specifying a propery name or a collection of key/value pairs.
              * @param {Object} value Optional, the value associated with the key (in case it was a string).
@@ -74531,14 +75380,14 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 }
             },
             /**
-             * [Alias] Sets dialog settings/options
+             * [Alias] Sets dialog settings/options 
              */
             set:function(key, value){
                 this.setting(key,value);
                 return this;
             },
             /**
-             * [Alias] Gets dialog settings/options
+             * [Alias] Gets dialog settings/options 
              */
             get:function(key){
                 return this.setting(key);
@@ -74589,7 +75438,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
              * @return {Object} the dialog instance.
              */
             show: function (modal, className) {
-
+                
                 // ensure initialization
                 initialize(this);
 
@@ -74651,7 +75500,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
 
                     //reflow
                     reflow = this.elements.root.offsetWidth;
-
+                  
                     // show dialog
                     removeClass(this.elements.root, classes.hidden);
 
@@ -75167,12 +76016,12 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
         return {
             /**
              * Alertify defaults
-             *
+             * 
              * @type {Object}
              */
             defaults: defaults,
             /**
-             * Dialogs factory
+             * Dialogs factory 
              *
              * @param {string}      Dialog name.
              * @param {Function}    A Dialog factory function.
@@ -75265,13 +76114,13 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 }
             },
             /**
-             * [Alias] Sets dialog settings/options
+             * [Alias] Sets dialog settings/options 
              */
             set: function(name,key,value){
                 return this.setting(name, key,value);
             },
             /**
-             * [Alias] Gets dialog settings/options
+             * [Alias] Gets dialog settings/options 
              */
             get: function(name, key){
                 return this.setting(name, key);
@@ -75825,13 +76674,13 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
 
 
 /***/ }),
-/* 108 */
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(109);
+module.exports = __webpack_require__(113);
 
 /***/ }),
-/* 109 */
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -75839,7 +76688,7 @@ module.exports = __webpack_require__(109);
 
 var utils = __webpack_require__(1);
 var bind = __webpack_require__(20);
-var Axios = __webpack_require__(111);
+var Axios = __webpack_require__(115);
 var defaults = __webpack_require__(12);
 
 /**
@@ -75874,14 +76723,14 @@ axios.create = function create(instanceConfig) {
 
 // Expose Cancel & CancelToken
 axios.Cancel = __webpack_require__(24);
-axios.CancelToken = __webpack_require__(125);
+axios.CancelToken = __webpack_require__(129);
 axios.isCancel = __webpack_require__(23);
 
 // Expose all/spread
 axios.all = function all(promises) {
   return Promise.all(promises);
 };
-axios.spread = __webpack_require__(126);
+axios.spread = __webpack_require__(130);
 
 module.exports = axios;
 
@@ -75890,7 +76739,7 @@ module.exports.default = axios;
 
 
 /***/ }),
-/* 110 */
+/* 114 */
 /***/ (function(module, exports) {
 
 /*!
@@ -75917,7 +76766,7 @@ function isSlowBuffer (obj) {
 
 
 /***/ }),
-/* 111 */
+/* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -75925,8 +76774,8 @@ function isSlowBuffer (obj) {
 
 var defaults = __webpack_require__(12);
 var utils = __webpack_require__(1);
-var InterceptorManager = __webpack_require__(120);
-var dispatchRequest = __webpack_require__(121);
+var InterceptorManager = __webpack_require__(124);
+var dispatchRequest = __webpack_require__(125);
 
 /**
  * Create a new instance of Axios
@@ -76003,7 +76852,7 @@ module.exports = Axios;
 
 
 /***/ }),
-/* 112 */
+/* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -76022,7 +76871,7 @@ module.exports = function normalizeHeaderName(headers, normalizedName) {
 
 
 /***/ }),
-/* 113 */
+/* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -76055,7 +76904,7 @@ module.exports = function settle(resolve, reject, response) {
 
 
 /***/ }),
-/* 114 */
+/* 118 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -76083,7 +76932,7 @@ module.exports = function enhanceError(error, config, code, request, response) {
 
 
 /***/ }),
-/* 115 */
+/* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -76158,7 +77007,7 @@ module.exports = function buildURL(url, params, paramsSerializer) {
 
 
 /***/ }),
-/* 116 */
+/* 120 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -76218,7 +77067,7 @@ module.exports = function parseHeaders(headers) {
 
 
 /***/ }),
-/* 117 */
+/* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -76293,7 +77142,7 @@ module.exports = (
 
 
 /***/ }),
-/* 118 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -76336,7 +77185,7 @@ module.exports = btoa;
 
 
 /***/ }),
-/* 119 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -76396,7 +77245,7 @@ module.exports = (
 
 
 /***/ }),
-/* 120 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -76455,18 +77304,18 @@ module.exports = InterceptorManager;
 
 
 /***/ }),
-/* 121 */
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var utils = __webpack_require__(1);
-var transformData = __webpack_require__(122);
+var transformData = __webpack_require__(126);
 var isCancel = __webpack_require__(23);
 var defaults = __webpack_require__(12);
-var isAbsoluteURL = __webpack_require__(123);
-var combineURLs = __webpack_require__(124);
+var isAbsoluteURL = __webpack_require__(127);
+var combineURLs = __webpack_require__(128);
 
 /**
  * Throws a `Cancel` if cancellation has been requested.
@@ -76548,7 +77397,7 @@ module.exports = function dispatchRequest(config) {
 
 
 /***/ }),
-/* 122 */
+/* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -76575,7 +77424,7 @@ module.exports = function transformData(data, headers, fns) {
 
 
 /***/ }),
-/* 123 */
+/* 127 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -76596,7 +77445,7 @@ module.exports = function isAbsoluteURL(url) {
 
 
 /***/ }),
-/* 124 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -76617,7 +77466,7 @@ module.exports = function combineURLs(baseURL, relativeURL) {
 
 
 /***/ }),
-/* 125 */
+/* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -76681,7 +77530,7 @@ module.exports = CancelToken;
 
 
 /***/ }),
-/* 126 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -76715,7 +77564,7 @@ module.exports = function spread(callback) {
 
 
 /***/ }),
-/* 127 */
+/* 131 */
 /***/ (function(module, exports) {
 
 function isPromise(p) {
@@ -76862,7 +77711,7 @@ module.exports = SyncPromise;
 
 
 /***/ }),
-/* 128 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var require;var require;/**
@@ -76904,7 +77753,7 @@ var require;var require;/**
 //# sourceMappingURL=push.min.js.map
 
 /***/ }),
-/* 129 */
+/* 133 */
 /***/ (function(module, exports) {
 
 /**
@@ -80004,250 +80853,10 @@ var require;var require;/**
 
 
 /***/ }),
-/* 130 */
+/* 134 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 131 */,
-/* 132 */,
-/* 133 */,
-/* 134 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var map = {
-	"./page/shared/contact.vue": 135
-};
-function webpackContext(req) {
-	return __webpack_require__(webpackContextResolve(req));
-};
-function webpackContextResolve(req) {
-	var id = map[req];
-	if(!(id + 1)) // check for number or string
-		throw new Error("Cannot find module '" + req + "'.");
-	return id;
-};
-webpackContext.keys = function webpackContextKeys() {
-	return Object.keys(map);
-};
-webpackContext.resolve = webpackContextResolve;
-module.exports = webpackContext;
-webpackContext.id = 134;
-
-/***/ }),
-/* 135 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(0)
-/* script */
-var __vue_script__ = __webpack_require__(136)
-/* template */
-var __vue_template__ = __webpack_require__(137)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/assets/js/components/page/shared/contact.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-11f6c7af", Component.options)
-  } else {
-    hotAPI.reload("data-v-11f6c7af", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 136 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-exports.default = {
-    data: function data() {
-        return {
-            statusContact: false
-        };
-    }
-};
-
-/***/ }),
-/* 137 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { class: { active: _vm.statusContact }, attrs: { id: "contact" } },
-    [
-      _c("div", { staticClass: "top" }, [
-        _c(
-          "div",
-          { staticClass: "logo" },
-          [_c("svgicon", { attrs: { name: "logo" } })],
-          1
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass: "btn_close",
-            on: {
-              click: function($event) {
-                _vm.statusContact = false
-              }
-            }
-          },
-          [_vm._m(0)]
-        )
-      ]),
-      _vm._v(" "),
-      _vm._m(1)
-    ]
-  )
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("p", [_vm._v("Cerrar"), _c("i", { staticClass: "fas fa-times" })])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row align-items-center center" }, [
-      _c("nav", { staticClass: "col-md-3" }, [
-        _c("ul", [
-          _c("li", [_vm._v("Nombre")]),
-          _vm._v(" "),
-          _c("li", [_vm._v("Empresa")]),
-          _vm._v(" "),
-          _c("li", [_vm._v("Presupuesto")]),
-          _vm._v(" "),
-          _c("li", [_vm._v("Teléfono")]),
-          _vm._v(" "),
-          _c("li", [_vm._v("Correo Electrónico")]),
-          _vm._v(" "),
-          _c("li", [_vm._v("Servicio")]),
-          _vm._v(" "),
-          _c("li", [_vm._v("Contacto")])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-md-9" }, [
-        _c("div", { staticClass: "question" }, [
-          _c("p", [_vm._v("Hola :) Cual es tu Nombre")]),
-          _vm._v(" "),
-          _c("input", {
-            attrs: {
-              type: "text",
-              placeholder: "Nombre,Apellidos",
-              required: ""
-            }
-          })
-        ])
-      ])
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-11f6c7af", module.exports)
-  }
-}
 
 /***/ })
 /******/ ]);

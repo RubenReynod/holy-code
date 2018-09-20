@@ -16,7 +16,7 @@
         </div>
         <div class="menu" v-bind:class="{ active : statusMenu }">
             <div class="top">
-                <div class="logo">
+                <div class="logo" color="white">
                     <svgicon name="logo"></svgicon>
                 </div>
                 <div class="btn_close" v-on:click="statusMenu=false">
