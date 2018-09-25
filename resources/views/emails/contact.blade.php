@@ -20,7 +20,7 @@
 		<tr>
 			<td class="logo" style="width: 100%; text-align: center; border-bottom: 2px solid #40B979" colspan="2">
         <?php $url = (isset($_SERVER['HTTPS'])?"https":"http")."://".$_SERVER['HTTP_HOST']; ?>
-				<a href="<?=$url?>"><img src="<?=$url?>/public/images/logoGray.png"></a>
+				<a href="<?=$url?>"><img src="<?=$url?>/public/images/svgs/logo.svg"></a>
 			</td>
 		</tr>
 		<tr>

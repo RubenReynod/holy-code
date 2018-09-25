@@ -25866,7 +25866,7 @@ var app = new _vue2.default({
             var itemTop = banner.getBoundingClientRect().top + window.pageYOffset;
             var itemH = banner.offsetHeight;
             if (150 + 100 * (scrollVal - itemTop) / itemH > 0) {
-                banner.style.backgroundPositionY = 50 + 100 * (scrollVal - itemTop) / itemH / 3 + "%";
+                banner.style.backgroundPositionY = 50 + 100 * (scrollVal - itemTop) / itemH / 2 + "%";
             }
         }
     },
