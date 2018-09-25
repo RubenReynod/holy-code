@@ -10581,16 +10581,96 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 /* ================ Herencias (extend) ================== */
-.title_ h1, .title_ h2 {
-  font-weight: 500;
-  margin-bottom: 0;
+.animation.layers_left_foto {
+  position: relative;
+  overflow: hidden;
 }
 
-.title_ h1[color="green"], .title_ h2[color="green"] {
+.animation.layers_left_foto::before {
+  content: '';
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  height: 100%;
+  width: 100%;
+  background: white;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+
+.animation.layers_left_foto.in::before {
+  left: -100%;
+}
+
+.animation.layers_right_text {
+  position: relative;
+  overflow: hidden;
+}
+
+.animation.layers_right_text::before {
+  content: '';
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  height: 100%;
+  width: 100%;
+  background: #40B979;
+  opacity: 0.5;
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: -100%;
+}
+
+.animation.layers_right_text::after {
+  content: '';
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  transition-delay: 500ms;
+  -webkit-transition-delay: 500ms;
+  -moz-transition-delay: 500ms;
+  -o-transition-delay: 500ms;
+  -sm-transition-delay: 500ms;
+  height: 100%;
+  width: 100%;
+  background: #40B979;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: -100%;
+}
+
+.animation.layers_right_text .content {
+  opacity: 0;
+  z-index: 15;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  transition-delay: 1s;
+  -webkit-transition-delay: 1s;
+  -moz-transition-delay: 1s;
+  -o-transition-delay: 1s;
+  -sm-transition-delay: 1s;
+}
+
+.animation.layers_right_text.in::before, .animation.layers_right_text.in::after {
+  left: 0;
+}
+
+.animation.layers_right_text.in .content {
+  opacity: 1;
+}
+
+.title_ h1, .title_ h2, .title_ h3 {
+  font-weight: 500;
+  margin-bottom: 0;
+  font-size: 2.2rem;
+}
+
+.title_ h1[color="green"], .title_ h2[color="green"], .title_ h3[color="green"] {
   color: #40B979;
 }
 
-.title_ h1[color="gray"], .title_ h2[color="gray"] {
+.title_ h1[color="gray"], .title_ h2[color="gray"], .title_ h3[color="gray"] {
   color: #C4C4C4;
 }
 
@@ -11164,7 +11244,6 @@ a.text-dark:hover, a.text-dark:focus {
   bottom: 0;
   width: 55%;
   height: 70%;
-  background: #40B979;
   color: #fff;
   font-size: 1.3em;
   font-weight: 100;

@@ -18,7 +18,7 @@
 <body>
 	<table style="width: 100%;">
 		<tr>
-			<td class="logo" style="width: 100%; text-align: center; border-bottom: 2px solid #C61F30" colspan="2">
+			<td class="logo" style="width: 100%; text-align: center; border-bottom: 2px solid #40B979" colspan="2">
         <?php $url = (isset($_SERVER['HTTPS'])?"https":"http")."://".$_SERVER['HTTP_HOST']; ?>
 				<a href="<?=$url?>"><img src="<?=$url?>/public/images/logoGray.png"></a>
 			</td>
@@ -41,12 +41,28 @@
 						<td style="padding-left: 20px; width: 100px;"><b>Teléfono: </b></td>
 						<td>{!! $phone !!}</td>
 					</tr>
+					<tr>
+						<td style="padding-left: 20px; width: 100px;"><b>Empresa: </b></td>
+						<td>{!! $factory !!}</td>
+					</tr>
+					<tr>
+						<td style="padding-left: 20px; width: 100px;"><b>Presupuesto: </b></td>
+						<td>{!! $budget !!}</td>
+					</tr>
+					<tr>
+						<td style="padding-left: 20px; width: 100px;"><b>Servicio: </b></td>
+						<td>{!! $service !!}</td>
+					</tr>
+					<tr>
+						<td style="padding-left: 20px; width: 100px;"><b>Teléfono: </b></td>
+						<td>{!! $phone !!}</td>
+					</tr>
 				</table>
 			</td>
 		</tr>
 
 		<tr>
-			<td style="text-align: center; width: 100%; background: #C61F30; color: white; padding: 20px 0; " colspan="2">© 2018 BYNET <br>TODOS LOS DERECHOS RESERVADOS </td>
+			<td style="text-align: center; width: 100%; background: #40B979; color: white; padding: 20px 0; " colspan="2">© holy-Code. 2018 <br> Todos los derechos reservados</td>
 		</tr>
 	</table>
 

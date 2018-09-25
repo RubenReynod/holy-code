@@ -1,0 +1,64 @@
+.animation{
+	&.layers_left_foto{
+		position: relative;
+		overflow: hidden;
+		&::before{
+			content: '';
+			@include transition(1s ease);
+			height: 100%;
+			width: 100%;
+			background: white;
+			position: absolute;
+			z-index: 10;
+			top: 0;
+			left: 0;
+		}
+		&.in{
+			&::before{
+				left: -100%;
+			}
+		}
+	}
+	&.layers_right_text{
+		position: relative;
+		overflow: hidden;
+		&::before{
+			content: '';
+			@include transition(1s ease);
+			height: 100%;
+			width: 100%;
+			background: $color--primary;
+			opacity: 0.5;
+			position: absolute;
+			z-index: 5;
+			top: 0;
+			left: -100%;
+		}
+		&::after{
+			content: '';
+			@include transition(1s ease);
+			@include cp-property(transition-delay,500ms);
+			height: 100%;
+			width: 100%;
+			background: $color--primary;
+			position: absolute;
+			z-index: 10;
+			top: 0;
+			left: -100%;
+		}
+		.content{
+			opacity: 0;
+			z-index: 15;
+			@include transition(1s ease);
+			@include cp-property(transition-delay,1s);
+		}
+		&.in{
+			&::before,&::after{
+				left: 0;
+			}
+			.content{
+				opacity: 1;
+			}	
+		}
+	}
+}

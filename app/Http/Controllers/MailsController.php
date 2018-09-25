@@ -8,7 +8,7 @@ use Illuminate\Mail\Message;
 
 class MailsController extends Controller
 {
-    public function sendMail(Request $request){
+    public function contact(Request $request){
         $data = $request->all();
         Mail::send('emails.contact',(array)$data,function($m) use ($data){
             //$m->from('no-reply@bynet.com.mx',$name = 'BYNET | Contacto');

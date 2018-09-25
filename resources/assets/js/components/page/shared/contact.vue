@@ -17,7 +17,7 @@
                     <li v-bind:class="{ active : mail.phone != '' }" v-on:click=" btnForm = 'phone' ">Teléfono</li>
                     <li v-bind:class="{ active : mail.email != '' }" v-on:click=" btnForm = 'email' ">Correo Electrónico</li>
                     <li v-bind:class="{ active : mail.service != '' }" v-on:click=" btnForm = 'service' ">Servicio</li>
-                    <li v-bind:class="{ active : mail.contact != '' }" v-on:click=" btnForm = 'contact' ">Contacto</li>
+                    <!--<li v-bind:class="{ active : mail.contact != '' }" v-on:click=" btnForm = 'contact' ">Contacto</li>-->
                 </ul>
             </nav>
             <div class="col-md-9">
