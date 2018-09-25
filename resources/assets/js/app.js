@@ -26,30 +26,36 @@ const app = new Vue({
     el: '#app',
     router:Router,
     methods:{
-        animations : function(){
-        	var time = 0;
-            var scroll = window.scrollY;
-
+        show : function(){
+          var scrollVal = window.scrollY;
+          var windowH = window.innerHeight;
           // Mostrar elementos al dar scroll
-          document.querySelectorAll('.animation:not(.in)').forEach(function(item,index){
-              var top = item.getBoundingClientRect().top + window.pageYOffset;
-              var windowH = window.innerHeight;
-              console.log(top+" - "+(scroll+windowH));
-              if (top < (scroll+windowH-100)) {
-                  item.style.animationDelay = time+"ms";
+          var itemsToShow = document.querySelectorAll('.animation:not(.in)');
+          if (itemsToShow.length > 0)
+          itemsToShow.forEach(function(item,index){
+              var itemTop = item.getBoundingClientRect().top + window.pageYOffset;
+              var itemH = item.offsetHeight;
+              if ((itemTop+itemH-100) < (scrollVal+windowH)) {
                   item.classList.add("in");
-                  time = !mounted?time+450:time+100;
               }
           });
+
+          //parallax
+          var banner = document.querySelector('.back');
+          var itemTop = banner.getBoundingClientRect().top + window.pageYOffset;
+          var itemH = banner.offsetHeight;
+          if ((150+(100 * (scrollVal - itemTop)) / itemH) > 0) {
+              banner.style.backgroundPositionY = (50+((100 * (scrollVal - itemTop)) / itemH) / 3) + "%";
+          }
         }
     },
     mounted(){
-         this.animations;
+         this.show;
     },
     created(){
-    	window.addEventListener('scroll',this.animations);
+    	   document.addEventListener('scroll',this.show);
     },
     destroyed(){
-    	window.addEventListener('scroll',this.animations);
+    	   document.removeEventListener('scroll',this.show);
     }
 });

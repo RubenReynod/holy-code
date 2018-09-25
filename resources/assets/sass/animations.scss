@@ -24,7 +24,7 @@
 		overflow: hidden;
 		&::before{
 			content: '';
-			@include transition(1s ease);
+			@include transition(600ms ease);
 			height: 100%;
 			width: 100%;
 			background: $color--primary;
@@ -37,7 +37,7 @@
 		&::after{
 			content: '';
 			@include transition(1s ease);
-			@include cp-property(transition-delay,500ms);
+			@include cp-property(transition-delay,300ms);
 			height: 100%;
 			width: 100%;
 			background: $color--primary;
@@ -49,8 +49,8 @@
 		.content{
 			opacity: 0;
 			z-index: 15;
-			@include transition(1s ease);
-			@include cp-property(transition-delay,1s);
+			@include transition(600ms ease);
+			@include cp-property(transition-delay,600ms);
 		}
 		&.in{
 			&::before,&::after{
@@ -58,7 +58,7 @@
 			}
 			.content{
 				opacity: 1;
-			}	
+			}
 		}
 	}
 }

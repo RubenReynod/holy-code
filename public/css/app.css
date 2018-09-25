@@ -10610,8 +10610,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 .animation.layers_right_text::before {
   content: '';
-  -webkit-transition: 1s ease;
-  transition: 1s ease;
+  -webkit-transition: 600ms ease;
+  transition: 600ms ease;
   height: 100%;
   width: 100%;
   background: #40B979;
@@ -10626,11 +10626,11 @@ a.text-dark:hover, a.text-dark:focus {
   content: '';
   -webkit-transition: 1s ease;
   transition: 1s ease;
-  transition-delay: 500ms;
-  -webkit-transition-delay: 500ms;
-  -moz-transition-delay: 500ms;
-  -o-transition-delay: 500ms;
-  -sm-transition-delay: 500ms;
+  transition-delay: 300ms;
+  -webkit-transition-delay: 300ms;
+  -moz-transition-delay: 300ms;
+  -o-transition-delay: 300ms;
+  -sm-transition-delay: 300ms;
   height: 100%;
   width: 100%;
   background: #40B979;
@@ -10643,13 +10643,13 @@ a.text-dark:hover, a.text-dark:focus {
 .animation.layers_right_text .content {
   opacity: 0;
   z-index: 15;
-  -webkit-transition: 1s ease;
-  transition: 1s ease;
-  transition-delay: 1s;
-  -webkit-transition-delay: 1s;
-  -moz-transition-delay: 1s;
-  -o-transition-delay: 1s;
-  -sm-transition-delay: 1s;
+  -webkit-transition: 600ms ease;
+  transition: 600ms ease;
+  transition-delay: 600ms;
+  -webkit-transition-delay: 600ms;
+  -moz-transition-delay: 600ms;
+  -o-transition-delay: 600ms;
+  -sm-transition-delay: 600ms;
 }
 
 .animation.layers_right_text.in::before, .animation.layers_right_text.in::after {
