@@ -25847,6 +25847,12 @@ window.Vue = _vue2.default;
 var app = new _vue2.default({
     el: '#app',
     router: _router2.default,
+    data: function data() {
+        return {
+            scrollTop: 0
+        };
+    },
+
     methods: {
         show: function show() {
             var scrollVal = window.scrollY;
@@ -25861,16 +25867,36 @@ var app = new _vue2.default({
                 }
             });
 
-            //parallax
+            // Parallax
             var banner = document.querySelector('.back');
             var itemTop = banner.getBoundingClientRect().top + window.pageYOffset;
             var itemH = banner.offsetHeight;
-            if (150 + 100 * (scrollVal - itemTop) / itemH > 0) {
-                banner.style.backgroundPositionY = 50 + 100 * (scrollVal - itemTop) / itemH / 2 + "%";
-            }
+            if (150 + 100 * (scrollVal - itemTop) / itemH > 0) banner.style.backgroundPositionY = 50 + 100 * (scrollVal - itemTop) / itemH / 2 + "%";
+
+            //var items = document.querySelectorAll('.parallax');
+            //var that = this;
+            //var currentPosition = window.pageYOffset || document.documentElement.scrollTop;
+            //items.forEach(function(item,index){
+            //var itemTop = item.getBoundingClientRect().top + window.pageYOffset;
+            //var itemH = item.offsetHeight;
+            //var childs = item.querySelectorAll('.item-parallax');
+            //childs.forEach(function(item,index){
+            //var styleTop = window.getComputedStyle(item).getPropertyValue('top');
+            //styleTop = styleTop.replace('px','');
+            //item.style.top = (styleTop+(-0.2 * itemTop))+"px";
+            /*if (that.scrollTop > currentPosition && parseInt(styleTop) < (itemH + 100)) {
+                item.style.top = (parseInt(styleTop) + 1)+"px";
+            }else if(that.scrollTop < currentPosition && parseInt(styleTop) > -100){
+                item.style.top = (parseInt(styleTop) - 1)+"px";
+            }*/
+
+            //});
+            //that.scrollTop = currentPosition;
+            //});
         }
     },
     mounted: function mounted() {
+        this.scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         this.show;
     },
     created: function created() {
@@ -29490,21 +29516,25 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("section", { staticClass: "us_desc" }, [
-      _c("div", { staticClass: "text animation layers_right_text" }, [
-        _c("div", { staticClass: "content" }, [
-          _c("p", [_c("b", [_vm._v("Bienvenido a HOLY-CODE")])]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "Holy-Code es una agencia digital interactiva con sede en Guadalajara, Jalisco.México. Nuestra ambición es seguir mejorando el panorama digital y hacer que la web sea un lugar mejor con un diseño hermoso. Esa es nuestra misión."
-            )
+    return _c("section", { staticClass: "us_desc parallax" }, [
+      _c(
+        "div",
+        { staticClass: "text animation item-parallax layers_right_text" },
+        [
+          _c("div", { staticClass: "content" }, [
+            _c("p", [_c("b", [_vm._v("Bienvenido a HOLY-CODE")])]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "Holy-Code es una agencia digital interactiva con sede en Guadalajara, Jalisco.México. Nuestra ambición es seguir mejorando el panorama digital y hacer que la web sea un lugar mejor con un diseño hermoso. Esa es nuestra misión."
+              )
+            ])
           ])
-        ])
-      ]),
+        ]
+      ),
       _vm._v(" "),
       _c("div", {
-        staticClass: "foto animation layers_left_foto",
+        staticClass: "foto item-parallax animation layers_left_foto",
         staticStyle: {
           background:
             "url('public/images/us/agency.jpg')no-repeat center center",
@@ -29682,14 +29712,14 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 //Funcion para añadirlas a Vue
 function fire(Vue) {
-	//Vee-validate	
+	//Vee-validate
 	_veeValidate.Validator.localize('es', _es2.default);
 	Vue.use(_veeValidate2.default, { locale: "es" });
 
-	//vue-datetime	
+	//vue-datetime
 	Vue.use(_vueDatetime2.default);
 
-	//Vue-select	
+	//Vue-select
 	Vue.component('v-select', _vueSelect2.default);
 
 	//Vue-svgicon
@@ -29752,7 +29782,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   * (c) 2018 Abdelrahman Awad
   * @license MIT
   */
-// 
+//
 
 /**
  * Gets the data attribute. the name must be kebab-case.
@@ -30205,7 +30235,7 @@ var merge = function (target, source) {
   return target;
 };
 
-// 
+//
 
 var ErrorBag = function ErrorBag () {
   this.items = [];
@@ -30482,7 +30512,7 @@ ErrorBag.prototype._scope = function _scope (field) {
   return null;
 };
 
-// 
+//
 
 var LOCALE = 'en';
 
@@ -30613,7 +30643,7 @@ Dictionary.prototype.setAttribute = function setAttribute (locale, key, attribut
 
 Object.defineProperties( Dictionary.prototype, prototypeAccessors$2 );
 
-// 
+//
 
 var normalizeValue = function (value) {
   if (isObject(value)) {
@@ -30731,7 +30761,7 @@ I18nDictionary.prototype.setAttribute = function setAttribute (locale, key, valu
 
 Object.defineProperties( I18nDictionary.prototype, prototypeAccessors$3 );
 
-// 
+//
 
 var defaultConfig = {
   locale: 'en',
@@ -31061,7 +31091,7 @@ Generator.resolveGetter = function resolveGetter (el, vnode, model) {
   }
 };
 
-// 
+//
 
 var DEFAULT_OPTIONS = {
   targetOf: null,
@@ -31637,7 +31667,7 @@ Field.prototype.destroy = function destroy () {
 
 Object.defineProperties( Field.prototype, prototypeAccessors$1 );
 
-// 
+//
 
 var FieldBag = function FieldBag () {
   this.items = [];
@@ -31719,7 +31749,7 @@ FieldBag.prototype.push = function push (item) {
 
 Object.defineProperties( FieldBag.prototype, prototypeAccessors$4 );
 
-// 
+//
 
 var RULES = {};
 var STRICT_MODE = true;
@@ -32456,7 +32486,7 @@ Validator.prototype._validate = function _validate (field, value, silent) {
 Object.defineProperties( Validator.prototype, prototypeAccessors );
 Object.defineProperties( Validator, staticAccessors );
 
-// 
+//
 
 /**
  * Checks if a parent validator instance was requested.
@@ -32549,7 +32579,7 @@ var mixin = {
   }
 };
 
-// 
+//
 
 /**
  * Finds the requested field by id from the context object.
@@ -32783,7 +32813,7 @@ if (isDefinedGlobally()) {
   var obj;
 }
 
-// 
+//
 
 function use (plugin, options) {
   if ( options === void 0 ) options = {};
@@ -35412,7 +35442,7 @@ function cleanEscapedString$1 (input) {
 
 // This file is generated automatically by `scripts/build/indices.js`. Please, don't change it.
 
-// 
+//
 
 /**
  * Custom parse behavior on top of date-fns parse function.
@@ -36552,7 +36582,7 @@ var Rules = {
   url: url
 };
 
-// 
+//
 
 var normalize = function (fields) {
   if (Array.isArray(fields)) {
@@ -50631,7 +50661,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("header", { attrs: { id: "header" } }, [
-    _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "container-fluid" }, [
       _c("div", { staticClass: "row" }, [
         _c("div", { staticClass: "col-10" }, [
           _c(
@@ -73094,11 +73124,11 @@ Object.defineProperty(exports, '__esModule', { value: true });
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
  * alertifyjs 1.11.0 http://alertifyjs.com
  * AlertifyJS is a javascript framework for developing pretty browser dialogs and notifications.
- * Copyright 2017 Mohammad Younes <Mohammad@alertifyjs.com> (http://alertifyjs.com) 
+ * Copyright 2017 Mohammad Younes <Mohammad@alertifyjs.com> (http://alertifyjs.com)
  * Licensed under GPL 3 <https://opensource.org/licenses/gpl-3.0>*/
 ( function ( window ) {
     'use strict';
-    
+
     /**
      * Keys enum
      * @type {Object}
@@ -73112,7 +73142,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
         RIGHT: 39
     };
     /**
-     * Default options 
+     * Default options
      * @type {Object}
      */
     var defaults = {
@@ -73157,7 +73187,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
             cancel:'ajs-cancel',
         }
     };
-    
+
     //holds open dialogs instances
     var openDialogs = [];
 
@@ -73166,19 +73196,19 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
      *
      * @element {node}      The element
      * @className {string}  One or more space-separated classes to be added to the class attribute of the element.
-     * 
+     *
      * @return {undefined}
      */
     function addClass(element,classNames){
         element.className += ' ' + classNames;
     }
-    
+
     /**
      * [Helper]  Removes the specified class(es) from the element.
      *
      * @element {node}      The element
      * @className {string}  One or more space-separated classes to be removed from the class attribute of the element.
-     * 
+     *
      * @return {undefined}
      */
     function removeClass(element, classNames) {
@@ -73248,11 +73278,11 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
             }
             return cpy;
         }
-      
+
         if(src instanceof Date){
             return new Date(src.getTime());
         }
-      
+
         if(src instanceof RegExp){
             cpy = new RegExp(src.source);
             cpy.global = src.global;
@@ -73261,7 +73291,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
             cpy.lastIndex = src.lastIndex;
             return cpy;
         }
-        
+
         if(typeof src === 'object'){
             cpy = {};
             // copy dialog pototype over definition.
@@ -73380,7 +73410,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
 
     /**
     * Creates event handler delegate that sends the instance as last argument.
-    * 
+    *
     * @return {Function}    a function wrapper which sends the instance as last argument.
     */
     function delegate(context, method) {
@@ -73398,7 +73428,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
     }
     /**
     * Helper for creating a dialog close event.
-    * 
+    *
     * @return {object}
     */
     function createCloseEvent(index, button) {
@@ -73481,16 +73511,16 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
 
         /**
          * Helper: initializes the dialog instance
-         * 
+         *
          * @return	{Number}	The total count of currently open modals.
          */
         function initialize(instance){
-            
+
             if(!instance.__internal){
 
                 //no need to expose init after this.
                 delete instance.__init;
-              
+
                 //keep a copy of initial dialog settings
                 if(!instance.__settings){
                     instance.__settings = copy(instance.settings);
@@ -73520,7 +73550,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                         }
                     };
                 }
-                
+
                 //initialize hooks object.
                 if(typeof instance.hooks !== 'object'){
                     instance.hooks = {};
@@ -73544,7 +73574,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 var internal = instance.__internal = {
                     /**
                      * Flag holding the open state of the dialog
-                     * 
+                     *
                      * @type {Boolean}
                      */
                     isOpen:false,
@@ -73606,11 +73636,11 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 var elements = {};
                 //root node
                 elements.root = document.createElement('div');
-                
+
                 elements.root.className = classes.base + ' ' + classes.hidden + ' ';
 
                 elements.root.innerHTML = templates.dimmer + templates.modal;
-                
+
                 //dimmer
                 elements.dimmer = elements.root.firstChild;
 
@@ -73624,14 +73654,14 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 elements.reset = [];
                 elements.reset.push(elements.dialog.firstChild);
                 elements.reset.push(elements.dialog.lastChild);
-                
+
                 //commands
                 elements.commands = {};
                 elements.commands.container = elements.reset[0].nextSibling;
                 elements.commands.pin = elements.commands.container.firstChild;
                 elements.commands.maximize = elements.commands.pin.nextSibling;
                 elements.commands.close = elements.commands.maximize.nextSibling;
-                
+
                 //header
                 elements.header = elements.commands.container.nextSibling;
 
@@ -73643,7 +73673,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 //footer
                 elements.footer = elements.body.nextSibling;
                 elements.footer.innerHTML = templates.buttons.auxiliary + templates.buttons.primary;
-                
+
                 //resize handle
                 elements.resizeHandle = elements.footer.nextSibling;
 
@@ -73655,10 +73685,10 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 elements.buttonTemplate = elements.buttons.primary.firstChild;
                 //remove button template
                 elements.buttons.primary.removeChild(elements.buttonTemplate);
-                               
+
                 for(var x=0; x < instance.__internal.buttons.length; x+=1) {
                     var button = instance.__internal.buttons[x];
-                    
+
                     // add to the list of used keys.
                     if(usedKeys.indexOf(button.key) < 0){
                         usedKeys.push(button.key);
@@ -73682,7 +73712,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 }
                 //make elements pubic
                 instance.elements = elements;
-                
+
                 //save event handlers delegates
                 internal.resetHandler = delegate(instance, onReset);
                 internal.beginMoveHandler = delegate(instance, beginMove);
@@ -73713,7 +73743,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                     instance.build();
                 }
             }
-            
+
             //add to the end of the DOM tree.
             document.body.appendChild(instance.elements.root);
         }
@@ -73773,10 +73803,10 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 }
             }
         }
-		
+
         /**
          * Sets the name of the transition used to show/hide the dialog
-         * 
+         *
          * @param {Object} instance The dilog instance.
          *
          */
@@ -73787,7 +73817,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
             addClass(instance.elements.root, classes.prefix + value);
             reflow = instance.elements.root.offsetWidth;
         }
-		
+
         /**
          * Toggles the dialog display mode
          *
@@ -73827,7 +73857,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
         }
 
         /**
-         * Toggles the dialog basic view mode 
+         * Toggles the dialog basic view mode
          *
          * @param {Object} instance The dilog instance.
          *
@@ -73844,7 +73874,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
         }
 
         /**
-         * Toggles the dialog frameless view mode 
+         * Toggles the dialog frameless view mode
          *
          * @param {Object} instance The dilog instance.
          *
@@ -73859,7 +73889,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 removeClass(instance.elements.root, classes.frameless);
             }
         }
-		
+
         /**
          * Helper: Brings the modeless dialog to front, attached to modeless dialogs.
          *
@@ -73869,7 +73899,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          * @return {undefined}
          */
         function bringToFront(event, instance){
-            
+
             // Do not bring to front if preceeded by an open modal
             var index = openDialogs.indexOf(instance);
             for(var x=index+1;x<openDialogs.length;x+=1){
@@ -73877,7 +73907,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                     return;
                 }
             }
-			
+
             // Bring to front by making it the last child.
             if(document.body.lastChild !== instance.elements.root){
                 document.body.appendChild(instance.elements.root);
@@ -73886,17 +73916,17 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 openDialogs.push(instance);
                 setFocus(instance);
             }
-			
+
             return false;
         }
-		
+
         /**
          * Helper: reflects dialogs options updates
          *
          * @param {Object} instance The dilog instance.
          * @param {String} option The updated option name.
          *
-         * @return	{undefined}	
+         * @return	{undefined}
          */
         function optionUpdated(instance, option, oldValue, newValue){
             switch(option){
@@ -73957,7 +73987,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 instance.hooks.onupdate.call(instance, option, oldValue, newValue);
             }
         }
-		
+
         /**
          * Helper: reflects dialogs options updates
          *
@@ -73968,9 +73998,9 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          * @param {Object} value Optional, the value associated with the key (in case it was a string).
          * @param {String} option The updated option name.
          *
-         * @return	{Object} result object 
+         * @return	{Object} result object
          *	The result objects has an 'op' property, indicating of this is a SET or GET operation.
-         *		GET: 
+         *		GET:
          *		- found: a flag indicating if the key was found or not.
          *		- value: the property value.
          *		SET:
@@ -74039,7 +74069,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          * Triggers a close event.
          *
          * @param {Object} instance	The dilog instance.
-         * 
+         *
          * @return {undefined}
          */
         function triggerClose(instance) {
@@ -74059,7 +74089,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          *
          * @param {Event} event	DOM event object.
          * @param {Object} instance	The dilog instance.
-         * 
+         *
          * @return {undefined}
          */
         function commandsClickHandler(event, instance) {
@@ -74090,7 +74120,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          * Helper: pins the modeless dialog.
          *
          * @param {Object} instance	The dialog instance.
-         * 
+         *
          * @return {undefined}
          */
         function pin(instance) {
@@ -74102,11 +74132,11 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          * Helper: unpins the modeless dialog.
          *
          * @param {Object} instance	The dilog instance.
-         * 
+         *
          * @return {undefined}
          */
         function unpin(instance) {
-            //unpin the dialog 
+            //unpin the dialog
             instance.set('pinned', false);
         }
 
@@ -74115,13 +74145,13 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          * Helper: enlarges the dialog to fill the entire screen.
          *
          * @param {Object} instance	The dilog instance.
-         * 
+         *
          * @return {undefined}
          */
         function maximize(instance) {
             // allow custom `onmaximize` method
             dispatchEvent('onmaximize', instance);
-            //maximize the dialog 
+            //maximize the dialog
             addClass(instance.elements.root, classes.maximized);
             if (instance.isOpen()) {
                 ensureNoOverflow();
@@ -74134,13 +74164,13 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          * Helper: returns the dialog to its former size.
          *
          * @param {Object} instance	The dilog instance.
-         * 
+         *
          * @return {undefined}
          */
         function restore(instance) {
             // allow custom `onrestore` method
             dispatchEvent('onrestore', instance);
-            //maximize the dialog 
+            //maximize the dialog
             removeClass(instance.elements.root, classes.maximized);
             if (instance.isOpen()) {
                 ensureNoOverflow();
@@ -74307,7 +74337,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
 
         // flag to cancel keyup event if already handled by click event (pressing Enter on a focusted button).
         var cancelKeyup = false;
-        /** 
+        /**
          * Helper: triggers a button callback
          *
          * @param {Object}		The dilog instance.
@@ -74337,7 +74367,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          *
          * @param {Event}		DOM event object.
          * @param {Object}		The dilog instance.
-         * 
+         *
          * @return {undefined}
          */
         function buttonsClickHandler(event, instance) {
@@ -74353,7 +74383,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          *
          * @param {Event}		DOM event object.
          * @param {Object}		The dilog instance.
-         * 
+         *
          * @return {undefined}
          */
         function keyupHandler(event) {
@@ -74380,7 +74410,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
         *
         * @param {Event}		DOM event object.
         * @param {Object}		The dilog instance.
-        * 
+        *
         * @return {undefined}
         */
         function keydownHandler(event) {
@@ -74450,7 +74480,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                     element = focus.element.call(instance);
                     break;
                 }
-                
+
                 // if no focus element, default to first reset element.
                 if ((typeof element === 'undefined' || element === null) && instance.__internal.buttons.length === 0) {
                     element = instance.elements.reset[0];
@@ -74477,7 +74507,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          */
         function onReset(event, instance) {
 
-            // should work on last modal if triggered from document.body 
+            // should work on last modal if triggered from document.body
             if (!instance) {
                 for (var x = openDialogs.length - 1; x > -1; x -= 1) {
                     if (openDialogs[x].isModal()) {
@@ -74523,7 +74553,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
             }
         }
         /**
-         * Transition in transitionend event handler. 
+         * Transition in transitionend event handler.
          *
          * @param {Event}		TransitionEnd event object.
          * @param {Object}		The dilog instance.
@@ -74553,7 +74583,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
         }
 
         /**
-         * Transition out transitionend event handler. 
+         * Transition out transitionend event handler.
          *
          * @param {Event}		TransitionEnd event object.
          * @param {Object}		The dilog instance.
@@ -74581,7 +74611,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 instance.__internal.activeElement.focus();
                 instance.__internal.activeElement = null;
             }
-            
+
             //destory the instance
             if (typeof instance.__internal.destroy === 'function') {
                 instance.__internal.destroy.apply(instance);
@@ -74606,7 +74636,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          *
          * @param {Event} event	DOM event object.
          * @param {Node} element The element being moved.
-         * 
+         *
          * @return {undefined}
          */
         function moveElement(event, element) {
@@ -74616,17 +74646,17 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
             if(refreshTop){
                 top -= document.body.scrollTop;
             }
-           
+
             element.style.left = left + 'px';
             element.style.top = top + 'px';
-           
+
         }
         /**
          * Helper: sets the element top/left coordinates within screen bounds
          *
          * @param {Event} event	DOM event object.
          * @param {Node} element The element being moved.
-         * 
+         *
          * @return {undefined}
          */
         function moveElementBounded(event, element) {
@@ -74636,7 +74666,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
             if(refreshTop){
                 top -= document.body.scrollTop;
             }
-            
+
             element.style.left = Math.min(bounds.maxLeft, Math.max(bounds.minLeft, left)) + 'px';
             if(refreshTop){
                 element.style.top = Math.min(bounds.maxTop, Math.max(bounds.minTop, top)) + 'px';
@@ -74644,7 +74674,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 element.style.top = Math.max(bounds.minTop, top) + 'px';
             }
         }
-            
+
 
         /**
          * Triggers the start of a move event, attached to the header element mouse down event.
@@ -74652,7 +74682,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          *
          * @param {Event} event	DOM event object.
          * @param {Object} instance The dilog instance.
-         * 
+         *
          * @return {Boolean} false
          */
         function beginMove(event, instance) {
@@ -74679,7 +74709,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                     if (element.style.top) {
                         top = parseInt(element.style.top, 10);
                     }
-                    
+
                     offsetX = eventSrc[xProp] - left;
                     offsetY = eventSrc[yProp] - top;
 
@@ -74688,18 +74718,18 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                     }else if(instance.isPinned()){
                         offsetY -= document.body.scrollTop;
                     }
-                    
+
                     if(instance.get('moveBounded')){
                         var current = element,
                             offsetLeft = -left,
                             offsetTop = -top;
-                        
+
                         //calc offset
                         do {
                             offsetLeft += current.offsetLeft;
                             offsetTop += current.offsetTop;
                         } while (current = current.offsetParent);
-                        
+
                         bounds = {
                             maxLeft : offsetLeft,
                             minLeft : -offsetLeft,
@@ -74711,7 +74741,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                         bounds = null;
                         moveDelegate = moveElement;
                     }
-                    
+
                     // allow custom `onmove` method
                     dispatchEvent('onmove', instance);
 
@@ -74728,7 +74758,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          * The actual move handler,  attached to document.body mousemove event.
          *
          * @param {Event} event	DOM event object.
-         * 
+         *
          * @return {undefined}
          */
         function move(event) {
@@ -74804,7 +74834,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
         }
 
         /* Controls moving a dialog around */
-        //holde the current instance being resized		
+        //holde the current instance being resized
         var resizable = null,
             //holds the staring left offset when resize starts.
             startingLeft = Number.Nan,
@@ -74822,7 +74852,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          * @param {Event} event	DOM mousemove event object.
          * @param {Node} element The element being moved.
          * @param {Boolean} pinned A flag indicating if the element being resized is pinned to the screen.
-         * 
+         *
          * @return {undefined}
          */
         function resizeElement(event, element, pageRelative) {
@@ -74848,7 +74878,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
             // rtl handling
             var isRTL = isRightToLeft();
             if (isRTL) {
-                // reverse X 
+                // reverse X
                 X = document.body.offsetWidth - X;
                 // if has a starting left, calculate offsetRight
                 if (!isNaN(startingLeft)) {
@@ -74886,7 +74916,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          *
          * @param {Event} event	DOM event object.
          * @param {Object} instance The dilog instance.
-         * 
+         *
          * @return {Boolean} false
          */
         function beginResize(event, instance) {
@@ -74901,7 +74931,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 if (eventSrc) {
                     // allow custom `onresize` method
                     dispatchEvent('onresize', instance);
-                    
+
                     resizable = instance;
                     handleOffset = instance.elements.resizeHandle.offsetHeight / 2;
                     var element = instance.elements.dialog;
@@ -74925,7 +74955,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
          * The actual resize handler,  attached to document.body mousemove event.
          *
          * @param {Event} event	DOM event object.
-         * 
+         *
          * @return {undefined}
          */
         function resize(event) {
@@ -75282,12 +75312,12 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 if(!isNaN(x) && !isNaN(y)){
                     // allow custom `onmove` method
                     dispatchEvent('onmove', this);
-                    
+
                     var element = this.elements.dialog,
                         current = element,
                         offsetLeft = 0,
                         offsetTop = 0;
-                    
+
                     //subtract existing left,top
                     if (element.style.left) {
                         offsetLeft -= parseInt(element.style.left, 10);
@@ -75312,7 +75342,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
 
                     element.style.left = left + 'px';
                     element.style.top = top + 'px';
-                    
+
                     // allow custom `onmoved` method
                     dispatchEvent('onmoved', this);
                 }
@@ -75337,10 +75367,10 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 ;
 
                 if(!isNaN(w) && !isNaN(h) && this.get('resizable') === true){
-                    
+
                     // allow custom `onresize` method
                     dispatchEvent('onresize', this);
-                    
+
                     if(('' + width).match(regex)){
                         w = w / 100 * document.documentElement.clientWidth ;
                     }
@@ -75357,14 +75387,14 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                     element.style.minHeight = this.elements.header.offsetHeight + this.elements.footer.offsetHeight + 'px';
                     element.style.width = w + 'px';
                     element.style.height = h + 'px';
-                    
+
                     // allow custom `onresized` method
                     dispatchEvent('onresized', this);
                 }
                 return this;
             },
             /**
-             * Gets or Sets dialog settings/options 
+             * Gets or Sets dialog settings/options
              *
              * @param {String|Object} key A string specifying a propery name or a collection of key/value pairs.
              * @param {Object} value Optional, the value associated with the key (in case it was a string).
@@ -75396,14 +75426,14 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 }
             },
             /**
-             * [Alias] Sets dialog settings/options 
+             * [Alias] Sets dialog settings/options
              */
             set:function(key, value){
                 this.setting(key,value);
                 return this;
             },
             /**
-             * [Alias] Gets dialog settings/options 
+             * [Alias] Gets dialog settings/options
              */
             get:function(key){
                 return this.setting(key);
@@ -75454,7 +75484,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
              * @return {Object} the dialog instance.
              */
             show: function (modal, className) {
-                
+
                 // ensure initialization
                 initialize(this);
 
@@ -75516,7 +75546,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
 
                     //reflow
                     reflow = this.elements.root.offsetWidth;
-                  
+
                     // show dialog
                     removeClass(this.elements.root, classes.hidden);
 
@@ -76032,12 +76062,12 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
         return {
             /**
              * Alertify defaults
-             * 
+             *
              * @type {Object}
              */
             defaults: defaults,
             /**
-             * Dialogs factory 
+             * Dialogs factory
              *
              * @param {string}      Dialog name.
              * @param {Function}    A Dialog factory function.
@@ -76130,13 +76160,13 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
                 }
             },
             /**
-             * [Alias] Sets dialog settings/options 
+             * [Alias] Sets dialog settings/options
              */
             set: function(name,key,value){
                 return this.setting(name, key,value);
             },
             /**
-             * [Alias] Gets dialog settings/options 
+             * [Alias] Gets dialog settings/options
              */
             get: function(name, key){
                 return this.setting(name, key);

@@ -6,14 +6,14 @@
             	  <h2 color="gray">Marcas, e-commerce y productos digitales</h2>
             </hgroup>
         </section>
-        <section class="us_desc">
-            <div class="text animation layers_right_text">
+        <section class="us_desc parallax">
+            <div class="text animation item-parallax layers_right_text">
                 <div class="content">
                     <p><b>Bienvenido a HOLY-CODE</b></p>
                     <p>Holy-Code es una agencia digital interactiva con sede en Guadalajara, Jalisco.México. Nuestra ambición es seguir mejorando el panorama digital y hacer que la web sea un lugar mejor con un diseño hermoso. Esa es nuestra misión.</p>
                 </div>
             </div>
-            <div class="foto animation layers_left_foto" style="background: url('public/images/us/agency.jpg')no-repeat center center; background-size: cover;"></div>
+            <div class="foto item-parallax animation layers_left_foto" style="background: url('public/images/us/agency.jpg')no-repeat center center; background-size: cover;"></div>
         </section>
         <section class="works">
         	<div class="title_">

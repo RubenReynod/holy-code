@@ -2,6 +2,8 @@
 #header{
     padding-top: 1.5rem;
     background: #fff;
+    padding-left: 5%;
+    padding-right: 5px;
     .bars{
         @extend %center-align;
         width: 25px;
